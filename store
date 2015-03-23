@@ -1,0 +1,73 @@
+#!/bin/bash
+
+# Include the functions that we'll use between scripts
+source /usr/hp/common_functions
+
+if [ "$1" == "--help" ]
+then	
+	echo "To log a file:"
+	echo "$0 file [filename]"
+	echo "To log an error:"
+	echo "$0 log [error_level] [error]"
+	exit 1
+fi
+
+LOG_TYPE=$1
+
+if [ "$LOG_TYPE" == "log" ]
+then
+	if [  $# -lt 4  ] || [ $# -gt 5 ]
+	then
+		echo "ERROR: Improper use of $0."
+		echo "$0 log [ctid] [error_level] [description] [(optional) timestamp]"
+		exit 1
+	fi
+	ERROR_LEVEL=$3
+	DESC=$4
+
+	# Get optional timestamp if passed
+	case $# in
+		5) TIMESTAMP=$4 ;;
+		4) TIMESTAMP=`date +%s` ;;
+	esac
+
+	#ssh -f aces@10.3.0.2 "echo $TIMESTAMP:$ERROR_LEVEL:$LOG >> logs"
+	mongo_write "db.logs.insert({timestamp: new Date($TIMESTAMP*1000), session_id: ObjectId('`get_id`'), ctid: $2, level: '$ERROR_LEVEL', desc: '$DESC'})"
+
+elif [ "$LOG_TYPE" == "download" ]
+then
+
+	if [ $# -ne 3 ]
+	then
+		echo "ERROR: Improper usage of $0."
+		echo "$0 download [ctid] [url]"
+		exit 1
+	fi
+
+	# Log the download 
+	store log $2 DOWNLOAD "$3"
+
+	# Get the ID
+	id="`get_id`"
+
+	# Download the software to our storage vm
+	ssh -f aces@10.3.0.2 "~/scripts/ssh_download '$id' '$2'" 2>> /usr/hp/monitor.log
+	
+#elif [ "$LOG_TYPE" == "file" ]
+#then
+	# Set sftp_cmds for uploading our file
+	# if [ ! -f "$2" ]
+	# then 
+	# 	echo "ERROR: File does not exist. Failed to upload $2"
+	#	exit 1	
+	#fi
+	#upload_file_set_cmds $2
+	#sftp -b sftp_cmds aces@10.3.0.2 > output.txt &
+	#rm output.txt sftp_cmds
+else
+	echo "ERROR: improper operation ($LOG_TYPE) type passed to $0."
+	exit 1
+fi
+
+
+

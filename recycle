@@ -1,0 +1,45 @@
+#!/bin/bash
+
+if [ $# -ne 3 ] && [ "$2" != "override" ]
+then
+	echo "You aren't using recycle correctly. 'recycle [ctid] [object id] [was kicked (0|1)]'"
+	exit 1
+fi
+
+source /usr/hp/common_functions
+
+# Make sure that a hacker was on the system before recycle was called 
+# and that the recycle command is being called for the right hacker 
+# (might be the wrong hacker because of being called via "at")
+if [ "$2" == "override" ] || ([ -e /usr/hp/$1.lock ] && [ "`cut -d':' -f1 /usr/hp/$1.lock`" == "$2" ])
+then
+	# Remove the file that indicates that a hacker is on the system
+	rm -f /usr/hp/$1.lock
+
+	store log $1 RECYCLE "Recycling container $1"
+
+	if [ "$2" != "override" ]
+	then
+		# Set disconnect time and whether the hacker was kicked
+		mongo_write "db.sessions.update({_id: ObjectId('`get_id`')}, {\$set: {disconnect: new Date(), was_kicked: '$3'}})"
+	fi
+
+	# First stop monitoring commands
+	sudo /usr/hp/hpctl stop $1
+
+	# Stop and destroy the container
+	sudo vzctl stop $1
+	sudo vzctl destroy $1 
+
+	# Restore the snapshot
+	sudo vzrestore /vz/dump/vzdump-openvz-$1*.tar $1
+
+	# Start the container
+	sudo vzctl start $1
+
+	# Add internet
+	sudo brctl addif br0 "veth$1.0"
+
+	# Restart monitoring for this honeypot
+	hpctl start $1
+fi

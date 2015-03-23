@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]
+then
+	echo "Usage: $0 [honeypot-number] "
+	exit 1
+fi
+
+sudo tail -fn0 /vz/private/$1/usr/hp/log_commands 2>> /usr/hp/monitor.log | while read line; do
+
+	# Get the url
+	url="`find_url $line`"
+	echo "Calling store on $line"
+	# Now store the download from the url
+	store download $1 "$url"
+done

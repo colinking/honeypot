@@ -1,0 +1,38 @@
+#!/bin/bash
+
+hp_1=124
+hp_2=148
+
+# log_connection [ctid] [ip]
+function log_connection {
+	# Log it to the Storage VM
+	store log $1 CONNECT "Connection opened from $2"
+}
+
+# mongo_write [mongo commands]
+function mongo_write {
+	# Log the mongo string
+	echo "$1" >> /usr/hp/monitor.log
+	# Pass in the text to write to mongo as $1
+	echo "$1" | /usr/bin/mongodb/bin/mongo --quiet 10.3.0.2/hpdata >> /usr/hp/monitor.log
+}
+
+# Returns the most recent object id from the mongo sessions collection
+# get_id
+function get_id {
+	echo "db.sessions.find({}, {_id: 1}).sort({connect: -1}).limit(1)" | mongo --quiet 10.3.0.2/hpdata | cut -d"\"" -f4
+}
+
+# get_hp_ip [ctid]
+function get_hp_ip {
+	if [ "$1" == "124" ]
+	then
+		echo "128.8.37.104"
+	elif [ "$1" == "148" ]
+	then
+		echo "128.8.37.120"
+	else
+		echo "ERROR: Unable to return honeypot IP. $1 is not a Honeypot ID"
+		exit 1
+	fi
+}

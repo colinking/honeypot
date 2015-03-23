@@ -1,0 +1,91 @@
+#!/bin/bash
+
+cd /usr/hp
+
+source /usr/hp/common_functions
+
+## Get the most recent p0f file from the data collector
+# SSh to data collector to get file name of most recent log file
+ssh data@192.168.1.254 'cd p0f/groupF/2015; cd `ls -t | head -1`; echo `pwd`/`ls -t | head -1`' > p0f_location.log
+# Save this location to a variable
+p0f_location=`cat p0f_location.log`
+# Remove the p0f_location log
+rm p0f_location.log
+# SCP to the data collector to transfer this file
+scp data@192.168.1.254:$p0f_location ./
+# Save the filename using string operators from the p0f_location variable, to use later 
+p0f_log="${p0f_location##*/}"
+
+for hp in $hp_1 $hp_2; do
+	# if new logs exist, continue
+	if [ -e /usr/hp/ids_$hp.log ]
+	then
+		# Get the recent connections from ids.log (all within the last hour)
+		recents=`cat /usr/hp/ids_$hp.log`
+		rm ids_$hp.log
+		ip=`get_hp_ip $hp`
+		for line in $recents; do
+			
+			# Cut out the connect time, id and disconnect time from the log line
+			connect="`echo "$line" | cut -d'|' -f1`"
+			id="`echo "$line" | cut -d'|' -f2`"
+			disconnect="`echo "$line" | cut -d'|' -f3`"
+			
+			# Check if the hacker was connected through the end of the hour
+			# If so, we will grab packets up to the end or from the beginning of the p0f file
+			if [ "$connect" == "" ]
+			then
+				# Include all packets from the begnining of the hour
+				connect="`date +"%Y/%m/%d %H:00:00"`"
+			fi
+			if [ "$disconnect" == "" ]
+			then
+				# Include all packets from when they connected to the end of the hour
+				disconnect="`date -d"+1 hour" +"%Y/%m/%d %H:00:00"`"
+			fi 
+
+			# Add a margin of error to connect and disconnect times
+			moe=2 # Seconds of margin on either side
+			connect=$(($connect - $moe))
+			disconnect=$(($disconnect + $moe))
+			
+			# Convert to the date format of the p0f logs 2015/03/15 00:02:42
+			from="`date -d@"$connect" +"%Y/%m/%d %H:%M:%S"`"
+			to="`date -d@"$disconnect" +"%Y/%m/%d %H:%M:%S"`"
+
+			# If you can figure out what all those quotes do, you deserve a medal
+			packets="`awk '$0 > "'"[$from"'" && $0 < "'"[$to"'"' "$p0f_log"`"
+
+			# Grep out only the lines that have "mod=syn|" and the hp's ip address
+			syn_packets="`echo "$packets" | grep "mod=syn|.*srv=$ip"`"
+
+			# Format the packets to be uploaded to mongo
+			packet_arr=""
+
+			while read packet
+			do
+				packet_arr+=", '$packet'"
+			done <<< "$syn_packets"
+
+			# Remove the first ", " from the packet array
+			packet_arr=${packet_arr:2}
+
+			# Cut out the OS
+			os="`echo "$syn_packets" | cut -d"|" -f5`"
+			# Remove "os="
+			os=${os:3}
+
+			# Cut out the distance
+			dist="`echo "$syn_packets" | cut -d"|" -f6`"
+			# Remove "dist="
+			dist=${dist:5}
+
+			# Upload to mongo using the id
+			mongo_write "db.sessions.update({_id: ObjectId('$id')}, {\$set: {os: '$os', dist: '$dist', p0f: [$packet_arr]}})"
+
+		done
+	fi
+done
+
+# Finally, remove the p0f log we downloaded to save space
+rm "$p0f_log"

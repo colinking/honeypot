@@ -1,0 +1,88 @@
+db.sessions.drop(); db.logs.drop()
+true
+KILLING MONITOR PROCESSES FOR 124
+STARTING HP 124
+KILLING MONITOR PROCESSES FOR 148
+nohup: ignoring input
+nohup: ignoring input
+STARTING HP 148
+nohup: ignoring input
+nohup: ignoring input
+MONITOR_SSH: Mar 22 22:23:12 ovzhost sshd[839]: Accepted password for root from 129.2.205.24 port 57341 ssh2
+Logon Detected
+db.sessions.insert({connect: new Date(), ip: '129.2.205.24', info: {"geobytesinternet":"US","geobytescountry":"United States","geobytesregionlocationcode":"USMD","geobytesregion":"Maryland","geobytescode":"MD","geobyteslocationcode":"USMDCPAR","geobytescity":"College Park","geobytescityid":"8922","geobytesfqcn":"College Park, MD, United States","geobyteslatitude":"38.989101","geobyteslongitude":"-76.932899","geobytescapital":"Washington, DC ","geobytestimezone":"-76.9329","geobytesnationalitysingular":"American","geobytespopulation":"278058881","geobytesnationalityplural":"Americans","geobytesmapreference":"North America ","geobytescurrency":"US Dollar","geobytescurrencycode":"USD","geobytestitle":"The United States"}, port: '57341', hp_ip: '128.8.37.104', password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 107 at Sun Mar 22 22:53:00 2015
+db.logs.insert({timestamp: new Date(1427077393*1000), session_id: ObjectId('550f7910ad0608133d8e91d4'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 129.2.205.24'})
+WriteResult({ "nInserted" : 1 })
+MONITOR_SSH: Mar 22 22:23:19 ovzhost sshd[839]: Received disconnect from 129.2.205.24: 11: disconnected by user
+Logoff detected
+db.logs.insert({timestamp: new Date(1427077399*1000), session_id: ObjectId('550f7910ad0608133d8e91d4'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('550f7910ad0608133d8e91d4')}, {$set: {disconnect: new Date(), was_kicked: 'no'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+KILLING MONITOR PROCESSES FOR 124
+STOPPING HP 124
+Stopping container ...
+Container was stopped
+Container is unmounted
+Destroying container private area: /vz/private/124
+Container private area was destroyed
+INFO: restore openvz backup '/vz/dump/vzdump-openvz-124-2015_03_22-19_20_20.tar' using ID 124
+INFO: extracting archive '/vz/dump/vzdump-openvz-124-2015_03_22-19_20_20.tar'
+INFO: Total bytes read: 977776640 (933MiB, 94MiB/s)
+INFO: extracting configuration to '/etc/vz/conf/124.conf'
+INFO: restore openvz backup '/vz/dump/vzdump-openvz-124-2015_03_22-19_20_20.tar' successful
+Starting container...
+Initializing quota ...
+Container is mounted
+Setting CPU units: 1000
+Configure veth devices: veth124.0 
+Container start in progress...
+KILLING MONITOR PROCESSES FOR 124
+STARTING HP 124
+MONITOR_SSH: Mar 22 22:40:41 ovzhost sshd[918]: Accepted password for root from 43.255.191.131 port 37796 ssh2
+Logon Detected
+db.sessions.insert({connect: new Date(), ip: '43.255.191.131', info: {"geobytesinternet":"ID","geobytescountry":"Indonesia","geobytesregionlocationcode":"IDJK","geobytesregion":"Jakarta Raya (Djakarta Raya)","geobytescode":"JK","geobyteslocationcode":"IDJKJAKA","geobytescity":"Jakarta","geobytescityid":"4010","geobytesfqcn":"Jakarta, JK, Indonesia","geobyteslatitude":"-6.167000","geobyteslongitude":"106.800003","geobytescapital":"Jakarta ","geobytestimezone":"106.8","geobytesnationalitysingular":"Indonesian","geobytespopulation":"228437870","geobytesnationalityplural":"Indonesians","geobytesmapreference":"Southeast Asia ","geobytescurrency":"Rupiah","geobytescurrencycode":"IDR","geobytestitle":"Indonesia"}, port: '37796', hp_ip: '128.8.37.104', password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 108 at Sun Mar 22 23:10:00 2015
+db.logs.insert({timestamp: new Date(1427078442*1000), session_id: ObjectId('550f7d2a66be24134afd3d02'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 43.255.191.131'})
+MONITOR_SSH: Mar 22 22:40:42 ovzhost sshd[1254]: Accepted password for root from 43.255.191.131 port 59880 ssh2
+Logon Detected
+WriteResult({ "nInserted" : 1 })
+db.sessions.insert({connect: new Date(), ip: '43.255.191.131', info: {"geobytesinternet":"ID","geobytescountry":"Indonesia","geobytesregionlocationcode":"IDJK","geobytesregion":"Jakarta Raya (Djakarta Raya)","geobytescode":"JK","geobyteslocationcode":"IDJKJAKA","geobytescity":"Jakarta","geobytescityid":"4010","geobytesfqcn":"Jakarta, JK, Indonesia","geobyteslatitude":"-6.167000","geobyteslongitude":"106.800003","geobytescapital":"Jakarta ","geobytestimezone":"106.8","geobytesnationalitysingular":"Indonesian","geobytespopulation":"228437870","geobytesnationalityplural":"Indonesians","geobytesmapreference":"Southeast Asia ","geobytescurrency":"Rupiah","geobytescurrencycode":"IDR","geobytestitle":"Indonesia"}, port: '59880', hp_ip: '128.8.37.120', password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 109 at Sun Mar 22 23:10:00 2015
+db.logs.insert({timestamp: new Date(1427078442*1000), session_id: ObjectId('550f7d2a54f6a58c447577e6'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 43.255.191.131'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('550f7910ad0608133d8e91d4')}, {$set: {os: '', dist: '', p0f: ['']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/sync_p0f_logs: line 50: 2015/03/23 00:00:00 + 2: syntax error in expression (error token is "00:00:00 + 2")
+db.logs.insert({timestamp: new Date(1427080200*1000), session_id: ObjectId('550f7d2a54f6a58c447577e6'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+db.logs.insert({timestamp: new Date(1427080200*1000), session_id: ObjectId('550f7d2a54f6a58c447577e6'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('550f7d2a54f6a58c447577e6')}, {$set: {disconnect: new Date(), was_kicked: 'yes'}})
+db.sessions.update({_id: ObjectId('550f7d2a54f6a58c447577e6')}, {$set: {disconnect: new Date(), was_kicked: 'yes'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+KILLING MONITOR PROCESSES FOR 148
+KILLING MONITOR PROCESSES FOR 124
+STOPPING HP 148
+STOPPING HP 124
+KILLING MONITOR PROCESSES FOR 124
+STARTING HP 124
+KILLING MONITOR PROCESSES FOR 148
+STARTING HP 148
+MONITOR_SSH: Mar 22 23:54:15 ovzhost sshd[1058]: Accepted password for root from 129.2.205.24 port 58036 ssh2
+Logon Detected
+db.sessions.insert({connect: new Date(), ip: '129.2.205.24', info: {"geobytesinternet":"US","geobytescountry":"United States","geobytesregionlocationcode":"USMD","geobytesregion":"Maryland","geobytescode":"MD","geobyteslocationcode":"USMDCPAR","geobytescity":"College Park","geobytescityid":"8922","geobytesfqcn":"College Park, MD, United States","geobyteslatitude":"38.989101","geobyteslongitude":"-76.932899","geobytescapital":"Washington, DC ","geobytestimezone":"-76.9329","geobytesnationalitysingular":"American","geobytespopulation":"278058881","geobytesnationalityplural":"Americans","geobytesmapreference":"North America ","geobytescurrency":"US Dollar","geobytescurrencycode":"USD","geobytestitle":"The United States"}, port: '58036', hp_ip: '128.8.37.104', password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 110 at Mon Mar 23 00:24:00 2015
+db.logs.insert({timestamp: new Date(1427082855*1000), session_id: ObjectId('550f8e67a8e5872b85030c42'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 129.2.205.24'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/sync_p0f_logs: line 50: 2015/03/23 01:00:00 + 2: syntax error in expression (error token is "01:00:00 + 2")

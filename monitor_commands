@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 ]
+then
+	echo "Usage: $0 [honeypot-number]"
+	exit 1
+fi
+
+# Include the functions that we'll use between scripts
+source /usr/hp/common_functions
+
+#echo "Running tail on ~/.bash_history in container #$1...";
+
+sudo tail -fn0 /vz/private/$1/root/.bash_history 2>> /usr/hp/monitor.log | while read line; do
+	# Get the ID of the currently logged on user
+	id="`get_id`"
+	ssh -f aces@10.3.0.2 "cd ~/data/$id; echo '$line' >> logs_command" 2> /dev/null
+done
