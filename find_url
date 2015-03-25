@@ -29,6 +29,9 @@ then
 		then
 			optionParam=1
 			continue
+		elif [ "${x:0:1}" == "-" ]
+		then
+			continue
 		else
 			url=$x
 			break			
@@ -48,6 +51,9 @@ then
 		elif [ "$x" == "-A" ] || [ "$x" == "--user-agent" ] || [ "$x" == "-b" ] || [ "$x" == "-cookie" ] || [ "$x" == "--cookie-jar" ] || [ "$x" == "-C" ] || [ "$x" == "--continue-at" ] || [ "$x" == "--ciphers" ] || [ "$x" == "--connect-timeout" ] || [ "$x" == "--crlfile" ] || [ "$x" == "-d" ] || [ "$x" == "--data" ] || [ "$x" == "-D" ] || [ "$x" == "--dump-header" ] || [ "$x" == "--data-ascii" ] || [ "$x" == "--data-binary" ] || [ "$x" == "--data-urlencode" ] || [ "$x" == "--delegation" ] || [ "$x" == "--dns-interface" ] || [ "$x" == "--dns-ipv4-addr" ] || [ "$x" == "--dns-ipv6-addr" ] || [ "$x" == "dns-servers" ] || [ "$x" == "-e" ] || [ "$x" == "--cert" ] || [ "$x" == "--engine" ] || [ "$x" == "--egd-file" ] || [ "$x" == "--capath" ] || [ "$x" == "-F" ] || [ "$x" == "--form" ] || [ "$x" == "--ftp-account" ] || [ "$x" == "--ftp-alternative-to-user" ] || [ "$x" == "--ftp-method" ] || [ "$x" == "--ftp-ssl-mode" ] || [ "$x" == "-H" ] || [ "$x" == "--header" ] || [ "$x" == "--hostpubmd5" ] || [ "$x" == "--interface" ] || [ "$x" == "-K" ] || [ "$s" == "--config" ] || [ "$x" == "--keepalive-time" ] || [ "$x" == "--key" ] || [ "$x" == "--key-type" ] || [ "$x" == "--krb" ] || [ "$x" == "--libcurl" ] || [ "$x" == "--limit-rate" ] || [ "$x" == "--local-port" ] || [ "$x" == "-m" ] || [ "$x" == "--max-time" ] || [ "$x" == "--login-options" ] || [ "$x" == "--mail-auth" ] || [ "$x" == "--mail-from" ] || [ "$x" == "--max-filesize" ] || [ "$x" == "--mail-rcpt" ] || [ "$x" == "--max-redirs" ] || [ "$x" == "-n" ] || [ "$x" == "--netric" ] || [ "$x" == "-N" ] || [ "$x" == "--no-buffer" ] || [ "$x" == "--noproxy" ] || [ "$x" == "-o" ] || [ "$x" == "--output" ] || [ "$x" == "-P" ] || [ "$x" == "--ftp-port" ] || [ "$x" == "--pass" ] || [ "$x" == "-pass" ] || [ "$x" == "--proto" ] || [ "$x" == "--proto-redir" ] || [ "$x" == "-proxy1.0" ] || [ "$x" == "--pubkey" ] || [ "$x" == "-Q" ] || [ "$x" == "--quote" ] || [ "$x" == "-r" ] || [ "$x" == "-range" ] || [ "$x" == "--random-file" ] || [ "$x" == "--resolve" ] || [ "$x" == "--retry" ] || [ "$x" == "--retry-delay" ] || [ "$x" == "--retry-max-time" ] || [ "$x" == "--socks4" ] || [ "$x" == "--socks4a" ] || [ "$x" == "socks5-hostname" ] || [ "$x" == "--socks5" ] || [ "$x" == "--socks5-gssapi-service" ] || [ "$x" == "--stderr" ] || [ "$x" == "-t" ] || [ "$x" == "--telenet-option" ] || [ "$x" == "-T" ] || [ "$x" == "--upload-file" ] || [ "$x" == "--tftp-blksize" ] || [ "$x" == "--tlsauththype" ] || [ "$x" == "--tlspassword" ] || [ "$x" == "--tlsuser" ] || [ "$x" == "--trace" ] || [ "$x" == "--trace-ascii" ] || [ "$x" == "-u" ] || [ "$x" == "--user" ] || [ "$x" == "U" ] || [ "$x" == "--proxy-user" ] || [ "$x" == "-w" ] || [ "$x" == "--write-out" ] || [ "$x" == "-x" ] || [ "$x" == "--proxy" ] || [ "$x" == "-X" ] || [ "$x" == "--request" ] || [ "$x" == "--request" ] || [ "$x" == "-y" ] || [ "$x" == "--speed-time" ] || [ "$x" == "-Y" ] || [ "$x" == "--speed-limit" ] || [ "$x" == "-z" ] || [ "$x" == "--time-cond" ]
 		then
 			optionParam=1
+			continue
+		elif [ "${x:0:1}" == "-" ]
+		then
 			continue
 		else
 			url=$x

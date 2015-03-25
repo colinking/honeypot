@@ -76,6 +76,9 @@ then
 		start_hp $hp
 	done
 
+	# Reset Firewall again just to be sure
+	sudo /usr/hp/firewall_start
+
 elif command_matches "stop"
 then
 	
@@ -136,7 +139,8 @@ then
 
 		# Check if the honeypot is currently compromised
 		echo -n "Compromised..."
-		if echo "db.logs.find({ctid: $hp}, {_id: 0, level: 1}).sort({timestamp: -1}).limit(1)" | mongo --quiet 10.3.0.2/hpdata | grep -q RECYCLE; then
+		last_hp_log="`echo "db.logs.find({ctid: $hp}, {_id: 0, level: 1}).sort({timestamp: -1}).limit(1)" | mongo --quiet 10.3.0.2/hpdata`"
+		if [ "$last_hp_log" == "" ] || echo "$last_hp_log" | grep -q RECYCLE; then
 			echo "NO"
 		else
 			echo "YES"
@@ -145,8 +149,12 @@ then
 			date -d"$iso_time" +"%m/%d/%y %r"
 		fi
 
-		# Output the number of recycles (aka sessions) since the start
-		echo -n "Total Number of Complete Sessions..."
+		# Output the number of connections since the start
+		echo -n "Number of Connections..."
+		echo "db.logs.find({level: 'CONNECT', ctid: $hp}).count()" | mongo --quiet 10.3.0.2/hpdata
+
+		# Output the number of recycles since the start
+		echo -n "Number of Recycles..."
 		echo "db.logs.find({level: 'RECYCLE', ctid: $hp}).count()" | mongo --quiet 10.3.0.2/hpdata
 		
 		# Output the number of hackers in the last day

@@ -24,8 +24,12 @@ sudo tail -fn0 /vz/private/$1/var/log/auth.log 2>> /usr/hp/monitor.log | while r
 	# Case: Mar 16 16:18:30 ovzhost sshd[8588]: Accepted password for root from 128.8.68.127 port 57278 ssh2
 	if echo "$line" | grep -q "Accepted password for root from" ;
 	then
-		echo "MONITOR_SSH: $line"
-		echo "Logon Detected"
+		echo "[`date +"%x %r"`] MONITOR_SSH - ACCEPTED PASSWORD: $line"
+
+		# Notify our team about the logon
+		echo "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=COLINKING" http://api.justyo.co/yo/`"
+		echo "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=MONEYBAGSWAG" http://api.justyo.co/yo/`"
+		echo "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=KFOSTER5" http://api.justyo.co/yo/`"
 
 		# Temp fix if multiple users log in at once
 		if [ ! -e /usr/hp/$1.lock ]
@@ -71,8 +75,7 @@ sudo tail -fn0 /vz/private/$1/var/log/auth.log 2>> /usr/hp/monitor.log | while r
 	elif echo "$line" | grep -Eq "Received disconnect from.*disconnected by user" ;
 	then
 
-		echo "MONITOR_SSH: $line"
-		echo "Logoff detected"
+		echo "[`date +"%x %r"`] MONITOR_SSH - DISCONNECT: $line"
 
 		# Temp fix for if multiple users log in at same time
 		if [ -e /usr/hp/$1.lock ]
@@ -98,6 +101,11 @@ sudo tail -fn0 /vz/private/$1/var/log/auth.log 2>> /usr/hp/monitor.log | while r
 			# Recycle the honeypot
 			recycle $1 $id "no"
 		fi
+	elif echo "$line" | grep -q "Failed password for root" ; 
+	then
+		echo "[`date +"%x %r"`] FAILED PASSWORD: $line"
+	else
+		echo "[`date +"%x %r"`] OTHER MONITOR_SSH: $line"
 	fi
 done
 

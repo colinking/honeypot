@@ -10,7 +10,7 @@ sudo tail -fn0 /vz/private/$1/usr/hp/log_commands 2>> /usr/hp/monitor.log | whil
 
 	# Get the url
 	url="`find_url $line`"
-	echo "Calling store on $line"
+	echo "[`date +"%x %r"`] MONITOR_DOWNLOADS: [CTID: $1] ['$line'] => URL: $url"
 	# Now store the download from the url
 	store download $1 "$url"
 done

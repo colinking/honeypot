@@ -4,6 +4,21 @@ cd /usr/hp
 
 source /usr/hp/common_functions
 
+# First, get the IDs from the ids_$ctid.log file (all within the last hour)
+if [ -e /usr/hp/ids_$hp_1.log ]; then
+	recents_1="`cat /usr/hp/ids_$hp_1.log`"
+fi
+if [ -e /usr/hp/ids_$hp_2.log ]; then
+	recents_2="`cat /usr/hp/ids_$hp_2.log`"
+fi
+
+# Now remove the logs files
+rm -f ids_$hp_1.log ids_$hp_2.log
+
+
+# Then wait a minute or two before getting the p0f files
+sleep 180
+
 ## Get the most recent p0f file from the data collector
 # SSh to data collector to get file name of most recent log file
 ssh data@192.168.1.254 'cd p0f/groupF/2015; cd `ls -t | head -1`; echo `pwd`/`ls -t | head -1`' > p0f_location.log
@@ -17,12 +32,16 @@ scp data@192.168.1.254:$p0f_location ./
 p0f_log="${p0f_location##*/}"
 
 for hp in $hp_1 $hp_2; do
+	# Get the correct list of ids from the two sets of recent ids/timestamps
+	recents="$recents_1"
+	if [ "$hp" == "$hp_2" ]; then
+		recents="$recents_2"
+	fi
+
 	# if new logs exist, continue
-	if [ -e /usr/hp/ids_$hp.log ]
+	if [ ! -z "$recents" ]
 	then
-		# Get the recent connections from ids.log (all within the last hour)
-		recents=`cat /usr/hp/ids_$hp.log`
-		rm ids_$hp.log
+
 		ip=`get_hp_ip $hp`
 		for line in $recents; do
 			
@@ -36,12 +55,14 @@ for hp in $hp_1 $hp_2; do
 			if [ "$connect" == "" ]
 			then
 				# Include all packets from the begnining of the hour
-				connect="`date +"%Y/%m/%d %H:00:00"`"
+				connect_date="`date +"%Y/%m/%d %H:00:00"`"
+				connect="`date -d"$connect_date" +%s`"
 			fi
 			if [ "$disconnect" == "" ]
 			then
 				# Include all packets from when they connected to the end of the hour
-				disconnect="`date -d"+1 hour" +"%Y/%m/%d %H:00:00"`"
+				disconnect_date="`date -d"+1 hour" +"%Y/%m/%d %H:00:00"`"
+				disconnect="`date -d"$disconnect_date" +%s`"
 			fi 
 
 			# Add a margin of error to connect and disconnect times

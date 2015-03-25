@@ -2,7 +2,7 @@
 
 if [ $# -ne 3 ] && [ "$2" != "override" ]
 then
-	echo "You aren't using recycle correctly. 'recycle [ctid] [object id] [was kicked (0|1)]'"
+	echo "You aren't using recycle correctly. 'recycle [ctid] [object id] [was kicked (yes|no)]'"
 	exit 1
 fi
 
