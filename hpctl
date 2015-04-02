@@ -8,8 +8,6 @@ source /usr/hp/common_functions
 sudo echo "Forcing password entry for sudo, if not already done so" > /dev/null
 
 function kill_monitoring {
-	# Stop all monitoring processes that may be running
-	echo "KILLING MONITOR PROCESSES FOR $1" >> /usr/hp/monitor.log
 	# Kill all tail processes
 	sudo pkill -f "tail -fn0 /vz/private/$1"
 	# Kill the monitoring processes themselves
@@ -18,13 +16,13 @@ function kill_monitoring {
 
 function start_hp {
 
-	echo "STARTING HP $1" >> /usr/hp/monitor.log
+	log_write "STARTING HP $1"
 
 	# Setup command monitoring
 	nohup /usr/hp/monitor_commands $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
 
 	# Setup SSH monitoring
-	nohup /usr/hp/monitor_ssh $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
+	#nohup /usr/hp/monitor_ssh $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
 
 	# Setup download monitoring
 	nohup /usr/hp/monitor_downloads $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
@@ -77,14 +75,14 @@ then
 	done
 
 	# Reset Firewall again just to be sure
-	sudo /usr/hp/firewall_start
+	log_write "`sudo /usr/hp/firewall_start`"
 
 elif command_matches "stop"
 then
+
+	log_write "STOPPING HP $2"
 	
 	kill_monitoring $2
-
-	echo "STOPPING HP $2" >> /usr/hp/monitor.log
 
 	# Remove CRON job for getting p0f logs
 	# TODO
@@ -101,7 +99,7 @@ then
 		echo "======================"
 
 		# Check that all monitoring processes are running
-		for command in monitor_commands monitor_ssh monitor_downloads; do
+		for command in monitor_commands monitor_downloads; do
 			echo -n "$command..."
 			if echo "`ps aux`" | grep "$command $hp" | grep -qv grep
 			then
@@ -114,11 +112,11 @@ then
 		# Check that all tail processes are running
 		echo -n "Tail processes..."
 		tail_ps="`ps aux | grep "tail.*$hp" | grep -vE "(sudo|grep)" | wc -l`"
-		if [ "$tail_ps" == "3" ]
+		if [ "$tail_ps" == "2" ]
 		then
 			echo "GOOD"
 		else
-			echo "($tail_ps/3)"
+			echo "($tail_ps/2)"
 		fi
 
 		# Check that the container is started
@@ -127,7 +125,7 @@ then
 		if [ "$vzstatus" == "CTID $hp exist mounted running" ]; then
 			echo "GOOD"
 		else
-			echo "$vzstatus"
+			echo "BAD - $vzstatus"
 		fi
 
 		# Check that the container has internet
@@ -170,7 +168,7 @@ then
 			date -d"$iso_time" +"%m/%d/%y %r"
 		fi
 
-		# Check that the firewall is running
+		# Check that the firewall is running via checking open ports
 		echo
 		echo "==== Open Ports ===="
 		nmap `get_hp_ip $hp` | sed -n '1,/SERVICE/d;/Nmap done/q;p' | grep -v ^$
@@ -188,7 +186,7 @@ then
 	if [ `ssh aces@10.3.0.2 "ps aux | grep mongod | grep -v grep | wc -l"` -gt 0 ]; then
 		echo "GOOD"
 	else
-		echo "OFF"
+		echo "BAD - NOT RUNNING"
 	fi
 
 	# Check that the Nagios server is running
@@ -202,12 +200,12 @@ then
 	echo ""
 	echo "========================================================"
 	echo "Do not use this command once the honeypots are deployed!"
-	echo "ALL DATA WILL BE ERASED, PRESS ANY KEY TO CONTINUE......"
+	echo "           -    ALL DATA WILL BE ERASED    -            "
 	echo "========================================================"
 	echo ""
 
 	# Check that the user wants to delete all data
-	echo -n ".... "
+	echo -n "PRESS ANY KEY TO CONTINUE.... "
 	read
 
 	hpctl stop
@@ -223,7 +221,7 @@ then
 	rm -f /usr/hp/ids_$hp_1.log /usr/hp/ids_$hp_2.log /usr/hp/monitor.log /usr/hp/$hp_1.lock /usr/hp/$hp_2.lock
 
 	# Remove directories from storage vm
-	ssh -f aces@10.3.0.2 "cd ~/data; rm -rf 5*"
+	ssh -f aces@10.3.0.2 "cd ~/data && rm -rf *"
 
 	# Drop DB's in Mongo
 	mongo_write "db.sessions.drop(); db.logs.drop()"

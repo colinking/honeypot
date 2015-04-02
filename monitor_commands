@@ -15,6 +15,6 @@ source /usr/hp/common_functions
 sudo tail -fn0 /vz/private/$1/root/.bash_history 2>> /usr/hp/monitor.log | while read line; do
 	# Get the ID of the currently logged on user
 	id="`get_id`"
-	echo "[`date +"%x %r"`] MONITOR_COMMANDS: (ID: $id) $line"
-	ssh -f aces@10.3.0.2 "cd ~/data/$id; echo '$line' >> logs_command" 2> /dev/null
+	log_write "(ID: $id) $line"
+	ssh -f aces@10.3.0.2 "cd ~/data/$id; echo '$line' >> commands.log" 2> /dev/null
 done

@@ -1,0 +1,20 @@
+Mar 31 21:18:57 ovzhost sshd[785]: Connection closed by 127.0.0.1 [preauth]
+Mar 31 21:19:25 ovzhost sshd[794]: reverse mapping checking getaddrinfo for 108.61.175.138.vultr.com [108.61.175.138] failed - POSSIBLE BREAK-IN ATTEMPT!
+Mar 31 21:19:25 ovzhost sshd[794]: Invalid user pi from 108.61.175.138
+Mar 31 21:19:25 ovzhost sshd[794]: input_userauth_request: invalid user pi [preauth]
+Mar 31 21:19:25 ovzhost sshd[794]: pam_unix(sshd:auth): check pass; user unknown
+Mar 31 21:19:25 ovzhost sshd[794]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=108.61.175.138 
+Mar 31 21:19:28 ovzhost sshd[794]: Failed password for invalid user pi from 108.61.175.138 port 65175 ssh2
+Mar 31 21:19:28 ovzhost sshd[794]: error: Received disconnect from 108.61.175.138: 3: com.jcraft.jsch.JSchException: Auth fail [preauth]
+Mar 31 21:20:01 ovzhost CRON[800]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Mar 31 21:20:01 ovzhost CRON[800]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Mar 31 21:20:01 ovzhost CRON[800]: pam_unix(cron:session): session closed for user smmsp
+Mar 31 21:21:08 ovzhost sshd[831]: Invalid user oracle from 80.242.123.130
+Mar 31 21:21:08 ovzhost sshd[831]: input_userauth_request: invalid user oracle [preauth]
+Mar 31 21:21:08 ovzhost sshd[831]: pam_unix(sshd:auth): check pass; user unknown
+Mar 31 21:21:08 ovzhost sshd[831]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=130-123-242-80.pppoe.dyn.broadband.blic.net 
+Mar 31 21:21:08 ovzhost sshd[834]: Connection closed by 128.8.37.120 [preauth]
+Mar 31 21:21:11 ovzhost sshd[831]: Failed password for invalid user oracle from 80.242.123.130 port 33339 ssh2
+Mar 31 21:21:11 ovzhost sshd[831]: Received disconnect from 80.242.123.130: 11: Bye Bye [preauth]
+Mar 31 21:23:57 ovzhost sshd[843]: Connection closed by 127.0.0.1 [preauth]
+Mar 31 21:28:57 ovzhost sshd[863]: Connection closed by 127.0.0.1 [preauth]

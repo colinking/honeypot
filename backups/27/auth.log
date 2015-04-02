@@ -1,0 +1,140 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  1 09:31:18 ovzhost sshd[777]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 09:32:44 ovzhost sshd[783]: Did not receive identification string from 218.88.178.68
+Apr  1 09:35:30 ovzhost sshd[801]: Connection closed by 128.8.37.104 [preauth]
+Apr  1 09:36:18 ovzhost sshd[804]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 09:39:01 ovzhost CRON[817]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  1 09:39:01 ovzhost CRON[817]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  1 09:39:02 ovzhost CRON[817]: pam_unix(cron:session): session closed for user root
+Apr  1 09:40:01 ovzhost CRON[829]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  1 09:40:01 ovzhost CRON[829]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  1 09:40:01 ovzhost CRON[829]: pam_unix(cron:session): session closed for user smmsp
+Apr  1 09:40:09 ovzhost sshd[854]: Invalid user mat3 from 218.88.178.68
+Apr  1 09:40:09 ovzhost sshd[854]: input_userauth_request: invalid user mat3 [preauth]
+Apr  1 09:40:09 ovzhost sshd[854]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:09 ovzhost sshd[854]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:10 ovzhost sshd[854]: Failed password for invalid user mat3 from 218.88.178.68 port 58120 ssh2
+Apr  1 09:40:11 ovzhost sshd[854]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:13 ovzhost sshd[858]: Invalid user matt4 from 218.88.178.68
+Apr  1 09:40:13 ovzhost sshd[858]: input_userauth_request: invalid user matt4 [preauth]
+Apr  1 09:40:13 ovzhost sshd[858]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:13 ovzhost sshd[858]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:15 ovzhost sshd[858]: Failed password for invalid user matt4 from 218.88.178.68 port 58312 ssh2
+Apr  1 09:40:16 ovzhost sshd[858]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:18 ovzhost sshd[860]: Invalid user mat4 from 218.88.178.68
+Apr  1 09:40:18 ovzhost sshd[860]: input_userauth_request: invalid user mat4 [preauth]
+Apr  1 09:40:18 ovzhost sshd[860]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:18 ovzhost sshd[860]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:20 ovzhost sshd[860]: Failed password for invalid user mat4 from 218.88.178.68 port 58557 ssh2
+Apr  1 09:40:20 ovzhost sshd[860]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:24 ovzhost sshd[862]: Invalid user mat from 218.88.178.68
+Apr  1 09:40:24 ovzhost sshd[862]: input_userauth_request: invalid user mat [preauth]
+Apr  1 09:40:24 ovzhost sshd[862]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:24 ovzhost sshd[862]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:25 ovzhost sshd[862]: Failed password for invalid user mat from 218.88.178.68 port 58764 ssh2
+Apr  1 09:40:27 ovzhost sshd[862]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:32 ovzhost sshd[864]: Invalid user matt from 218.88.178.68
+Apr  1 09:40:32 ovzhost sshd[864]: input_userauth_request: invalid user matt [preauth]
+Apr  1 09:40:32 ovzhost sshd[864]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:32 ovzhost sshd[864]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:34 ovzhost sshd[864]: Failed password for invalid user matt from 218.88.178.68 port 58973 ssh2
+Apr  1 09:40:35 ovzhost sshd[864]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:37 ovzhost sshd[868]: Invalid user home from 218.88.178.68
+Apr  1 09:40:37 ovzhost sshd[868]: input_userauth_request: invalid user home [preauth]
+Apr  1 09:40:37 ovzhost sshd[868]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:37 ovzhost sshd[868]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:39 ovzhost sshd[868]: Failed password for invalid user home from 218.88.178.68 port 59303 ssh2
+Apr  1 09:40:39 ovzhost sshd[868]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:41 ovzhost sshd[870]: Invalid user home from 218.88.178.68
+Apr  1 09:40:41 ovzhost sshd[870]: input_userauth_request: invalid user home [preauth]
+Apr  1 09:40:41 ovzhost sshd[870]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:41 ovzhost sshd[870]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:43 ovzhost sshd[870]: Failed password for invalid user home from 218.88.178.68 port 59578 ssh2
+Apr  1 09:40:43 ovzhost sshd[870]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:45 ovzhost sshd[872]: Invalid user home from 218.88.178.68
+Apr  1 09:40:45 ovzhost sshd[872]: input_userauth_request: invalid user home [preauth]
+Apr  1 09:40:45 ovzhost sshd[872]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:45 ovzhost sshd[872]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:47 ovzhost sshd[872]: Failed password for invalid user home from 218.88.178.68 port 59809 ssh2
+Apr  1 09:40:48 ovzhost sshd[872]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:50 ovzhost sshd[874]: Invalid user home from 218.88.178.68
+Apr  1 09:40:50 ovzhost sshd[874]: input_userauth_request: invalid user home [preauth]
+Apr  1 09:40:50 ovzhost sshd[874]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:50 ovzhost sshd[874]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:52 ovzhost sshd[874]: Failed password for invalid user home from 218.88.178.68 port 60078 ssh2
+Apr  1 09:40:52 ovzhost sshd[874]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:55 ovzhost sshd[876]: Invalid user home2 from 218.88.178.68
+Apr  1 09:40:55 ovzhost sshd[876]: input_userauth_request: invalid user home2 [preauth]
+Apr  1 09:40:55 ovzhost sshd[876]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:55 ovzhost sshd[876]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:40:56 ovzhost sshd[876]: Failed password for invalid user home2 from 218.88.178.68 port 60330 ssh2
+Apr  1 09:40:56 ovzhost sshd[876]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:40:58 ovzhost sshd[878]: Invalid user manager from 218.88.178.68
+Apr  1 09:40:58 ovzhost sshd[878]: input_userauth_request: invalid user manager [preauth]
+Apr  1 09:40:58 ovzhost sshd[878]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:40:58 ovzhost sshd[878]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:41:00 ovzhost sshd[878]: Failed password for invalid user manager from 218.88.178.68 port 60562 ssh2
+Apr  1 09:41:01 ovzhost sshd[878]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:41:03 ovzhost sshd[880]: Invalid user manager from 218.88.178.68
+Apr  1 09:41:03 ovzhost sshd[880]: input_userauth_request: invalid user manager [preauth]
+Apr  1 09:41:03 ovzhost sshd[880]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:41:03 ovzhost sshd[880]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:41:04 ovzhost sshd[880]: Failed password for invalid user manager from 218.88.178.68 port 60802 ssh2
+Apr  1 09:41:05 ovzhost sshd[880]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:41:07 ovzhost sshd[882]: Invalid user manager from 218.88.178.68
+Apr  1 09:41:07 ovzhost sshd[882]: input_userauth_request: invalid user manager [preauth]
+Apr  1 09:41:07 ovzhost sshd[882]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:41:07 ovzhost sshd[882]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:41:09 ovzhost sshd[882]: Failed password for invalid user manager from 218.88.178.68 port 32811 ssh2
+Apr  1 09:41:09 ovzhost sshd[882]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:41:11 ovzhost sshd[884]: Invalid user manager from 218.88.178.68
+Apr  1 09:41:11 ovzhost sshd[884]: input_userauth_request: invalid user manager [preauth]
+Apr  1 09:41:11 ovzhost sshd[884]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:41:11 ovzhost sshd[884]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:41:13 ovzhost sshd[884]: Failed password for invalid user manager from 218.88.178.68 port 33052 ssh2
+Apr  1 09:41:13 ovzhost sshd[884]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:41:16 ovzhost sshd[886]: Invalid user manager from 218.88.178.68
+Apr  1 09:41:16 ovzhost sshd[886]: input_userauth_request: invalid user manager [preauth]
+Apr  1 09:41:16 ovzhost sshd[886]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:41:16 ovzhost sshd[886]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:41:17 ovzhost sshd[886]: Failed password for invalid user manager from 218.88.178.68 port 33326 ssh2
+Apr  1 09:41:17 ovzhost sshd[886]: Received disconnect from 218.88.178.68: 11: Bye Bye [preauth]
+Apr  1 09:41:18 ovzhost sshd[889]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 09:41:25 ovzhost sshd[891]: Invalid user manager from 218.88.178.68
+Apr  1 09:41:25 ovzhost sshd[891]: input_userauth_request: invalid user manager [preauth]
+Apr  1 09:41:25 ovzhost sshd[891]: pam_unix(sshd:auth): check pass; user unknown
+Apr  1 09:41:25 ovzhost sshd[891]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=218.88.178.68 
+Apr  1 09:41:27 ovzhost sshd[891]: Failed password for invalid user manager from 218.88.178.68 port 33550 ssh2
+Apr  1 09:41:27 ovzhost sshd[891]: Connection closed by 218.88.178.68 [preauth]
+Apr  1 09:45:30 ovzhost sshd[912]: Connection closed by 128.8.37.104 [preauth]
+Apr  1 09:46:18 ovzhost sshd[917]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 09:51:18 ovzhost sshd[936]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 09:55:05 ovzhost sshd[954]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=130-123-242-80.pppoe.dyn.broadband.blic.net  user=root
+Apr  1 09:55:07 ovzhost sshd[954]: Failed password for root from 80.242.123.130 port 42125 ssh2
+Apr  1 09:55:07 ovzhost sshd[954]: Received disconnect from 80.242.123.130: 11: Bye Bye [preauth]
+Apr  1 09:55:30 ovzhost sshd[959]: Connection closed by 128.8.37.104 [preauth]
+Apr  1 09:56:18 ovzhost sshd[964]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 10:00:01 ovzhost CRON[978]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  1 10:00:01 ovzhost CRON[978]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  1 10:00:01 ovzhost CRON[978]: pam_unix(cron:session): session closed for user smmsp
+Apr  1 10:01:18 ovzhost sshd[1009]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 10:05:30 ovzhost sshd[1030]: Connection closed by 128.8.37.104 [preauth]
+Apr  1 10:06:18 ovzhost sshd[1035]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 10:09:01 ovzhost CRON[1048]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  1 10:09:01 ovzhost CRON[1049]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  1 10:09:01 ovzhost CRON[1049]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  1 10:09:01 ovzhost CRON[1048]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  1 10:09:01 ovzhost CRON[1048]: pam_unix(cron:session): session closed for user root
+Apr  1 10:09:01 ovzhost CRON[1049]: pam_unix(cron:session): session closed for user root
+Apr  1 10:11:18 ovzhost sshd[1068]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 10:15:30 ovzhost sshd[1089]: Connection closed by 128.8.37.104 [preauth]
+Apr  1 10:16:18 ovzhost sshd[1094]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 10:20:01 ovzhost CRON[1108]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  1 10:20:01 ovzhost CRON[1108]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  1 10:20:01 ovzhost CRON[1108]: pam_unix(cron:session): session closed for user smmsp
+Apr  1 10:21:18 ovzhost sshd[1139]: Connection closed by 127.0.0.1 [preauth]
+Apr  1 10:25:30 ovzhost sshd[1160]: Connection closed by 128.8.37.104 [preauth]
+Apr  1 10:26:18 ovzhost sshd[1165]: Connection closed by 127.0.0.1 [preauth]

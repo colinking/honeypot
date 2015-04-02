@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source /usr/hp/common_functions
+
+log_write "CRONTAB: Recycling Honeypots"
+/usr/hp/recycle 124 override
+/usr/hp/recycle 148 override

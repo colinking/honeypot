@@ -13,23 +13,25 @@ if [ -e /usr/hp/ids_$hp_2.log ]; then
 fi
 
 # Now remove the logs files
-rm -f ids_$hp_1.log ids_$hp_2.log
+rm -f /usr/hp/ids_$hp_1.log /usr/hp/ids_$hp_2.log
 
 
-# Then wait a minute or two before getting the p0f files
+# Then wait a minute or two before getting the p0f files so that they are made by Bertrand's scripts
 sleep 180
 
 ## Get the most recent p0f file from the data collector
 # SSh to data collector to get file name of most recent log file
-ssh data@192.168.1.254 'cd p0f/groupF/2015; cd `ls -t | head -1`; echo `pwd`/`ls -t | head -1`' > p0f_location.log
+# Password is hac****data (replace **** with your best guess) if can't get in, may need to set up sshpass or similar
+ssh data@192.168.1.254 'cd p0f/groupF/2015; cd `ls -t | head -1`; echo `pwd`/`ls -t | head -1`' > /usr/hp/p0f_location.log
 # Save this location to a variable
-p0f_location=`cat p0f_location.log`
+p0f_location=`cat /usr/hp/p0f_location.log`
 # Remove the p0f_location log
-rm p0f_location.log
+rm /usr/hp/p0f_location.log
 # SCP to the data collector to transfer this file
-scp data@192.168.1.254:$p0f_location ./
+scp data@192.168.1.254:$p0f_location /usr/hp
 # Save the filename using string operators from the p0f_location variable, to use later 
-p0f_log="${p0f_location##*/}"
+p0f_log="/usr/hp/${p0f_location##*/}"
+log_write "$p0f_log"
 
 for hp in $hp_1 $hp_2; do
 	# Get the correct list of ids from the two sets of recent ids/timestamps
@@ -74,7 +76,7 @@ for hp in $hp_1 $hp_2; do
 			from="`date -d@"$connect" +"%Y/%m/%d %H:%M:%S"`"
 			to="`date -d@"$disconnect" +"%Y/%m/%d %H:%M:%S"`"
 
-			# If you can figure out what all those quotes do, you deserve a medal
+			# don't use excessive quotes? readability?....pssha who needs it
 			packets="`awk '$0 > "'"[$from"'" && $0 < "'"[$to"'"' "$p0f_log"`"
 
 			# Grep out only the lines that have "mod=syn|" and the hp's ip address
@@ -91,18 +93,37 @@ for hp in $hp_1 $hp_2; do
 			# Remove the first ", " from the packet array
 			packet_arr=${packet_arr:2}
 
-			# Cut out the OS
-			os="`echo "$syn_packets" | cut -d"|" -f5`"
-			# Remove "os="
-			os=${os:3}
+			# Cut out all of the OS's from the packets
+			all_os="`echo "$syn_packets" | cut -d"|" -f5`"
+			found_os=""
+			# Find the first os in the list of packets
+			while read os; do
+				# Remove the "os="
+				os_type="${os:3}"
+				if [ "$os_type" != "???" ]; then
+					os=$os_type
+					break
+				fi
+			done <<< "$all_os"
 
 			# Cut out the distance
 			dist="`echo "$syn_packets" | cut -d"|" -f6`"
 			# Remove "dist="
 			dist=${dist:5}
 
+			# Cut out all of the dist's from the packets
+			all_dist="`echo "$syn_packets" | cut -d"|" -f6`"
+			found_dist=""
+
+			# Find the first dist in the list of packets
+			while read dist; do
+				# Remove the "dist="
+				found_dist="${dist:5}"
+				break
+			done <<< "$all_dist"
+
 			# Upload to mongo using the id
-			mongo_write "db.sessions.update({_id: ObjectId('$id')}, {\$set: {os: '$os', dist: '$dist', p0f: [$packet_arr]}})"
+			mongo_write "db.sessions.update({_id: ObjectId('$id')}, {\$set: {os: '$found_os', dist: '$found_dist', p0f: [$packet_arr]}})"
 
 		done
 	fi
@@ -110,3 +131,5 @@ done
 
 # Finally, remove the p0f log we downloaded to save space
 rm "$p0f_log"
+
+

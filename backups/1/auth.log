@@ -1,0 +1,24 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Mar 31 21:16:23 ovzhost sshd[776]: Connection closed by 127.0.0.1 [preauth]
+Mar 31 21:19:25 ovzhost sshd[797]: reverse mapping checking getaddrinfo for 108.61.175.138.vultr.com [108.61.175.138] failed - POSSIBLE BREAK-IN ATTEMPT!
+Mar 31 21:19:25 ovzhost sshd[797]: Invalid user pi from 108.61.175.138
+Mar 31 21:19:25 ovzhost sshd[797]: input_userauth_request: invalid user pi [preauth]
+Mar 31 21:19:25 ovzhost sshd[797]: pam_unix(sshd:auth): check pass; user unknown
+Mar 31 21:19:25 ovzhost sshd[797]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=108.61.175.138 
+Mar 31 21:19:28 ovzhost sshd[797]: Failed password for invalid user pi from 108.61.175.138 port 65174 ssh2
+Mar 31 21:19:28 ovzhost sshd[797]: error: Received disconnect from 108.61.175.138: 3: com.jcraft.jsch.JSchException: Auth fail [preauth]
+Mar 31 21:20:01 ovzhost CRON[800]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Mar 31 21:20:01 ovzhost CRON[800]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Mar 31 21:20:01 ovzhost CRON[800]: pam_unix(cron:session): session closed for user smmsp
+Mar 31 21:20:50 ovzhost sshd[830]: Connection closed by 128.8.37.104 [preauth]
+Mar 31 21:21:08 ovzhost sshd[832]: Invalid user oracle from 80.242.123.130
+Mar 31 21:21:08 ovzhost sshd[832]: input_userauth_request: invalid user oracle [preauth]
+Mar 31 21:21:08 ovzhost sshd[832]: pam_unix(sshd:auth): check pass; user unknown
+Mar 31 21:21:08 ovzhost sshd[832]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=130-123-242-80.pppoe.dyn.broadband.blic.net 
+Mar 31 21:21:11 ovzhost sshd[832]: Failed password for invalid user oracle from 80.242.123.130 port 56065 ssh2
+Mar 31 21:21:11 ovzhost sshd[832]: Received disconnect from 80.242.123.130: 11: Bye Bye [preauth]
+Mar 31 21:21:23 ovzhost sshd[835]: Connection closed by 127.0.0.1 [preauth]
+Mar 31 21:26:23 ovzhost sshd[854]: Connection closed by 127.0.0.1 [preauth]

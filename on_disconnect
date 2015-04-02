@@ -1,0 +1,26 @@
+#!/bin/bash
+
+cd /usr/hp
+
+echo "[`date +"%x %r"`] ON_DISCONNECT - DISCONNECT"
+
+# Temp fix for if multiple users log in at same time
+if [ -e /usr/hp/$1.lock ]
+then
+
+	# Get the disconnect time
+	converted_time="`date +%s`"
+
+	# Get the ID of the currently logged in hacker
+	id="`cat /usr/hp/$1.lock`"
+
+	# Log the disconnnect
+	if [ ! -s ids_$1.log ]
+	then
+		# The file is empty, so echo the object id too
+		echo "|$id|$converted_time" >> ids_$1.log
+	else
+		# Just echo the disconnect time
+		echo "$converted_time" >> ids_$1.log
+	fi
+fi

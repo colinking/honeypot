@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /usr/hp/common_functions
+
 if [ $# -ne 1 ]
 then
 	echo "Usage: $0 [honeypot-number] "
@@ -8,9 +10,18 @@ fi
 
 sudo tail -fn0 /vz/private/$1/usr/hp/log_commands 2>> /usr/hp/monitor.log | while read line; do
 
-	# Get the url
-	url="`find_url $line`"
-	echo "[`date +"%x %r"`] MONITOR_DOWNLOADS: [CTID: $1] ['$line'] => URL: $url"
-	# Now store the download from the url
-	store download $1 "$url"
+	if [ "$line" == "connect" ]; then
+		log_write "[CTID: $1] ['$line'] CONNECTION MADE"
+		# Grab the IP and port from the connect data
+		ip="`echo $line | cut -d" " -f2`"
+		port="`echo $line | cut -d" " -f3`"
+		# Call our on connect command
+		on_connect $1 $ip $port
+	else
+		# Get the url
+		url="`find_url $line`"
+		log_write "[CTID: $1] ['$line'] => URL: $url"
+		# Now store the download from the url
+		store download $1 "$url"
+	fi
 done
