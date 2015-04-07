@@ -1,0 +1,21 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 11:20:01 ovzhost CRON[778]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 11:20:01 ovzhost CRON[778]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  5 11:20:01 ovzhost CRON[778]: pam_unix(cron:session): session closed for user smmsp
+Apr  5 11:20:19 ovzhost sshd[804]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  5 11:20:21 ovzhost sshd[804]: Failed password for root from 128.134.54.57 port 34873 ssh2
+Apr  5 11:20:26 ovzhost sshd[804]: message repeated 2 times: [ Failed password for root from 128.134.54.57 port 34873 ssh2]
+Apr  5 11:20:26 ovzhost sshd[804]: Connection closed by 128.134.54.57 [preauth]
+Apr  5 11:20:26 ovzhost sshd[804]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  5 11:20:53 ovzhost sshd[811]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 11:24:30 ovzhost sshd[827]: Connection closed by 128.8.37.104 [preauth]
+Apr  5 11:25:53 ovzhost sshd[837]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 11:29:42 ovzhost sshd[848]: Connection closed by 61.166.189.69 [preauth]

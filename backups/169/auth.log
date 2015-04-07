@@ -1,0 +1,113 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:34:35 ovzhost sshd[790]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:35:30 ovzhost sshd[796]: Connection closed by 128.8.37.104 [preauth]
+Apr  4 05:39:01 ovzhost CRON[809]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 05:39:01 ovzhost CRON[809]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  4 05:39:01 ovzhost CRON[809]: pam_unix(cron:session): session closed for user root
+Apr  4 05:39:35 ovzhost sshd[823]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:40:01 ovzhost CRON[826]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 05:40:01 ovzhost CRON[826]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  4 05:40:01 ovzhost CRON[826]: pam_unix(cron:session): session closed for user smmsp
+Apr  4 05:44:35 ovzhost sshd[872]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:45:30 ovzhost sshd[878]: Connection closed by 128.8.37.104 [preauth]
+Apr  4 05:49:35 ovzhost sshd[894]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:50:39 ovzhost sshd[899]: Received disconnect from 117.21.174.111: 11:  [preauth]
+Apr  4 05:54:35 ovzhost sshd[919]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:55:30 ovzhost sshd[925]: Connection closed by 128.8.37.104 [preauth]
+Apr  4 05:59:35 ovzhost sshd[941]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 05:59:46 ovzhost sshd[943]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=130-123-242-80.pppoe.dyn.broadband.blic.net  user=root
+Apr  4 05:59:48 ovzhost sshd[943]: Failed password for root from 80.242.123.130 port 57407 ssh2
+Apr  4 05:59:48 ovzhost sshd[943]: Received disconnect from 80.242.123.130: 11: Bye Bye [preauth]
+Apr  4 06:00:01 ovzhost CRON[946]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 06:00:01 ovzhost CRON[946]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  4 06:00:01 ovzhost CRON[946]: pam_unix(cron:session): session closed for user smmsp
+Apr  4 06:04:35 ovzhost sshd[992]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 06:05:30 ovzhost sshd[998]: Connection closed by 128.8.37.104 [preauth]
+Apr  4 06:09:01 ovzhost CRON[1011]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 06:09:01 ovzhost CRON[1012]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 06:09:01 ovzhost CRON[1012]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  4 06:09:01 ovzhost CRON[1011]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  4 06:09:01 ovzhost CRON[1011]: pam_unix(cron:session): session closed for user root
+Apr  4 06:09:01 ovzhost CRON[1012]: pam_unix(cron:session): session closed for user root
+Apr  4 06:09:35 ovzhost sshd[1028]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 06:14:35 ovzhost sshd[1051]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 06:15:30 ovzhost sshd[1057]: Connection closed by 128.8.37.104 [preauth]
+Apr  4 06:19:04 ovzhost sshd[1070]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:06 ovzhost sshd[1070]: Failed password for root from 58.218.211.190 port 51890 ssh2
+Apr  4 06:19:10 ovzhost sshd[1070]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 51890 ssh2]
+Apr  4 06:19:10 ovzhost sshd[1070]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:19:10 ovzhost sshd[1070]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:14 ovzhost sshd[1072]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:16 ovzhost sshd[1072]: Failed password for root from 58.218.211.190 port 38675 ssh2
+Apr  4 06:19:21 ovzhost sshd[1072]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 38675 ssh2]
+Apr  4 06:19:22 ovzhost sshd[1072]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:19:22 ovzhost sshd[1072]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:25 ovzhost sshd[1076]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:27 ovzhost sshd[1076]: Failed password for root from 58.218.211.190 port 55903 ssh2
+Apr  4 06:19:32 ovzhost sshd[1076]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 55903 ssh2]
+Apr  4 06:19:32 ovzhost sshd[1076]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:19:32 ovzhost sshd[1076]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:34 ovzhost sshd[1078]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:35 ovzhost sshd[1081]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 06:19:36 ovzhost sshd[1078]: Failed password for root from 58.218.211.190 port 44975 ssh2
+Apr  4 06:19:45 ovzhost sshd[1078]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 44975 ssh2]
+Apr  4 06:19:46 ovzhost sshd[1078]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:19:46 ovzhost sshd[1078]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:49 ovzhost sshd[1083]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:19:50 ovzhost sshd[1083]: Failed password for root from 58.218.211.190 port 35701 ssh2
+Apr  4 06:19:55 ovzhost sshd[1083]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 35701 ssh2]
+Apr  4 06:19:55 ovzhost sshd[1083]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:19:55 ovzhost sshd[1083]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:20:01 ovzhost CRON[1088]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 06:20:01 ovzhost CRON[1088]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  4 06:20:02 ovzhost CRON[1088]: pam_unix(cron:session): session closed for user smmsp
+Apr  4 06:20:22 ovzhost sshd[1086]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:20:24 ovzhost sshd[1086]: Failed password for root from 58.218.211.190 port 54354 ssh2
+Apr  4 06:20:24 ovzhost sshd[1086]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:20:27 ovzhost sshd[1116]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:20:29 ovzhost sshd[1116]: Failed password for root from 58.218.211.190 port 54568 ssh2
+Apr  4 06:20:34 ovzhost sshd[1116]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 54568 ssh2]
+Apr  4 06:20:34 ovzhost sshd[1116]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:20:34 ovzhost sshd[1116]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:20:49 ovzhost sshd[1118]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:20:50 ovzhost sshd[1118]: Failed password for root from 58.218.211.190 port 47655 ssh2
+Apr  4 06:20:56 ovzhost sshd[1118]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 47655 ssh2]
+Apr  4 06:21:03 ovzhost sshd[1118]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:21:03 ovzhost sshd[1118]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:21:23 ovzhost sshd[1120]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:21:24 ovzhost sshd[1122]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:21:26 ovzhost sshd[1122]: Failed password for root from 58.218.211.190 port 59191 ssh2
+Apr  4 06:21:31 ovzhost sshd[1122]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 59191 ssh2]
+Apr  4 06:21:31 ovzhost sshd[1122]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:21:31 ovzhost sshd[1122]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:21:35 ovzhost sshd[1128]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:21:38 ovzhost sshd[1128]: Failed password for root from 58.218.211.190 port 48339 ssh2
+Apr  4 06:21:43 ovzhost sshd[1128]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 48339 ssh2]
+Apr  4 06:21:44 ovzhost sshd[1128]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:21:44 ovzhost sshd[1128]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:21:50 ovzhost sshd[1130]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:21:52 ovzhost sshd[1130]: Failed password for root from 58.218.211.190 port 38930 ssh2
+Apr  4 06:21:59 ovzhost sshd[1130]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 38930 ssh2]
+Apr  4 06:21:59 ovzhost sshd[1130]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:21:59 ovzhost sshd[1130]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:22:03 ovzhost sshd[1133]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:22:06 ovzhost sshd[1133]: Failed password for root from 58.218.211.190 port 33973 ssh2
+Apr  4 06:22:14 ovzhost sshd[1135]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:22:15 ovzhost sshd[1135]: Failed password for root from 58.218.211.190 port 51166 ssh2
+Apr  4 06:22:20 ovzhost sshd[1135]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 51166 ssh2]
+Apr  4 06:22:21 ovzhost sshd[1135]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:22:21 ovzhost sshd[1135]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:22:11 ovzhost sshd[1133]: message repeated 2 times: [ Failed password for root from 58.218.211.190 port 33973 ssh2]
+Apr  4 06:22:26 ovzhost sshd[1133]: Received disconnect from 58.218.211.190: 11:  [preauth]
+Apr  4 06:22:26 ovzhost sshd[1133]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.218.211.190  user=root
+Apr  4 06:24:35 ovzhost sshd[1150]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 06:25:30 ovzhost sshd[1156]: Connection closed by 128.8.37.104 [preauth]
+Apr  4 06:29:35 ovzhost sshd[1172]: Connection closed by 127.0.0.1 [preauth]

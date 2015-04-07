@@ -1,0 +1,336 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 02:30:40 ovzhost sshd[719]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 02:35:29 ovzhost sshd[805]: Connection closed by 128.8.37.104 [preauth]
+Apr  6 02:35:40 ovzhost sshd[808]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 02:39:01 ovzhost CRON[822]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 02:39:01 ovzhost CRON[822]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  6 02:39:01 ovzhost CRON[822]: pam_unix(cron:session): session closed for user root
+Apr  6 02:40:01 ovzhost CRON[837]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 02:40:01 ovzhost CRON[837]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  6 02:40:01 ovzhost CRON[837]: pam_unix(cron:session): session closed for user smmsp
+Apr  6 02:40:40 ovzhost sshd[864]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 02:45:29 ovzhost sshd[887]: Connection closed by 128.8.37.104 [preauth]
+Apr  6 02:45:40 ovzhost sshd[890]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 02:50:40 ovzhost sshd[909]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 02:55:29 ovzhost sshd[932]: Connection closed by 128.8.37.104 [preauth]
+Apr  6 02:55:40 ovzhost sshd[935]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 03:00:01 ovzhost CRON[955]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 03:00:01 ovzhost CRON[955]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  6 03:00:01 ovzhost CRON[955]: pam_unix(cron:session): session closed for user smmsp
+Apr  6 03:00:01 ovzhost sshd[953]: Invalid user test from 80.242.123.130
+Apr  6 03:00:01 ovzhost sshd[953]: input_userauth_request: invalid user test [preauth]
+Apr  6 03:00:01 ovzhost sshd[953]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:00:01 ovzhost sshd[953]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=130-123-242-80.pppoe.dyn.broadband.blic.net 
+Apr  6 03:00:03 ovzhost sshd[953]: Failed password for invalid user test from 80.242.123.130 port 55048 ssh2
+Apr  6 03:00:04 ovzhost sshd[953]: Received disconnect from 80.242.123.130: 11: Bye Bye [preauth]
+Apr  6 03:00:40 ovzhost sshd[982]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 03:02:28 ovzhost sshd[992]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:29 ovzhost sshd[992]: Failed password for root from 221.229.160.237 port 36806 ssh2
+Apr  6 03:02:34 ovzhost sshd[992]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 36806 ssh2]
+Apr  6 03:02:34 ovzhost sshd[992]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:02:34 ovzhost sshd[992]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:36 ovzhost sshd[994]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:37 ovzhost sshd[994]: Failed password for root from 221.229.160.237 port 42711 ssh2
+Apr  6 03:02:42 ovzhost sshd[994]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 42711 ssh2]
+Apr  6 03:02:42 ovzhost sshd[994]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:02:42 ovzhost sshd[994]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:44 ovzhost sshd[996]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:47 ovzhost sshd[996]: Failed password for root from 221.229.160.237 port 48585 ssh2
+Apr  6 03:02:52 ovzhost sshd[996]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 48585 ssh2]
+Apr  6 03:02:52 ovzhost sshd[996]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:02:52 ovzhost sshd[996]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:55 ovzhost sshd[998]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:02:57 ovzhost sshd[998]: Failed password for root from 221.229.160.237 port 56203 ssh2
+Apr  6 03:03:02 ovzhost sshd[998]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 56203 ssh2]
+Apr  6 03:03:02 ovzhost sshd[998]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:02 ovzhost sshd[998]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:05 ovzhost sshd[1001]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:07 ovzhost sshd[1001]: Failed password for root from 221.229.160.237 port 35101 ssh2
+Apr  6 03:03:13 ovzhost sshd[1001]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 35101 ssh2]
+Apr  6 03:03:13 ovzhost sshd[1001]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:13 ovzhost sshd[1001]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:15 ovzhost sshd[1003]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:17 ovzhost sshd[1003]: Failed password for root from 221.229.160.237 port 43198 ssh2
+Apr  6 03:03:21 ovzhost sshd[1003]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 43198 ssh2]
+Apr  6 03:03:22 ovzhost sshd[1003]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:22 ovzhost sshd[1003]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:23 ovzhost sshd[1007]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:25 ovzhost sshd[1007]: Failed password for root from 221.229.160.237 port 49841 ssh2
+Apr  6 03:03:29 ovzhost sshd[1007]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 49841 ssh2]
+Apr  6 03:03:29 ovzhost sshd[1007]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:29 ovzhost sshd[1007]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:34 ovzhost sshd[1011]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:36 ovzhost sshd[1011]: Failed password for root from 221.229.160.237 port 56274 ssh2
+Apr  6 03:03:40 ovzhost sshd[1011]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 56274 ssh2]
+Apr  6 03:03:41 ovzhost sshd[1011]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:41 ovzhost sshd[1011]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:42 ovzhost sshd[1013]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:45 ovzhost sshd[1013]: Failed password for root from 221.229.160.237 port 36716 ssh2
+Apr  6 03:03:49 ovzhost sshd[1013]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 36716 ssh2]
+Apr  6 03:03:50 ovzhost sshd[1013]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:50 ovzhost sshd[1013]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:51 ovzhost sshd[1015]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:53 ovzhost sshd[1015]: Failed password for root from 221.229.160.237 port 43740 ssh2
+Apr  6 03:03:57 ovzhost sshd[1015]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 43740 ssh2]
+Apr  6 03:03:58 ovzhost sshd[1015]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:03:58 ovzhost sshd[1015]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:03:59 ovzhost sshd[1019]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:01 ovzhost sshd[1019]: Failed password for root from 221.229.160.237 port 50558 ssh2
+Apr  6 03:04:05 ovzhost sshd[1019]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 50558 ssh2]
+Apr  6 03:04:06 ovzhost sshd[1019]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:06 ovzhost sshd[1019]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:08 ovzhost sshd[1021]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:10 ovzhost sshd[1021]: Failed password for root from 221.229.160.237 port 57529 ssh2
+Apr  6 03:04:13 ovzhost sshd[1021]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 57529 ssh2]
+Apr  6 03:04:14 ovzhost sshd[1021]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:14 ovzhost sshd[1021]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:17 ovzhost sshd[1024]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:19 ovzhost sshd[1024]: Failed password for root from 221.229.160.237 port 36541 ssh2
+Apr  6 03:04:23 ovzhost sshd[1024]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 36541 ssh2]
+Apr  6 03:04:24 ovzhost sshd[1024]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:24 ovzhost sshd[1024]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:25 ovzhost sshd[1026]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:27 ovzhost sshd[1026]: Failed password for root from 221.229.160.237 port 44001 ssh2
+Apr  6 03:04:32 ovzhost sshd[1026]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 44001 ssh2]
+Apr  6 03:04:32 ovzhost sshd[1026]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:32 ovzhost sshd[1026]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:34 ovzhost sshd[1029]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:36 ovzhost sshd[1029]: Failed password for root from 221.229.160.237 port 51179 ssh2
+Apr  6 03:04:40 ovzhost sshd[1029]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 51179 ssh2]
+Apr  6 03:04:40 ovzhost sshd[1029]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:40 ovzhost sshd[1029]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:42 ovzhost sshd[1033]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:44 ovzhost sshd[1033]: Failed password for root from 221.229.160.237 port 57371 ssh2
+Apr  6 03:04:49 ovzhost sshd[1033]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 57371 ssh2]
+Apr  6 03:04:49 ovzhost sshd[1033]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:49 ovzhost sshd[1033]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:51 ovzhost sshd[1035]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:04:53 ovzhost sshd[1035]: Failed password for root from 221.229.160.237 port 37383 ssh2
+Apr  6 03:04:58 ovzhost sshd[1035]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 37383 ssh2]
+Apr  6 03:04:58 ovzhost sshd[1035]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:04:58 ovzhost sshd[1035]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:00 ovzhost sshd[1038]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:02 ovzhost sshd[1038]: Failed password for root from 221.229.160.237 port 45456 ssh2
+Apr  6 03:05:06 ovzhost sshd[1038]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 45456 ssh2]
+Apr  6 03:05:06 ovzhost sshd[1038]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:05:06 ovzhost sshd[1038]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:07 ovzhost sshd[1040]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:10 ovzhost sshd[1040]: Failed password for root from 221.229.160.237 port 52294 ssh2
+Apr  6 03:05:14 ovzhost sshd[1040]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 52294 ssh2]
+Apr  6 03:05:14 ovzhost sshd[1040]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:05:14 ovzhost sshd[1040]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:16 ovzhost sshd[1042]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:17 ovzhost sshd[1042]: Failed password for root from 221.229.160.237 port 60587 ssh2
+Apr  6 03:05:22 ovzhost sshd[1042]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 60587 ssh2]
+Apr  6 03:05:22 ovzhost sshd[1042]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:05:22 ovzhost sshd[1042]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:27 ovzhost sshd[1044]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:29 ovzhost sshd[1044]: Failed password for root from 221.229.160.237 port 39962 ssh2
+Apr  6 03:05:29 ovzhost sshd[1047]: Connection closed by 128.8.37.104 [preauth]
+Apr  6 03:05:34 ovzhost sshd[1044]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 39962 ssh2]
+Apr  6 03:05:34 ovzhost sshd[1044]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:05:34 ovzhost sshd[1044]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:40 ovzhost sshd[1052]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 03:05:40 ovzhost sshd[1049]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:05:42 ovzhost sshd[1049]: Failed password for root from 221.229.160.237 port 51536 ssh2
+Apr  6 03:05:46 ovzhost sshd[1049]: message repeated 2 times: [ Failed password for root from 221.229.160.237 port 51536 ssh2]
+Apr  6 03:05:46 ovzhost sshd[1049]: Received disconnect from 221.229.160.237: 11:  [preauth]
+Apr  6 03:05:46 ovzhost sshd[1049]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.160.237  user=root
+Apr  6 03:09:01 ovzhost CRON[1067]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 03:09:01 ovzhost CRON[1066]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 03:09:01 ovzhost CRON[1067]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  6 03:09:01 ovzhost CRON[1066]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  6 03:09:01 ovzhost CRON[1066]: pam_unix(cron:session): session closed for user root
+Apr  6 03:09:01 ovzhost CRON[1067]: pam_unix(cron:session): session closed for user root
+Apr  6 03:10:40 ovzhost sshd[1085]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 03:15:29 ovzhost sshd[1108]: Connection closed by 128.8.37.104 [preauth]
+Apr  6 03:15:40 ovzhost sshd[1111]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 03:18:05 ovzhost sshd[1121]: Did not receive identification string from 195.3.144.95
+Apr  6 03:18:06 ovzhost sshd[1122]: Invalid user admin from 195.3.144.95
+Apr  6 03:18:06 ovzhost sshd[1122]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:18:06 ovzhost sshd[1122]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:06 ovzhost sshd[1122]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:09 ovzhost sshd[1122]: Failed password for invalid user admin from 195.3.144.95 port 51110 ssh2
+Apr  6 03:18:09 ovzhost sshd[1122]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:11 ovzhost sshd[1124]: Invalid user admin from 195.3.144.95
+Apr  6 03:18:11 ovzhost sshd[1124]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:18:11 ovzhost sshd[1124]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:11 ovzhost sshd[1124]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:13 ovzhost sshd[1124]: Failed password for invalid user admin from 195.3.144.95 port 53591 ssh2
+Apr  6 03:18:13 ovzhost sshd[1124]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:14 ovzhost sshd[1126]: Invalid user admin from 195.3.144.95
+Apr  6 03:18:14 ovzhost sshd[1126]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:18:14 ovzhost sshd[1126]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:14 ovzhost sshd[1126]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:16 ovzhost sshd[1126]: Failed password for invalid user admin from 195.3.144.95 port 57035 ssh2
+Apr  6 03:18:17 ovzhost sshd[1126]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:18 ovzhost sshd[1128]: Invalid user admin from 195.3.144.95
+Apr  6 03:18:18 ovzhost sshd[1128]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:18:18 ovzhost sshd[1128]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:18 ovzhost sshd[1128]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:20 ovzhost sshd[1128]: Failed password for invalid user admin from 195.3.144.95 port 59431 ssh2
+Apr  6 03:18:20 ovzhost sshd[1128]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:21 ovzhost sshd[1130]: Invalid user support from 195.3.144.95
+Apr  6 03:18:21 ovzhost sshd[1130]: input_userauth_request: invalid user support [preauth]
+Apr  6 03:18:22 ovzhost sshd[1130]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:22 ovzhost sshd[1130]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:24 ovzhost sshd[1130]: Failed password for invalid user support from 195.3.144.95 port 61528 ssh2
+Apr  6 03:18:24 ovzhost sshd[1130]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:25 ovzhost sshd[1132]: Invalid user support from 195.3.144.95
+Apr  6 03:18:25 ovzhost sshd[1132]: input_userauth_request: invalid user support [preauth]
+Apr  6 03:18:25 ovzhost sshd[1132]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:25 ovzhost sshd[1132]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:27 ovzhost sshd[1132]: Failed password for invalid user support from 195.3.144.95 port 65099 ssh2
+Apr  6 03:18:27 ovzhost sshd[1132]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:28 ovzhost sshd[1134]: Invalid user user from 195.3.144.95
+Apr  6 03:18:28 ovzhost sshd[1134]: input_userauth_request: invalid user user [preauth]
+Apr  6 03:18:28 ovzhost sshd[1134]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:28 ovzhost sshd[1134]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:30 ovzhost sshd[1134]: Failed password for invalid user user from 195.3.144.95 port 50584 ssh2
+Apr  6 03:18:30 ovzhost sshd[1134]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:31 ovzhost sshd[1138]: Invalid user user from 195.3.144.95
+Apr  6 03:18:31 ovzhost sshd[1138]: input_userauth_request: invalid user user [preauth]
+Apr  6 03:18:31 ovzhost sshd[1138]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:31 ovzhost sshd[1138]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:33 ovzhost sshd[1138]: Failed password for invalid user user from 195.3.144.95 port 53561 ssh2
+Apr  6 03:18:33 ovzhost sshd[1138]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:34 ovzhost sshd[1140]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:18:37 ovzhost sshd[1140]: Failed password for root from 195.3.144.95 port 55976 ssh2
+Apr  6 03:18:37 ovzhost sshd[1140]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:38 ovzhost sshd[1142]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:18:40 ovzhost sshd[1142]: Failed password for root from 195.3.144.95 port 58536 ssh2
+Apr  6 03:18:40 ovzhost sshd[1142]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:41 ovzhost sshd[1144]: Invalid user ftp from 195.3.144.95
+Apr  6 03:18:41 ovzhost sshd[1144]: input_userauth_request: invalid user ftp [preauth]
+Apr  6 03:18:42 ovzhost sshd[1144]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:42 ovzhost sshd[1144]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:44 ovzhost sshd[1144]: Failed password for invalid user ftp from 195.3.144.95 port 60718 ssh2
+Apr  6 03:18:44 ovzhost sshd[1144]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:45 ovzhost sshd[1146]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:18:47 ovzhost sshd[1146]: Failed password for root from 195.3.144.95 port 64430 ssh2
+Apr  6 03:18:47 ovzhost sshd[1146]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:49 ovzhost sshd[1148]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:18:50 ovzhost sshd[1148]: Failed password for root from 195.3.144.95 port 50341 ssh2
+Apr  6 03:18:50 ovzhost sshd[1148]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:51 ovzhost sshd[1150]: Invalid user admin from 195.3.144.95
+Apr  6 03:18:51 ovzhost sshd[1150]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:18:51 ovzhost sshd[1150]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:51 ovzhost sshd[1150]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:53 ovzhost sshd[1150]: Failed password for invalid user admin from 195.3.144.95 port 53173 ssh2
+Apr  6 03:18:54 ovzhost sshd[1150]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:55 ovzhost sshd[1152]: Invalid user user from 195.3.144.95
+Apr  6 03:18:55 ovzhost sshd[1152]: input_userauth_request: invalid user user [preauth]
+Apr  6 03:18:55 ovzhost sshd[1152]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:55 ovzhost sshd[1152]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:18:56 ovzhost sshd[1152]: Failed password for invalid user user from 195.3.144.95 port 56249 ssh2
+Apr  6 03:18:57 ovzhost sshd[1152]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:18:58 ovzhost sshd[1156]: Invalid user admin from 195.3.144.95
+Apr  6 03:18:58 ovzhost sshd[1156]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:18:58 ovzhost sshd[1156]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:18:58 ovzhost sshd[1156]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:00 ovzhost sshd[1156]: Failed password for invalid user admin from 195.3.144.95 port 58513 ssh2
+Apr  6 03:19:00 ovzhost sshd[1156]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:01 ovzhost sshd[1158]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:19:03 ovzhost sshd[1158]: Failed password for root from 195.3.144.95 port 60856 ssh2
+Apr  6 03:19:03 ovzhost sshd[1158]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:04 ovzhost sshd[1160]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:19:07 ovzhost sshd[1160]: Failed password for root from 195.3.144.95 port 63276 ssh2
+Apr  6 03:19:07 ovzhost sshd[1160]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:08 ovzhost sshd[1162]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:19:10 ovzhost sshd[1162]: Failed password for root from 195.3.144.95 port 50519 ssh2
+Apr  6 03:19:10 ovzhost sshd[1162]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:11 ovzhost sshd[1164]: Invalid user support from 195.3.144.95
+Apr  6 03:19:11 ovzhost sshd[1164]: input_userauth_request: invalid user support [preauth]
+Apr  6 03:19:11 ovzhost sshd[1164]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:11 ovzhost sshd[1164]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:13 ovzhost sshd[1164]: Failed password for invalid user support from 195.3.144.95 port 52943 ssh2
+Apr  6 03:19:14 ovzhost sshd[1164]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:15 ovzhost sshd[1166]: Invalid user admin from 195.3.144.95
+Apr  6 03:19:15 ovzhost sshd[1166]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:19:15 ovzhost sshd[1166]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:15 ovzhost sshd[1166]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:17 ovzhost sshd[1166]: Failed password for invalid user admin from 195.3.144.95 port 56443 ssh2
+Apr  6 03:19:17 ovzhost sshd[1166]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:18 ovzhost sshd[1169]: Invalid user default from 195.3.144.95
+Apr  6 03:19:18 ovzhost sshd[1169]: input_userauth_request: invalid user default [preauth]
+Apr  6 03:19:18 ovzhost sshd[1169]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:18 ovzhost sshd[1169]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:20 ovzhost sshd[1169]: Failed password for invalid user default from 195.3.144.95 port 59419 ssh2
+Apr  6 03:19:20 ovzhost sshd[1169]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:21 ovzhost sshd[1171]: Invalid user default from 195.3.144.95
+Apr  6 03:19:21 ovzhost sshd[1171]: input_userauth_request: invalid user default [preauth]
+Apr  6 03:19:21 ovzhost sshd[1171]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:21 ovzhost sshd[1171]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:23 ovzhost sshd[1171]: Failed password for invalid user default from 195.3.144.95 port 61899 ssh2
+Apr  6 03:19:23 ovzhost sshd[1171]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:24 ovzhost sshd[1173]: Invalid user ftpuser from 195.3.144.95
+Apr  6 03:19:24 ovzhost sshd[1173]: input_userauth_request: invalid user ftpuser [preauth]
+Apr  6 03:19:24 ovzhost sshd[1173]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:24 ovzhost sshd[1173]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:27 ovzhost sshd[1173]: Failed password for invalid user ftpuser from 195.3.144.95 port 64436 ssh2
+Apr  6 03:19:27 ovzhost sshd[1173]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:28 ovzhost sshd[1175]: Invalid user asteriskftp from 195.3.144.95
+Apr  6 03:19:28 ovzhost sshd[1175]: input_userauth_request: invalid user asteriskftp [preauth]
+Apr  6 03:19:28 ovzhost sshd[1175]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:28 ovzhost sshd[1175]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:30 ovzhost sshd[1175]: Failed password for invalid user asteriskftp from 195.3.144.95 port 51971 ssh2
+Apr  6 03:19:31 ovzhost sshd[1175]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:32 ovzhost sshd[1177]: Invalid user PlcmSpIp from 195.3.144.95
+Apr  6 03:19:32 ovzhost sshd[1177]: input_userauth_request: invalid user PlcmSpIp [preauth]
+Apr  6 03:19:32 ovzhost sshd[1177]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:32 ovzhost sshd[1177]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:34 ovzhost sshd[1177]: Failed password for invalid user PlcmSpIp from 195.3.144.95 port 55325 ssh2
+Apr  6 03:19:34 ovzhost sshd[1177]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:35 ovzhost sshd[1179]: Invalid user ubnt from 195.3.144.95
+Apr  6 03:19:35 ovzhost sshd[1179]: input_userauth_request: invalid user ubnt [preauth]
+Apr  6 03:19:35 ovzhost sshd[1179]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:35 ovzhost sshd[1179]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:38 ovzhost sshd[1179]: Failed password for invalid user ubnt from 195.3.144.95 port 58303 ssh2
+Apr  6 03:19:38 ovzhost sshd[1179]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:39 ovzhost sshd[1183]: Invalid user guest from 195.3.144.95
+Apr  6 03:19:39 ovzhost sshd[1183]: input_userauth_request: invalid user guest [preauth]
+Apr  6 03:19:39 ovzhost sshd[1183]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:39 ovzhost sshd[1183]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:41 ovzhost sshd[1183]: Failed password for invalid user guest from 195.3.144.95 port 61782 ssh2
+Apr  6 03:19:41 ovzhost sshd[1183]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:43 ovzhost sshd[1185]: Invalid user pi from 195.3.144.95
+Apr  6 03:19:43 ovzhost sshd[1185]: input_userauth_request: invalid user pi [preauth]
+Apr  6 03:19:43 ovzhost sshd[1185]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:43 ovzhost sshd[1185]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:45 ovzhost sshd[1185]: Failed password for invalid user pi from 195.3.144.95 port 49364 ssh2
+Apr  6 03:19:45 ovzhost sshd[1185]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:46 ovzhost sshd[1187]: Invalid user raspberry from 195.3.144.95
+Apr  6 03:19:46 ovzhost sshd[1187]: input_userauth_request: invalid user raspberry [preauth]
+Apr  6 03:19:46 ovzhost sshd[1187]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:46 ovzhost sshd[1187]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:49 ovzhost sshd[1187]: Failed password for invalid user raspberry from 195.3.144.95 port 52549 ssh2
+Apr  6 03:19:49 ovzhost sshd[1187]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:50 ovzhost sshd[1189]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net  user=root
+Apr  6 03:19:52 ovzhost sshd[1189]: Failed password for root from 195.3.144.95 port 56362 ssh2
+Apr  6 03:19:52 ovzhost sshd[1189]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:53 ovzhost sshd[1191]: Invalid user admin from 195.3.144.95
+Apr  6 03:19:53 ovzhost sshd[1191]: input_userauth_request: invalid user admin [preauth]
+Apr  6 03:19:53 ovzhost sshd[1191]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:53 ovzhost sshd[1191]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:56 ovzhost sshd[1191]: Failed password for invalid user admin from 195.3.144.95 port 59993 ssh2
+Apr  6 03:19:56 ovzhost sshd[1191]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:19:57 ovzhost sshd[1193]: Invalid user remote from 195.3.144.95
+Apr  6 03:19:57 ovzhost sshd[1193]: input_userauth_request: invalid user remote [preauth]
+Apr  6 03:19:57 ovzhost sshd[1193]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 03:19:57 ovzhost sshd[1193]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=xcv.ip-colo.net 
+Apr  6 03:19:59 ovzhost sshd[1193]: Failed password for invalid user remote from 195.3.144.95 port 64318 ssh2
+Apr  6 03:19:59 ovzhost sshd[1193]: Connection closed by 195.3.144.95 [preauth]
+Apr  6 03:20:01 ovzhost CRON[1196]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 03:20:01 ovzhost CRON[1196]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  6 03:20:01 ovzhost CRON[1196]: pam_unix(cron:session): session closed for user smmsp
+Apr  6 03:20:40 ovzhost sshd[1223]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 03:25:29 ovzhost sshd[1246]: Connection closed by 128.8.37.104 [preauth]
+Apr  6 03:25:40 ovzhost sshd[1249]: Connection closed by 127.0.0.1 [preauth]

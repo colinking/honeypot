@@ -1,0 +1,10 @@
+ls
+pwd
+ls /etc/profile
+vim /etc/profile
+if [ $SSH_CLIENT ]; if [ $SSH_CLIENT ];  q
+if [ $SSH_CLIENT ]; then echo Hello; fi
+if [ -z $SSH_CLIENT ]; then echo Hello; fi
+if [ -z "$SSH_CLIENT" ]; then echo Hello; fi
+clear
+exit

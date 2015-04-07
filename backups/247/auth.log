@@ -1,0 +1,38 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 15:54:40 ovzhost sshd[788]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 15:57:20 ovzhost sshd[803]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  5 15:57:23 ovzhost sshd[803]: Failed password for root from 128.134.54.57 port 36936 ssh2
+Apr  5 15:57:27 ovzhost sshd[803]: message repeated 2 times: [ Failed password for root from 128.134.54.57 port 36936 ssh2]
+Apr  5 15:57:27 ovzhost sshd[803]: Connection closed by 128.134.54.57 [preauth]
+Apr  5 15:57:27 ovzhost sshd[803]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  5 15:57:56 ovzhost sshd[807]: Connection closed by 128.8.37.104 [preauth]
+Apr  5 15:59:40 ovzhost sshd[816]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 16:00:01 ovzhost CRON[820]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 16:00:01 ovzhost CRON[820]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  5 16:00:01 ovzhost CRON[820]: pam_unix(cron:session): session closed for user smmsp
+Apr  5 16:04:40 ovzhost sshd[861]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 16:07:56 ovzhost sshd[878]: Connection closed by 128.8.37.104 [preauth]
+Apr  5 16:09:01 ovzhost CRON[886]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 16:09:01 ovzhost CRON[885]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 16:09:01 ovzhost CRON[885]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  5 16:09:01 ovzhost CRON[886]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  5 16:09:01 ovzhost CRON[885]: pam_unix(cron:session): session closed for user root
+Apr  5 16:09:01 ovzhost CRON[886]: pam_unix(cron:session): session closed for user root
+Apr  5 16:09:40 ovzhost sshd[901]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 16:14:40 ovzhost sshd[920]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 16:17:56 ovzhost sshd[937]: Connection closed by 128.8.37.104 [preauth]
+Apr  5 16:19:40 ovzhost sshd[946]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 16:20:01 ovzhost CRON[950]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 16:20:01 ovzhost CRON[950]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  5 16:20:01 ovzhost CRON[950]: pam_unix(cron:session): session closed for user smmsp
+Apr  5 16:24:40 ovzhost sshd[991]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 16:27:56 ovzhost sshd[1008]: Connection closed by 128.8.37.104 [preauth]
+Apr  5 16:29:40 ovzhost sshd[1017]: Connection closed by 127.0.0.1 [preauth]

@@ -1,0 +1,90 @@
+#!/bin/bash
+
+cd /usr/hp
+
+source /usr/hp/common_functions
+
+# First, get the IDs from the ids_$ctid.log file (all within the last hour)
+if [ -e /usr/hp/test_ids_$hp_1.log ]; then
+	recents_1="`cat /usr/hp/test_ids_$hp_1.log`"
+fi
+if [ -e /usr/hp/test_ids_$hp_2.log ]; then
+	recents_2="`cat /usr/hp/test_ids_$hp_2.log`"
+fi
+
+
+p0f_log="/usr/hp/p0f-hacs102_groupF_20150406_1900.log"
+
+for hp in $hp_1 $hp_2; do
+	echo "testing $hp"
+	# Get the correct list of ids from the two sets of recent ids/timestamps
+	recents="$recents_1"
+	if [ "$hp" == "$hp_2" ]; then
+		recents="$recents_2"
+	fi
+
+	# if new logs exist, continue
+	if [ ! -z "$recents" ]
+	then
+
+		echo "past recents"
+
+		ip=`get_hp_ip $hp`
+		for line in $recents; do
+			echo "Checking $line"
+			# Cut out the values stored in the log file
+			client="`echo "$line" | cut -d'|' -f1`"
+			honeypot="`echo "$line" | cut -d'|' -f2`"
+			id="`echo "$line" | cut -d'|' -f3`"
+
+			# don't use excessive quotes? readability?....pssha who needs it
+			packets="`cat $p0f_log | grep -E "mod=syn\|cli=$client.*srv=$honeypot"`"
+			# Format the packets to be uploaded to mongo
+			packet_arr=""
+
+			while read packet
+			do
+				packet_arr+=", '$packet'"
+			done <<< "$packets"
+
+			# Remove the first ", " from the packet array
+			packet_arr=${packet_arr:2}
+
+			# Cut out all of the OS's from the packets
+			all_os="`echo "$packets" | cut -d"|" -f5`"
+			echo "ALL OS"
+			echo $all_os
+			found_os=""
+			# Find the first os in the list of packets
+			while read os; do
+				# Remove the "os="
+				os_type="${os:3}"
+				if [ "$os_type" != "???" ]; then
+					found_os=$os_type
+					break
+				fi
+			done <<< "$all_os"
+
+			# Cut out all of the dist's from the packets
+			all_dist="`echo "$packets" | cut -d"|" -f6`"
+			found_dist=""
+
+			# Find the first dist in the list of packets
+			while read dist; do
+				# Remove the "dist="
+				found_dist="${dist:5}"
+				break
+			done <<< "$all_dist"
+
+			# Upload to mongo using the id
+			echo "For ID: $id"
+			echo "Found os: $found_os"
+			echo "Distance: $found_dist"
+			echo "==Packests=="
+			echo "[$packet_arr]"
+
+		done
+	fi
+done
+
+

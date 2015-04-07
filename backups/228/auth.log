@@ -1,0 +1,53 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 08:36:24 ovzhost sshd[767]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.166.240  user=root
+Apr  5 08:36:26 ovzhost sshd[767]: Failed password for root from 221.229.166.240 port 41140 ssh2
+Apr  5 08:37:25 ovzhost sshd[771]: Received disconnect from 221.229.166.240: 11:  [preauth]
+Apr  5 08:37:46 ovzhost sshd[767]: message repeated 2 times: [ Failed password for root from 221.229.166.240 port 41140 ssh2]
+Apr  5 08:37:46 ovzhost sshd[767]: Received disconnect from 221.229.166.240: 11:  [preauth]
+Apr  5 08:37:46 ovzhost sshd[767]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.229.166.240  user=root
+Apr  5 08:37:51 ovzhost sshd[775]: Connection closed by 221.229.166.240 [preauth]
+Apr  5 08:37:52 ovzhost sshd[769]: Connection closed by 221.229.166.240 [preauth]
+Apr  5 08:37:55 ovzhost sshd[773]: Received disconnect from 221.229.166.240: 11:  [preauth]
+Apr  5 08:39:01 ovzhost CRON[777]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 08:39:01 ovzhost CRON[777]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  5 08:39:01 ovzhost CRON[777]: pam_unix(cron:session): session closed for user root
+Apr  5 08:40:01 ovzhost CRON[788]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 08:40:01 ovzhost CRON[788]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  5 08:40:01 ovzhost CRON[788]: pam_unix(cron:session): session closed for user smmsp
+Apr  5 08:42:45 ovzhost sshd[814]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  5 08:42:47 ovzhost sshd[814]: Failed password for root from 128.134.54.57 port 55458 ssh2
+Apr  5 08:42:50 ovzhost sshd[814]: message repeated 2 times: [ Failed password for root from 128.134.54.57 port 55458 ssh2]
+Apr  5 08:42:51 ovzhost sshd[814]: Connection closed by 128.134.54.57 [preauth]
+Apr  5 08:42:51 ovzhost sshd[814]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  5 08:51:53 ovzhost sshd[816]: Invalid user test from 80.242.123.130
+Apr  5 08:51:53 ovzhost sshd[816]: input_userauth_request: invalid user test [preauth]
+Apr  5 08:51:53 ovzhost sshd[816]: pam_unix(sshd:auth): check pass; user unknown
+Apr  5 08:51:53 ovzhost sshd[816]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=130-123-242-80.pppoe.dyn.broadband.blic.net 
+Apr  5 08:51:55 ovzhost sshd[816]: Failed password for invalid user test from 80.242.123.130 port 40130 ssh2
+Apr  5 08:51:55 ovzhost sshd[816]: Received disconnect from 80.242.123.130: 11: Bye Bye [preauth]
+Apr  5 08:57:56 ovzhost sshd[818]: Did not receive identification string from 111.203.22.56
+Apr  5 09:00:01 ovzhost CRON[819]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 09:00:01 ovzhost CRON[819]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  5 09:00:01 ovzhost CRON[819]: pam_unix(cron:session): session closed for user smmsp
+Apr  5 09:03:30 ovzhost sshd[845]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=117.21.174.111  user=root
+Apr  5 09:03:30 ovzhost sshd[847]: Did not receive identification string from 222.77.190.33
+Apr  5 09:03:33 ovzhost sshd[845]: Failed password for root from 117.21.174.111 port 50000 ssh2
+Apr  5 09:03:37 ovzhost sshd[845]: message repeated 2 times: [ Failed password for root from 117.21.174.111 port 50000 ssh2]
+Apr  5 09:03:37 ovzhost sshd[845]: Received disconnect from 117.21.174.111: 11:  [preauth]
+Apr  5 09:03:37 ovzhost sshd[845]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=117.21.174.111  user=root
+Apr  5 09:03:51 ovzhost sshd[848]: Received disconnect from 117.21.174.111: 11:  [preauth]
+Apr  5 09:09:01 ovzhost CRON[850]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 09:09:01 ovzhost CRON[850]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  5 09:09:01 ovzhost CRON[851]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 09:09:01 ovzhost CRON[851]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  5 09:09:01 ovzhost CRON[850]: pam_unix(cron:session): session closed for user root
+Apr  5 09:09:02 ovzhost CRON[851]: pam_unix(cron:session): session closed for user root
+Apr  5 09:20:01 ovzhost CRON[864]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 09:20:01 ovzhost CRON[864]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  5 09:20:01 ovzhost CRON[864]: pam_unix(cron:session): session closed for user smmsp
+Apr  5 09:22:06 ovzhost sshd[890]: Accepted password for root from 128.134.54.57 port 53409 ssh2
+Apr  5 09:22:06 ovzhost sshd[890]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  5 09:22:06 ovzhost sshd[890]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 09:22:20 ovzhost sshd[890]: pam_unix(sshd:session): session closed for user root

@@ -19,13 +19,13 @@ function start_hp {
 	log_write "STARTING HP $1"
 
 	# Setup command monitoring
-	nohup /usr/hp/monitor_commands $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
+	nohup /usr/hp/monitor_commands $1 >> /usr/hp/monitor.log 2>&1 &
 
 	# Setup SSH monitoring
-	#nohup /usr/hp/monitor_ssh $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
+	nohup /usr/hp/monitor_ssh $1 >> /usr/hp/monitor.log 2>&1 &
 
 	# Setup download monitoring
-	nohup /usr/hp/monitor_downloads $1 >> /usr/hp/monitor.log 2>> /usr/hp/monitor.log &
+	nohup /usr/hp/monitor_downloads $1 >> /usr/hp/monitor.log 2>&1 &
 
 	# Create CRON job for getting p0f logs
 	# TODO
@@ -99,7 +99,7 @@ then
 		echo "======================"
 
 		# Check that all monitoring processes are running
-		for command in monitor_commands monitor_downloads; do
+		for command in monitor_commands monitor_ssh monitor_downloads; do
 			echo -n "$command..."
 			if echo "`ps aux`" | grep "$command $hp" | grep -qv grep
 			then
@@ -112,11 +112,11 @@ then
 		# Check that all tail processes are running
 		echo -n "Tail processes..."
 		tail_ps="`ps aux | grep "tail.*$hp" | grep -vE "(sudo|grep)" | wc -l`"
-		if [ "$tail_ps" == "2" ]
+		if [ "$tail_ps" == "3" ]
 		then
 			echo "GOOD"
 		else
-			echo "($tail_ps/2)"
+			echo "($tail_ps/3)"
 		fi
 
 		# Check that the container is started
@@ -136,16 +136,16 @@ then
 		echo "==== Statistics ===="
 
 		# Check if the honeypot is currently compromised
-		echo -n "Compromised..."
-		last_hp_log="`echo "db.logs.find({ctid: $hp}, {_id: 0, level: 1}).sort({timestamp: -1}).limit(1)" | mongo --quiet 10.3.0.2/hpdata`"
-		if [ "$last_hp_log" == "" ] || echo "$last_hp_log" | grep -q RECYCLE; then
-			echo "NO"
-		else
-			echo "YES"
-			echo -n "Compromised Since..."
+		#echo -n "Compromised..."
+		#last_hp_log="`echo "db.logs.find({ctid: $hp}, {_id: 0, level: 1}).sort({timestamp: -1}).limit(1)" | mongo --quiet 10.3.0.2/hpdata`"
+		#if [ "$last_hp_log" == "" ] || echo "$last_hp_log" | grep -q RECYCLE; then
+		#	echo "NO"
+		#else
+		#	echo "YES"
+			echo -n "Last Connection..."
 			iso_time=`echo "db.logs.find({ctid: $hp}, {_id: 0, timestamp: 1}).sort({timestamp: -1}).limit(1)" | mongo --quiet 10.3.0.2/hpdata | cut -d"\"" -f4`
 			date -d"$iso_time" +"%m/%d/%y %r"
-		fi
+		#fi
 
 		# Output the number of connections since the start
 		echo -n "Number of Connections..."

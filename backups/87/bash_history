@@ -1,0 +1,4 @@
+echo "$SSH_CLIENT"
+sshd
+less /var/adm/messages
+less /var/log/secure

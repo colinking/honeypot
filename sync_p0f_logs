@@ -68,7 +68,7 @@ for hp in $hp_1 $hp_2; do
 			fi 
 
 			# Add a margin of error to connect and disconnect times
-			moe=2 # Seconds of margin on either side
+			moe=10 # Seconds of margin on either side
 			connect=$(($connect - $moe))
 			disconnect=$(($disconnect + $moe))
 			
@@ -101,7 +101,7 @@ for hp in $hp_1 $hp_2; do
 				# Remove the "os="
 				os_type="${os:3}"
 				if [ "$os_type" != "???" ]; then
-					os=$os_type
+					found_os=$os_type
 					break
 				fi
 			done <<< "$all_os"

@@ -1,0 +1,27 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 11:32:28 ovzhost sshd[788]: Connection closed by 127.0.0.1 [preauth]
+Apr  5 11:35:48 ovzhost sshd[805]: Connection closed by 128.8.37.120 [preauth]
+Apr  5 11:36:47 ovzhost sshd[811]: Invalid user zhangyan from 111.75.208.194
+Apr  5 11:36:47 ovzhost sshd[811]: input_userauth_request: invalid user zhangyan [preauth]
+Apr  5 11:36:48 ovzhost sshd[811]: pam_unix(sshd:auth): check pass; user unknown
+Apr  5 11:36:48 ovzhost sshd[811]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=111.75.208.194 
+Apr  5 11:36:50 ovzhost sshd[811]: Failed password for invalid user zhangyan from 111.75.208.194 port 10643 ssh2
+Apr  5 11:36:50 ovzhost sshd[811]: Received disconnect from 111.75.208.194: 11: Bye Bye [preauth]
+Apr  5 11:36:56 ovzhost sshd[815]: Invalid user dff from 111.75.208.194
+Apr  5 11:36:56 ovzhost sshd[815]: input_userauth_request: invalid user dff [preauth]
+Apr  5 11:36:56 ovzhost sshd[815]: pam_unix(sshd:auth): check pass; user unknown
+Apr  5 11:36:56 ovzhost sshd[815]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=111.75.208.194 
+Apr  5 11:36:58 ovzhost sshd[815]: Failed password for invalid user dff from 111.75.208.194 port 47500 ssh2
+Apr  5 11:36:58 ovzhost sshd[815]: Received disconnect from 111.75.208.194: 11: Bye Bye [preauth]
+Apr  5 11:37:01 ovzhost sshd[817]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=111.75.208.194  user=root
+Apr  5 11:37:02 ovzhost sshd[817]: Failed password for root from 111.75.208.194 port 49906 ssh2
+Apr  5 11:37:03 ovzhost sshd[817]: Received disconnect from 111.75.208.194: 11: Bye Bye [preauth]
+Apr  5 11:37:06 ovzhost sshd[819]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=111.75.208.194  user=root
+Apr  5 11:37:09 ovzhost sshd[819]: Failed password for root from 111.75.208.194 port 51310 ssh2
+Apr  5 11:37:09 ovzhost sshd[819]: Received disconnect from 111.75.208.194: 11: Bye Bye [preauth]
+Apr  5 11:37:14 ovzhost sshd[821]: Accepted password for root from 111.75.208.194 port 53044 ssh2
+Apr  5 11:37:14 ovzhost sshd[821]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  5 11:37:14 ovzhost sshd[821]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  5 11:37:15 ovzhost sshd[821]: pam_unix(sshd:session): session closed for user root

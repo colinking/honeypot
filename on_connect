@@ -12,10 +12,10 @@ log_write "CONNECTION MADE"
 if [ ! -e /usr/hp/$1.lock ]
 then
 	# Notify our team about the logon
-	log_write "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=COLINKING" http://api.justyo.co/yo/`"
-	log_write "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=MONEYBAGSWAG" http://api.justyo.co/yo/`"
-	log_write "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=KFOSTER5" http://api.justyo.co/yo/`"
-	log_write "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=CRAZYI24" http://api.justyo.co/yo/`"
+	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=COLINKING" http://api.justyo.co/yo/ >> /dev/null 2>&1
+	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=MONEYBAGSWAG" http://api.justyo.co/yo/ >> /dev/null 2>&1
+	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=KFOSTER5" http://api.justyo.co/yo/ >> /dev/null 2>&1
+	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=CRAZYI24" http://api.justyo.co/yo/ >> /dev/null 2>&1
 	
 	# Get the timestamp of the connection
 	converted_time="`date +%s`"
@@ -27,7 +27,7 @@ then
 	ip_info=`curl http://gd.geobytes.com/GetCityDetails?fqcn=$2 2> /dev/null`
 
 	# Create the new MongoDB session to store this session's information
-	mongo_write "db.sessions.insert({connect: new Date(), hp_ip: '$hp_ip', hp: '$1', ip: '$2', port: '$3', info: '$ip_info', password: 'password'})"
+	mongo_write "db.sessions.insert({connect: new Date(), hp_ip: '$hp_ip', hp: '$1', ip: '$2', port: '$3', line: '$4', info: $ip_info, password: 'password'})"
 
 	# Get the ID of this session from mongo
 	id="`get_id`"
@@ -40,7 +40,7 @@ then
 	ssh -f aces@10.3.0.2 "mkdir ~/data/$id; mkdir ~/data/$id/downloads; touch ~/data/$id/commands.log" 2>> /usr/hp/monitor.log
 
 	# Set the container to recycle in 20 minutes
-	echo "recycle $1 $id" | at now + 20 minutes
+	echo "on_disconnect $1 $id" | at now + 20 minutes
 
 	# Log the connection at this timestamp and ip
 	log_connection $1 "$2"

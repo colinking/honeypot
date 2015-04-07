@@ -13,99 +13,29 @@ source /usr/hp/common_functions
 #echo "Running tail on /var/log/auth.log in container #$1...";
 
 sudo tail -fn0 /vz/private/$1/var/log/auth.log 2>> /usr/hp/monitor.log | while read line; do
-	
-	# Check that this line portrays to ssh-ing, exit if not
-	if ! echo "$line" | grep -lq "ovzhost sshd" ;
-	then
-		continue
-	fi
 
 	# Check if the log message is a conneciton/disconnection message
-	# Case: Mar 16 16:18:30 ovzhost sshd[8588]: Accepted password for root from 128.8.68.127 port 57278 ssh2
-	if echo "$line" | grep -q "Accepted password for root from" ;
+	# Case: Apr 2 11:25:42 ovzhost sshd[1128]: pam_unix(sshd:session): session opened for user root by (uid=0)
+	# Apr  2 14:41:19 ovzhost sshd[874]: Accepted password for root from 206.196.184.90 port 53766 ssh2
+	if echo "$line" | grep -Eq "ssh.*Accepted password for root" ;
 	then
-		echo "[`date +"%x %r"`] MONITOR_SSH - ACCEPTED PASSWORD: $line"
+		log_write "$line"
 
-		# Notify our team about the logon
-		echo "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=COLINKING" http://api.justyo.co/yo/`"
-		echo "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=MONEYBAGSWAG" http://api.justyo.co/yo/`"
-		echo "`curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=KFOSTER5" http://api.justyo.co/yo/`"
+		# Get the IP Address of the connecter
+		ip="`echo $line | cut -d" " -f11`"
 
-		# Temp fix if multiple users log in at once
-		if [ ! -e /usr/hp/$1.lock ]
-		then
-			# Get the timestamp of the connection
-			datestring="`echo "$line" | cut -d" " -f1-3`"
-			converted_time="`date -d"$datestring" +%s`"
+		# Get the port that they are connecting to
+		port="`echo $line | cut -d" " -f13`"
 
-			# Get the IP Address of the connecter
-			ip="`echo $line | cut -d" " -f11`"
-
-			# Get the port that they are connecting to
-			port="`echo $line | cut -d" " -f13`"
-
-			# Get the IP address of the honeypot they are connecting to
-			hp_ip=`get_hp_ip $1`
-
-			# Get info on the IP from Geobytes
-			info=`curl http://gd.geobytes.com/GetCityDetails?fqcn=$ip 2> /dev/null`
-
-			# Create the new MongoDB session to store this session's information
-			mongo_write "db.sessions.insert({connect: new Date(), ip: '$ip', info: $info, port: '$port', hp_ip: '$hp_ip', password: 'password'})"
-
-			# Get the ID of this session from mongo
-			id="`get_id`"
-
-			# Log the IP and ID of the hacker on the system
-			echo "$id:$ip" > /usr/hp/$1.lock
-			echo -n "$converted_time|$id|" >> /usr/hp/ids_$1.log
-
-			# Create a directory for this session on the storage vm
-			ssh -f aces@10.3.0.2 "mkdir ~/data/$id; mkdir ~/data/$id/downloads; touch ~/data/$id/logs_command" 2>> /usr/hp/monitor.log
-
-			# Set the container to recycle in 30 minutes
-			echo "recycle $1 $id 'yes'" | at now + 30 minutes
-
-		fi
-
-		# Log the connection at this timestamp and ip
-		log_connection $1 "$ip"
+		# Call the script to handle the new connections
+		/usr/hp/on_connect $1 "$ip" "$port" "$line"
 
 	# Case: Mar 16 16:18:41 ovzhost sshd[8588]: Received disconnect from 128.8.68.127: 11: disconnected by user
-	elif echo "$line" | grep -Eq "Received disconnect from.*disconnected by user" ;
+	# Apr  2 14:29:40 ovzhost sshd[1152]: pam_unix(sshd:session): session closed for user root
+	elif echo "$line" | grep -Eq "ssh.*session closed for user root" ;
 	then
-
-		echo "[`date +"%x %r"`] MONITOR_SSH - DISCONNECT: $line"
-
-		# Temp fix for if multiple users log in at same time
-		if [ -e /usr/hp/$1.lock ]
-		then
-
-			# Get the disconnect time
-			datestring="`echo "$line" | cut -d" " -f1-3`"
-			converted_time="`date -d"$datestring" +%s`"
-
-			# Get the ID of the currently logged in hacker
-			id="`cut -d":" -f1 /usr/hp/$1.lock`"
-
-			# Log the disconnnect
-			if [ ! -s ids_$1.log ]
-			then
-				# The file is empty, so echo the object id too
-				echo "|$id|$converted_time" >> ids_$1.log
-			else
-				# Just echo the disconnect time
-				echo "$converted_time" >> ids_$1.log
-			fi
-
-			# Recycle the honeypot
-			recycle $1 $id "no"
-		fi
-	elif echo "$line" | grep -q "Failed password for root" ; 
-	then
-		echo "[`date +"%x %r"`] FAILED PASSWORD: $line"
-	else
-		echo "[`date +"%x %r"`] OTHER MONITOR_SSH: $line"
+		log_write "DISCONNECT?: $line"
+		/usr/hp/recycle $1 "`get_id`"
 	fi
 done
 

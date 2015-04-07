@@ -16,12 +16,12 @@ sudo tail -fn0 /vz/private/$1/usr/hp/log_commands 2>> /usr/hp/monitor.log | whil
 		ip="`echo $line | cut -d" " -f2`"
 		port="`echo $line | cut -d" " -f3`"
 		# Call our on connect command
-		on_connect $1 $ip $port
+		/usr/hp/on_connect $1 $ip $port "$line"
 	else
 		# Get the url
-		url="`find_url $line`"
-		log_write "[CTID: $1] ['$line'] => URL: $url"
+		url="`/usr/hp/find_url $line`"
+		log_write "[CTID: $1] ['$line'] [`get_id`] => URL: $url"
 		# Now store the download from the url
-		store download $1 "$url"
+		/usr/hp/store download $1 "$url"
 	fi
 done

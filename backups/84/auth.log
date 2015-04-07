@@ -1,0 +1,74 @@
+Apr  2 13:33:47 ovzhost sshd[800]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 13:35:46 ovzhost sshd[808]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 13:36:02 ovzhost sshd[812]: Invalid user ubnt from 83.234.207.60
+Apr  2 13:36:02 ovzhost sshd[812]: input_userauth_request: invalid user ubnt [preauth]
+Apr  2 13:36:02 ovzhost sshd[812]: pam_unix(sshd:auth): check pass; user unknown
+Apr  2 13:36:02 ovzhost sshd[812]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=web.taom.ru 
+Apr  2 13:36:04 ovzhost sshd[812]: Failed password for invalid user ubnt from 83.234.207.60 port 11321 ssh2
+Apr  2 13:36:04 ovzhost sshd[812]: Received disconnect from 83.234.207.60: 11: Bye Bye [preauth]
+Apr  2 13:36:05 ovzhost sshd[814]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=web.taom.ru  user=root
+Apr  2 13:36:07 ovzhost sshd[814]: Failed password for root from 83.234.207.60 port 11567 ssh2
+Apr  2 13:36:07 ovzhost sshd[814]: Received disconnect from 83.234.207.60: 11: Bye Bye [preauth]
+Apr  2 13:36:09 ovzhost sshd[816]: Invalid user admin from 83.234.207.60
+Apr  2 13:36:09 ovzhost sshd[816]: input_userauth_request: invalid user admin [preauth]
+Apr  2 13:36:09 ovzhost sshd[816]: pam_unix(sshd:auth): check pass; user unknown
+Apr  2 13:36:09 ovzhost sshd[816]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=web.taom.ru 
+Apr  2 13:36:10 ovzhost sshd[816]: Failed password for invalid user admin from 83.234.207.60 port 11914 ssh2
+Apr  2 13:36:10 ovzhost sshd[816]: Received disconnect from 83.234.207.60: 11: Bye Bye [preauth]
+Apr  2 13:38:47 ovzhost sshd[829]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 13:39:01 ovzhost CRON[831]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  2 13:39:01 ovzhost CRON[831]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  2 13:39:01 ovzhost CRON[831]: pam_unix(cron:session): session closed for user root
+Apr  2 13:40:01 ovzhost CRON[845]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  2 13:40:01 ovzhost CRON[845]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  2 13:40:01 ovzhost CRON[845]: pam_unix(cron:session): session closed for user smmsp
+Apr  2 13:43:31 ovzhost sshd[885]: reverse mapping checking getaddrinfo for bb25e9c5.virtua.com.br [187.37.233.197] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  2 13:43:31 ovzhost sshd[885]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.37.233.197  user=root
+Apr  2 13:43:33 ovzhost sshd[885]: Failed password for root from 187.37.233.197 port 39820 ssh2
+Apr  2 13:43:33 ovzhost sshd[885]: Received disconnect from 187.37.233.197: 11: Bye Bye [preauth]
+Apr  2 13:43:34 ovzhost sshd[887]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=200-158-211-17.dsl.telesp.net.br  user=root
+Apr  2 13:43:36 ovzhost sshd[887]: Failed password for root from 200.158.211.17 port 40779 ssh2
+Apr  2 13:43:36 ovzhost sshd[887]: Received disconnect from 200.158.211.17: 11: Bye Bye [preauth]
+Apr  2 13:43:38 ovzhost sshd[889]: reverse mapping checking getaddrinfo for bb25e9c5.virtua.com.br [187.37.233.197] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  2 13:43:38 ovzhost sshd[889]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.37.233.197  user=root
+Apr  2 13:43:40 ovzhost sshd[889]: Failed password for root from 187.37.233.197 port 41706 ssh2
+Apr  2 13:43:40 ovzhost sshd[889]: Received disconnect from 187.37.233.197: 11: Bye Bye [preauth]
+Apr  2 13:43:41 ovzhost sshd[891]: reverse mapping checking getaddrinfo for bb25e9c5.virtua.com.br [187.37.233.197] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  2 13:43:41 ovzhost sshd[891]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.37.233.197  user=root
+Apr  2 13:43:43 ovzhost sshd[891]: Failed password for root from 187.37.233.197 port 42764 ssh2
+Apr  2 13:43:43 ovzhost sshd[891]: Received disconnect from 187.37.233.197: 11: Bye Bye [preauth]
+Apr  2 13:43:45 ovzhost sshd[895]: reverse mapping checking getaddrinfo for bb25e9c5.virtua.com.br [187.37.233.197] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  2 13:43:45 ovzhost sshd[895]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.37.233.197  user=root
+Apr  2 13:43:47 ovzhost sshd[895]: Failed password for root from 187.37.233.197 port 43895 ssh2
+Apr  2 13:43:47 ovzhost sshd[898]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 13:43:47 ovzhost sshd[895]: Received disconnect from 187.37.233.197: 11: Bye Bye [preauth]
+Apr  2 13:43:49 ovzhost sshd[900]: reverse mapping checking getaddrinfo for bb25e9c5.virtua.com.br [187.37.233.197] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  2 13:43:49 ovzhost sshd[900]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.37.233.197  user=root
+Apr  2 13:43:52 ovzhost sshd[900]: Failed password for root from 187.37.233.197 port 44843 ssh2
+Apr  2 13:43:52 ovzhost sshd[900]: Received disconnect from 187.37.233.197: 11: Bye Bye [preauth]
+Apr  2 13:45:46 ovzhost sshd[908]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 13:48:47 ovzhost sshd[923]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 13:53:47 ovzhost sshd[945]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 13:55:46 ovzhost sshd[953]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 13:58:47 ovzhost sshd[968]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:00:01 ovzhost CRON[973]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  2 14:00:01 ovzhost CRON[973]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  2 14:00:01 ovzhost CRON[973]: pam_unix(cron:session): session closed for user smmsp
+Apr  2 14:03:47 ovzhost sshd[1016]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:05:46 ovzhost sshd[1024]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:08:46 ovzhost sshd[1039]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:09:01 ovzhost CRON[1041]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  2 14:09:01 ovzhost CRON[1042]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  2 14:09:01 ovzhost CRON[1042]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  2 14:09:01 ovzhost CRON[1041]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  2 14:09:01 ovzhost CRON[1041]: pam_unix(cron:session): session closed for user root
+Apr  2 14:09:01 ovzhost CRON[1042]: pam_unix(cron:session): session closed for user root
+Apr  2 14:13:44 ovzhost sshd[1077]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:15:45 ovzhost sshd[1085]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:18:44 ovzhost sshd[1098]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:20:01 ovzhost CRON[1105]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  2 14:20:01 ovzhost CRON[1105]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  2 14:20:01 ovzhost CRON[1105]: pam_unix(cron:session): session closed for user smmsp
+Apr  2 14:23:44 ovzhost sshd[1146]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:25:45 ovzhost sshd[1156]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:28:44 ovzhost sshd[1169]: Connection closed by 127.0.0.1 [preauth]

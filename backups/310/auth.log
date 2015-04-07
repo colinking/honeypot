@@ -1,0 +1,65 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 18:48:11 ovzhost sshd[786]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 18:50:37 ovzhost sshd[799]: Connection closed by 128.8.37.120 [preauth]
+Apr  6 18:53:11 ovzhost sshd[811]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 18:55:56 ovzhost sshd[822]: Invalid user alvin from 221.146.74.146
+Apr  6 18:55:56 ovzhost sshd[822]: input_userauth_request: invalid user alvin [preauth]
+Apr  6 18:55:56 ovzhost sshd[822]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 18:55:56 ovzhost sshd[822]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  6 18:55:58 ovzhost sshd[822]: Failed password for invalid user alvin from 221.146.74.146 port 59603 ssh2
+Apr  6 18:55:58 ovzhost sshd[822]: Connection closed by 221.146.74.146 [preauth]
+Apr  6 18:56:16 ovzhost sshd[824]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  6 18:56:18 ovzhost sshd[824]: Failed password for root from 128.134.54.57 port 36879 ssh2
+Apr  6 18:56:22 ovzhost sshd[824]: message repeated 2 times: [ Failed password for root from 128.134.54.57 port 36879 ssh2]
+Apr  6 18:56:22 ovzhost sshd[824]: Connection closed by 128.134.54.57 [preauth]
+Apr  6 18:56:22 ovzhost sshd[824]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.134.54.57  user=root
+Apr  6 18:58:11 ovzhost sshd[835]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 19:00:01 ovzhost CRON[846]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 19:00:01 ovzhost CRON[846]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  6 19:00:01 ovzhost CRON[846]: pam_unix(cron:session): session closed for user smmsp
+Apr  6 19:00:37 ovzhost sshd[874]: Connection closed by 128.8.37.120 [preauth]
+Apr  6 19:03:11 ovzhost sshd[884]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 19:08:11 ovzhost sshd[904]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 19:09:01 ovzhost CRON[915]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 19:09:01 ovzhost CRON[914]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 19:09:01 ovzhost CRON[915]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  6 19:09:01 ovzhost CRON[914]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  6 19:09:01 ovzhost CRON[914]: pam_unix(cron:session): session closed for user root
+Apr  6 19:09:01 ovzhost CRON[915]: pam_unix(cron:session): session closed for user root
+Apr  6 19:10:24 ovzhost sshd[932]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=175.119.226.215  user=root
+Apr  6 19:10:27 ovzhost sshd[932]: Failed password for root from 175.119.226.215 port 54881 ssh2
+Apr  6 19:10:31 ovzhost sshd[932]: message repeated 2 times: [ Failed password for root from 175.119.226.215 port 54881 ssh2]
+Apr  6 19:10:31 ovzhost sshd[932]: Connection closed by 175.119.226.215 [preauth]
+Apr  6 19:10:31 ovzhost sshd[932]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=175.119.226.215  user=root
+Apr  6 19:10:37 ovzhost sshd[935]: Connection closed by 128.8.37.120 [preauth]
+Apr  6 19:13:11 ovzhost sshd[945]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 19:17:38 ovzhost sshd[963]: Invalid user amember from 221.146.74.146
+Apr  6 19:17:38 ovzhost sshd[963]: input_userauth_request: invalid user amember [preauth]
+Apr  6 19:17:38 ovzhost sshd[963]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 19:17:38 ovzhost sshd[963]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  6 19:17:39 ovzhost sshd[963]: Failed password for invalid user amember from 221.146.74.146 port 48730 ssh2
+Apr  6 19:17:40 ovzhost sshd[963]: Connection closed by 221.146.74.146 [preauth]
+Apr  6 19:18:11 ovzhost sshd[967]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 19:20:01 ovzhost CRON[980]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  6 19:20:01 ovzhost CRON[980]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  6 19:20:01 ovzhost CRON[980]: pam_unix(cron:session): session closed for user smmsp
+Apr  6 19:20:37 ovzhost sshd[1009]: Connection closed by 128.8.37.120 [preauth]
+Apr  6 19:21:25 ovzhost sshd[1013]: Invalid user ubnt from 202.121.199.171
+Apr  6 19:21:25 ovzhost sshd[1013]: input_userauth_request: invalid user ubnt [preauth]
+Apr  6 19:21:25 ovzhost sshd[1013]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 19:21:25 ovzhost sshd[1013]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=202.121.199.171 
+Apr  6 19:21:27 ovzhost sshd[1013]: Failed password for invalid user ubnt from 202.121.199.171 port 59264 ssh2
+Apr  6 19:21:27 ovzhost sshd[1013]: Received disconnect from 202.121.199.171: 11: Bye Bye [preauth]
+Apr  6 19:21:29 ovzhost sshd[1015]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=202.121.199.171  user=root
+Apr  6 19:21:31 ovzhost sshd[1015]: Failed password for root from 202.121.199.171 port 59521 ssh2
+Apr  6 19:21:32 ovzhost sshd[1015]: Received disconnect from 202.121.199.171: 11: Bye Bye [preauth]
+Apr  6 19:21:34 ovzhost sshd[1017]: Invalid user admin from 202.121.199.171
+Apr  6 19:21:34 ovzhost sshd[1017]: input_userauth_request: invalid user admin [preauth]
+Apr  6 19:21:34 ovzhost sshd[1017]: pam_unix(sshd:auth): check pass; user unknown
+Apr  6 19:21:34 ovzhost sshd[1017]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=202.121.199.171 
+Apr  6 19:21:35 ovzhost sshd[1017]: Failed password for invalid user admin from 202.121.199.171 port 59811 ssh2
+Apr  6 19:21:36 ovzhost sshd[1017]: Received disconnect from 202.121.199.171: 11: Bye Bye [preauth]
+Apr  6 19:23:11 ovzhost sshd[1025]: Connection closed by 127.0.0.1 [preauth]
+Apr  6 19:28:11 ovzhost sshd[1045]: Connection closed by 127.0.0.1 [preauth]

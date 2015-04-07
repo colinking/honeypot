@@ -1,0 +1,111 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 10:31:02 ovzhost sshd[685]: Invalid user ubnt from 176.114.36.78
+Apr  4 10:31:02 ovzhost sshd[685]: input_userauth_request: invalid user ubnt [preauth]
+Apr  4 10:31:02 ovzhost sshd[685]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:02 ovzhost sshd[685]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:04 ovzhost sshd[685]: Failed password for invalid user ubnt from 176.114.36.78 port 2280 ssh2
+Apr  4 10:31:04 ovzhost sshd[685]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:06 ovzhost sshd[768]: Invalid user admin from 176.114.36.78
+Apr  4 10:31:06 ovzhost sshd[768]: input_userauth_request: invalid user admin [preauth]
+Apr  4 10:31:06 ovzhost sshd[768]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:06 ovzhost sshd[768]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:08 ovzhost sshd[768]: Failed password for invalid user admin from 176.114.36.78 port 3173 ssh2
+Apr  4 10:31:08 ovzhost sshd[768]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:10 ovzhost sshd[783]: Accepted password for root from 176.114.36.78 port 3622 ssh2
+Apr  4 10:31:10 ovzhost sshd[783]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  4 10:31:10 ovzhost sshd[783]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  4 10:31:10 ovzhost sshd[783]: pam_unix(sshd:session): session closed for user root
+Apr  4 10:31:11 ovzhost sshd[795]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78  user=root
+Apr  4 10:31:13 ovzhost sshd[795]: Failed password for root from 176.114.36.78 port 3942 ssh2
+Apr  4 10:31:14 ovzhost sshd[795]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:15 ovzhost sshd[797]: Invalid user admin from 176.114.36.78
+Apr  4 10:31:15 ovzhost sshd[797]: input_userauth_request: invalid user admin [preauth]
+Apr  4 10:31:15 ovzhost sshd[797]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:15 ovzhost sshd[797]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:17 ovzhost sshd[797]: Failed password for invalid user admin from 176.114.36.78 port 4881 ssh2
+Apr  4 10:31:17 ovzhost sshd[797]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:19 ovzhost sshd[799]: Invalid user guest from 176.114.36.78
+Apr  4 10:31:19 ovzhost sshd[799]: input_userauth_request: invalid user guest [preauth]
+Apr  4 10:31:19 ovzhost sshd[799]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:19 ovzhost sshd[799]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:20 ovzhost sshd[799]: Failed password for invalid user guest from 176.114.36.78 port 2236 ssh2
+Apr  4 10:31:21 ovzhost sshd[799]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:22 ovzhost sshd[801]: Invalid user operator from 176.114.36.78
+Apr  4 10:31:22 ovzhost sshd[801]: input_userauth_request: invalid user operator [preauth]
+Apr  4 10:31:22 ovzhost sshd[801]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:22 ovzhost sshd[801]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:24 ovzhost sshd[801]: Failed password for invalid user operator from 176.114.36.78 port 2728 ssh2
+Apr  4 10:31:24 ovzhost sshd[801]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:26 ovzhost sshd[803]: Invalid user PlcmSpIp from 176.114.36.78
+Apr  4 10:31:26 ovzhost sshd[803]: input_userauth_request: invalid user PlcmSpIp [preauth]
+Apr  4 10:31:26 ovzhost sshd[803]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:26 ovzhost sshd[803]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:28 ovzhost sshd[803]: Failed password for invalid user PlcmSpIp from 176.114.36.78 port 3367 ssh2
+Apr  4 10:31:28 ovzhost sshd[803]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:29 ovzhost sshd[805]: Invalid user ftp from 176.114.36.78
+Apr  4 10:31:29 ovzhost sshd[805]: input_userauth_request: invalid user ftp [preauth]
+Apr  4 10:31:29 ovzhost sshd[805]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:29 ovzhost sshd[805]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:31 ovzhost sshd[805]: Failed password for invalid user ftp from 176.114.36.78 port 4286 ssh2
+Apr  4 10:31:31 ovzhost sshd[805]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:33 ovzhost sshd[807]: Invalid user admin from 176.114.36.78
+Apr  4 10:31:33 ovzhost sshd[807]: input_userauth_request: invalid user admin [preauth]
+Apr  4 10:31:33 ovzhost sshd[807]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:33 ovzhost sshd[807]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:35 ovzhost sshd[807]: Failed password for invalid user admin from 176.114.36.78 port 1789 ssh2
+Apr  4 10:31:35 ovzhost sshd[807]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:37 ovzhost sshd[809]: Invalid user pi from 176.114.36.78
+Apr  4 10:31:37 ovzhost sshd[809]: input_userauth_request: invalid user pi [preauth]
+Apr  4 10:31:37 ovzhost sshd[809]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:37 ovzhost sshd[809]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:39 ovzhost sshd[809]: Failed password for invalid user pi from 176.114.36.78 port 2454 ssh2
+Apr  4 10:31:39 ovzhost sshd[809]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:40 ovzhost sshd[814]: Connection closed by 127.0.0.1 [preauth]
+Apr  4 10:31:44 ovzhost sshd[811]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78  user=root
+Apr  4 10:31:46 ovzhost sshd[811]: Failed password for root from 176.114.36.78 port 3743 ssh2
+Apr  4 10:31:48 ovzhost sshd[811]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:50 ovzhost sshd[818]: Invalid user ftpuser from 176.114.36.78
+Apr  4 10:31:50 ovzhost sshd[818]: input_userauth_request: invalid user ftpuser [preauth]
+Apr  4 10:31:50 ovzhost sshd[818]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:50 ovzhost sshd[818]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:52 ovzhost sshd[818]: Failed password for invalid user ftpuser from 176.114.36.78 port 1487 ssh2
+Apr  4 10:31:52 ovzhost sshd[818]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:54 ovzhost sshd[820]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78  user=root
+Apr  4 10:31:55 ovzhost sshd[820]: Failed password for root from 176.114.36.78 port 3871 ssh2
+Apr  4 10:31:56 ovzhost sshd[820]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:31:57 ovzhost sshd[824]: Invalid user admin from 176.114.36.78
+Apr  4 10:31:57 ovzhost sshd[824]: input_userauth_request: invalid user admin [preauth]
+Apr  4 10:31:57 ovzhost sshd[824]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:31:57 ovzhost sshd[824]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:31:59 ovzhost sshd[824]: Failed password for invalid user admin from 176.114.36.78 port 4878 ssh2
+Apr  4 10:31:59 ovzhost sshd[824]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:32:00 ovzhost sshd[826]: Invalid user mike from 176.114.36.78
+Apr  4 10:32:00 ovzhost sshd[826]: input_userauth_request: invalid user mike [preauth]
+Apr  4 10:32:00 ovzhost sshd[826]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:32:00 ovzhost sshd[826]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:32:03 ovzhost sshd[826]: Failed password for invalid user mike from 176.114.36.78 port 1866 ssh2
+Apr  4 10:32:03 ovzhost sshd[826]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:32:04 ovzhost sshd[828]: Invalid user ftp from 176.114.36.78
+Apr  4 10:32:04 ovzhost sshd[828]: input_userauth_request: invalid user ftp [preauth]
+Apr  4 10:32:04 ovzhost sshd[828]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:32:04 ovzhost sshd[828]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:32:06 ovzhost sshd[828]: Failed password for invalid user ftp from 176.114.36.78 port 3294 ssh2
+Apr  4 10:32:06 ovzhost sshd[828]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:32:07 ovzhost sshd[830]: Invalid user christian from 176.114.36.78
+Apr  4 10:32:07 ovzhost sshd[830]: input_userauth_request: invalid user christian [preauth]
+Apr  4 10:32:07 ovzhost sshd[830]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:32:07 ovzhost sshd[830]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:32:10 ovzhost sshd[830]: Failed password for invalid user christian from 176.114.36.78 port 1144 ssh2
+Apr  4 10:32:10 ovzhost sshd[830]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:32:12 ovzhost sshd[832]: Invalid user aaron from 176.114.36.78
+Apr  4 10:32:12 ovzhost sshd[832]: input_userauth_request: invalid user aaron [preauth]
+Apr  4 10:32:12 ovzhost sshd[832]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:32:12 ovzhost sshd[832]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 
+Apr  4 10:32:14 ovzhost sshd[832]: Failed password for invalid user aaron from 176.114.36.78 port 1631 ssh2
+Apr  4 10:32:14 ovzhost sshd[832]: Received disconnect from 176.114.36.78: 11: Bye Bye [preauth]
+Apr  4 10:32:15 ovzhost sshd[834]: Invalid user admin from 176.114.36.78
+Apr  4 10:32:15 ovzhost sshd[834]: input_userauth_request: invalid user admin [preauth]
+Apr  4 10:32:15 ovzhost sshd[834]: pam_unix(sshd:auth): check pass; user unknown
+Apr  4 10:32:15 ovzhost sshd[834]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=176.114.36.78 

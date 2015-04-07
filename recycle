@@ -8,18 +8,37 @@ fi
 
 source /usr/hp/common_functions
 
+# log_write "CALLING RECYCLE WITH $1 and ID=$2 || [ -e $1.lock ] = `[ -e /usr/hp/$1.lock ]` and cat $1.lock = `cat $1.lock`"
+
 # Make sure that a hacker was on the system before recycle was called 
 # and that the recycle command is being called for the right hacker 
 # (might be the wrong hacker because of being called via "at")
 if [ "$2" == "override" ] || ([ -e /usr/hp/$1.lock ] && [ "`cat /usr/hp/$1.lock`" == "$2" ])
 then
+
+	log_write "RECYCLING HONEYPOT $1"
+
 	# Remove the file that indicates that a hacker is on the system
 	rm -f /usr/hp/$1.lock
 
 	if [ "$2" != "override" ]
 	then
 		/usr/hp/store log $1 RECYCLE "Recycling container $1"
-		/usr/hp/on_disconnect $1
+		# Get the disconnect time
+		converted_time="`date +%s`"
+
+		# Get the ID of the currently logged in hacker
+		id="`cat /usr/hp/$1.lock`"
+
+		# Log the disconnnect
+		if [ ! -s ids_$1.log ]
+		then
+			# The file is empty, so echo the object id too
+			echo "|$id|$converted_time" >> ids_$1.log
+		else
+			# Just echo the disconnect time
+			echo "$converted_time" >> ids_$1.log
+		fi
 		# Set disconnect time and whether the hacker was kicked
 		mongo_write "db.sessions.update({_id: ObjectId('`get_id`')}, {\$set: {disconnect: new Date()}})"
 	fi
