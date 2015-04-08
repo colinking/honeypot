@@ -1,0 +1,37 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr  7 00:34:01 ovzhost sshd[790]: Connection closed by 127.0.0.1 [preauth]
+Apr  7 00:36:08 ovzhost sshd[799]: Connection closed by 128.8.37.120 [preauth]
+Apr  7 00:36:10 ovzhost sshd[801]: Invalid user bethel from 221.146.74.146
+Apr  7 00:36:10 ovzhost sshd[801]: input_userauth_request: invalid user bethel [preauth]
+Apr  7 00:36:10 ovzhost sshd[801]: pam_unix(sshd:auth): check pass; user unknown
+Apr  7 00:36:10 ovzhost sshd[801]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  7 00:36:12 ovzhost sshd[801]: Failed password for invalid user bethel from 221.146.74.146 port 22148 ssh2
+Apr  7 00:36:13 ovzhost sshd[801]: Connection closed by 221.146.74.146 [preauth]
+Apr  7 00:39:01 ovzhost CRON[816]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  7 00:39:01 ovzhost CRON[816]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  7 00:39:01 ovzhost CRON[816]: pam_unix(cron:session): session closed for user root
+Apr  7 00:39:01 ovzhost sshd[828]: Connection closed by 127.0.0.1 [preauth]
+Apr  7 00:40:01 ovzhost CRON[832]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  7 00:40:01 ovzhost CRON[832]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  7 00:40:01 ovzhost CRON[832]: pam_unix(cron:session): session closed for user smmsp
+Apr  7 00:42:11 ovzhost sshd[865]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=122.228.80.226  user=root
+Apr  7 00:42:12 ovzhost sshd[865]: Failed password for root from 122.228.80.226 port 1968 ssh2
+Apr  7 00:42:24 ovzhost sshd[865]: message repeated 5 times: [ Failed password for root from 122.228.80.226 port 1968 ssh2]
+Apr  7 00:42:24 ovzhost sshd[865]: Disconnecting: Too many authentication failures for root [preauth]
+Apr  7 00:42:24 ovzhost sshd[865]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=122.228.80.226  user=root
+Apr  7 00:42:24 ovzhost sshd[865]: PAM service(sshd) ignoring max retries; 6 > 3
+Apr  7 00:42:26 ovzhost sshd[867]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=122.228.80.226  user=root
+Apr  7 00:42:28 ovzhost sshd[867]: Failed password for root from 122.228.80.226 port 3987 ssh2
+Apr  7 00:42:38 ovzhost sshd[867]: message repeated 5 times: [ Failed password for root from 122.228.80.226 port 3987 ssh2]
+Apr  7 00:42:38 ovzhost sshd[867]: Disconnecting: Too many authentication failures for root [preauth]
+Apr  7 00:42:38 ovzhost sshd[867]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=122.228.80.226  user=root
+Apr  7 00:42:38 ovzhost sshd[867]: PAM service(sshd) ignoring max retries; 6 > 3
+Apr  7 00:42:40 ovzhost sshd[870]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=122.228.80.226  user=root
+Apr  7 00:42:42 ovzhost sshd[870]: Failed password for root from 122.228.80.226 port 4602 ssh2
+Apr  7 00:42:44 ovzhost sshd[870]: Failed password for root from 122.228.80.226 port 4602 ssh2
+Apr  7 00:42:44 ovzhost sshd[870]: Accepted password for root from 122.228.80.226 port 4602 ssh2
+Apr  7 00:42:44 ovzhost sshd[870]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  7 00:42:44 ovzhost sshd[870]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  7 00:42:44 ovzhost sshd[870]: pam_unix(sshd:session): session closed for user root

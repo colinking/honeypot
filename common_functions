@@ -42,4 +42,25 @@ function log_write {
 	echo "[`date +"%x %r"`] [$(basename $0)] $1" >> /usr/hp/monitor.log 2>&1
 }
 
+# yoteam [disconnect|connect|command]
+function yoteam {
+	access_token=""
+	if [ "$1" == "disconnect" ]; then
+		access_token="024211f3-35da-4680-8962-d806aeec8150" # HONEYPOTDISCONNECT
+	elif [ "$1" == "connect" ]; then
+		access_token="79b98490-3b03-4388-9649-454d666a909d" # HONEYPOTF
+	elif [ "$1" == "command" ]; then
+		access_token="070ded22-bfa6-435c-a041-d032c2d7607f" # HONEYPOTCOMMAND
+	else
+		echo "Bad yoteam $1"
+		return
+	fi
+
+	# Notify our team about the logon
+	curl --data "api_token=$access_token&username=COLINKING" http://api.justyo.co/yo/ >> /dev/null 2>&1
+	curl --data "api_token=$access_token&username=MONEYBAGSWAG" http://api.justyo.co/yo/ >> /dev/null 2>&1
+	curl --data "api_token=$access_token&username=KFOSTER5" http://api.justyo.co/yo/ >> /dev/null 2>&1
+	curl --data "api_token=$access_token&username=CRAZYI24" http://api.justyo.co/yo/ >> /dev/null 2>&1
+}
+
 

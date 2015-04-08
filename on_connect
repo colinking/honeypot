@@ -12,13 +12,7 @@ log_write "CONNECTION MADE"
 if [ ! -e /usr/hp/$1.lock ]
 then
 	# Notify our team about the logon
-	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=COLINKING" http://api.justyo.co/yo/ >> /dev/null 2>&1
-	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=MONEYBAGSWAG" http://api.justyo.co/yo/ >> /dev/null 2>&1
-	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=KFOSTER5" http://api.justyo.co/yo/ >> /dev/null 2>&1
-	curl --data "api_token=79b98490-3b03-4388-9649-454d666a909d&username=CRAZYI24" http://api.justyo.co/yo/ >> /dev/null 2>&1
-	
-	# Get the timestamp of the connection
-	converted_time="`date +%s`"
+	yoteam "connect"
 
 	# Get the IP address of the honeypot they are connecting to
 	hp_ip=`get_hp_ip $1`
@@ -32,15 +26,15 @@ then
 	# Get the ID of this session from mongo
 	id="`get_id`"
 
-	# Log the IP and ID of the hacker on the system
+	# Log to our lock and log files
 	echo "$id" > /usr/hp/$1.lock
-	echo -n "$converted_time|$id|" >> /usr/hp/ids_$1.log
+	echo "$2|$hp_ip|$id" >> /usr/hp/ids_$1.log
 
 	# Create a directory for this session on the storage vm
 	ssh -f aces@10.3.0.2 "mkdir ~/data/$id; mkdir ~/data/$id/downloads; touch ~/data/$id/commands.log" 2>> /usr/hp/monitor.log
 
 	# Set the container to recycle in 20 minutes
-	echo "on_disconnect $1 $id" | at now + 20 minutes
+	echo "recycle $1 $id" | at now + 20 minutes
 
 	# Log the connection at this timestamp and ip
 	log_connection $1 "$2"

@@ -13,6 +13,8 @@ source /usr/hp/common_functions
 #echo "Running tail on ~/.bash_history in container #$1...";
 
 sudo tail -fn0 /vz/private/$1/root/.bash_history 2>> /usr/hp/monitor.log | while read line; do
+	# Notify our team about the command
+	yoteam command
 	# Get the ID of the currently logged on user
 	id="`get_id`"
 	log_write "(ID: $id) $line"

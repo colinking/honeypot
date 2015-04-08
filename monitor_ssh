@@ -34,6 +34,8 @@ sudo tail -fn0 /vz/private/$1/var/log/auth.log 2>> /usr/hp/monitor.log | while r
 	# Apr  2 14:29:40 ovzhost sshd[1152]: pam_unix(sshd:session): session closed for user root
 	elif echo "$line" | grep -Eq "ssh.*session closed for user root" ;
 	then
+		# Notify our team about the disconnect
+		yoteam disconnect
 		log_write "DISCONNECT?: $line"
 		/usr/hp/recycle $1 "`get_id`"
 	fi

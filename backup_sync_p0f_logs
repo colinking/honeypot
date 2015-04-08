@@ -1,0 +1,135 @@
+#!/bin/bash
+
+cd /usr/hp
+
+source /usr/hp/common_functions
+
+# First, get the IDs from the ids_$ctid.log file (all within the last hour)
+if [ -e /usr/hp/ids_$hp_1.log ]; then
+	recents_1="`cat /usr/hp/ids_$hp_1.log`"
+fi
+if [ -e /usr/hp/ids_$hp_2.log ]; then
+	recents_2="`cat /usr/hp/ids_$hp_2.log`"
+fi
+
+# Now remove the logs files
+rm -f /usr/hp/ids_$hp_1.log /usr/hp/ids_$hp_2.log
+
+
+# Then wait a minute or two before getting the p0f files so that they are made by Bertrand's scripts
+sleep 180
+
+## Get the most recent p0f file from the data collector
+# SSh to data collector to get file name of most recent log file
+# Password is hac****data (replace **** with your best guess) if can't get in, may need to set up sshpass or similar
+ssh data@192.168.1.254 'cd p0f/groupF/2015; cd `ls -t | head -1`; echo `pwd`/`ls -t | head -1`' > /usr/hp/p0f_location.log
+# Save this location to a variable
+p0f_location=`cat /usr/hp/p0f_location.log`
+# Remove the p0f_location log
+rm /usr/hp/p0f_location.log
+# SCP to the data collector to transfer this file
+scp data@192.168.1.254:$p0f_location /usr/hp
+# Save the filename using string operators from the p0f_location variable, to use later 
+p0f_log="/usr/hp/${p0f_location##*/}"
+log_write "$p0f_log"
+
+for hp in $hp_1 $hp_2; do
+	# Get the correct list of ids from the two sets of recent ids/timestamps
+	recents="$recents_1"
+	if [ "$hp" == "$hp_2" ]; then
+		recents="$recents_2"
+	fi
+
+	# if new logs exist, continue
+	if [ ! -z "$recents" ]
+	then
+
+		ip=`get_hp_ip $hp`
+		for line in $recents; do
+			
+			# Cut out the connect time, id and disconnect time from the log line
+			connect="`echo "$line" | cut -d'|' -f1`"
+			id="`echo "$line" | cut -d'|' -f2`"
+			disconnect="`echo "$line" | cut -d'|' -f3`"
+			
+			# Check if the hacker was connected through the end of the hour
+			# If so, we will grab packets up to the end or from the beginning of the p0f file
+			if [ "$connect" == "" ]
+			then
+				# Include all packets from the begnining of the hour
+				connect_date="`date +"%Y/%m/%d %H:00:00"`"
+				connect="`date -d"$connect_date" +%s`"
+			fi
+			if [ "$disconnect" == "" ]
+			then
+				# Include all packets from when they connected to the end of the hour
+				disconnect_date="`date -d"+1 hour" +"%Y/%m/%d %H:00:00"`"
+				disconnect="`date -d"$disconnect_date" +%s`"
+			fi 
+
+			# Add a margin of error to connect and disconnect times
+			moe=10 # Seconds of margin on either side
+			connect=$(($connect - $moe))
+			disconnect=$(($disconnect + $moe))
+			
+			# Convert to the date format of the p0f logs 2015/03/15 00:02:42
+			from="`date -d@"$connect" +"%Y/%m/%d %H:%M:%S"`"
+			to="`date -d@"$disconnect" +"%Y/%m/%d %H:%M:%S"`"
+
+			# don't use excessive quotes? readability?....pssha who needs it
+			packets="`awk '$0 > "'"[$from"'" && $0 < "'"[$to"'"' "$p0f_log"`"
+
+			# Grep out only the lines that have "mod=syn|" and the hp's ip address
+			syn_packets="`echo "$packets" | grep "mod=syn|.*srv=$ip"`"
+
+			# Format the packets to be uploaded to mongo
+			packet_arr=""
+
+			while read packet
+			do
+				packet_arr+=", '$packet'"
+			done <<< "$syn_packets"
+
+			# Remove the first ", " from the packet array
+			packet_arr=${packet_arr:2}
+
+			# Cut out all of the OS's from the packets
+			all_os="`echo "$syn_packets" | cut -d"|" -f5`"
+			found_os=""
+			# Find the first os in the list of packets
+			while read os; do
+				# Remove the "os="
+				os_type="${os:3}"
+				if [ "$os_type" != "???" ]; then
+					found_os=$os_type
+					break
+				fi
+			done <<< "$all_os"
+
+			# Cut out the distance
+			dist="`echo "$syn_packets" | cut -d"|" -f6`"
+			# Remove "dist="
+			dist=${dist:5}
+
+			# Cut out all of the dist's from the packets
+			all_dist="`echo "$syn_packets" | cut -d"|" -f6`"
+			found_dist=""
+
+			# Find the first dist in the list of packets
+			while read dist; do
+				# Remove the "dist="
+				found_dist="${dist:5}"
+				break
+			done <<< "$all_dist"
+
+			# Upload to mongo using the id
+			mongo_write "db.sessions.update({_id: ObjectId('$id')}, {\$set: {os: '$found_os', dist: '$found_dist', p0f: [$packet_arr]}})"
+
+		done
+	fi
+done
+
+# Finally, remove the p0f log we downloaded to save space
+rm "$p0f_log"
+
+

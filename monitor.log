@@ -2116,3 +2116,1028 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 [04/06/2015 07:30:39 PM] [hpctl] STARTING HP 148
 [04/06/2015 07:30:39 PM] [hpctl] DEBUG: Firewall MODE 2
 [04/06/2015 08:03:01 PM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150406_2000.log
+[04/06/2015 08:30:01 PM] [backup] CRONTAB: Recycling Honeypots
+[04/06/2015 08:30:01 PM] [recycle] RECYCLING HONEYPOT 124
+[04/06/2015 08:30:01 PM] [hpctl] STOPPING HP 124
+[04/06/2015 08:30:18 PM] [hpctl] STARTING HP 124
+[04/06/2015 08:30:18 PM] [hpctl] DEBUG: Firewall MODE 2
+[04/06/2015 08:30:18 PM] [recycle] RECYCLING HONEYPOT 148
+[04/06/2015 08:30:18 PM] [hpctl] STOPPING HP 148
+[04/06/2015 08:30:32 PM] [hpctl] STARTING HP 148
+[04/06/2015 08:30:32 PM] [hpctl] DEBUG: Firewall MODE 2
+[04/06/2015 09:03:02 PM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150406_2100.log
+[04/06/2015 09:11:47 PM] [monitor_ssh] Apr  6 21:11:47 ovzhost sshd[1051]: Accepted password for root from 222.171.225.170 port 37685 ssh2
+[04/06/2015 09:11:47 PM] [on_connect] CONNECTION MADE
+[04/06/2015 09:11:48 PM] [monitor_ssh] Apr  6 21:11:48 ovzhost sshd[1048]: Accepted password for root from 222.171.225.170 port 40493 ssh2
+[04/06/2015 09:11:48 PM] [on_connect] CONNECTION MADE
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.104', hp: '124', ip: '222.171.225.170', port: '40493', line: 'Apr  6 21:11:48 ovzhost sshd[1048]: Accepted password for root from 222.171.225.170 port 40493 ssh2', info: {"geobytescertainty":"95","geobytesinternet":"JP","geobytescountry":"Japan","geobytesregionlocationcode":"JPMY","geobytesregion":"Miyagi","geobytescode":"MY","geobyteslocationcode":"JPMYSEND","geobytescity":"Sendai","geobytescityid":"4325","geobytesfqcn":"Sendai, MY, Japan","geobyteslatitude":"38.250000","geobyteslongitude":"140.882996","geobytescapital":"Tokyo ","geobytestimezone":"+09:00","geobytesnationalitysingular":"Japanese","geobytespopulation":"126771662","geobytesnationalityplural":"Japanese","geobytesmapreference":"Asia ","geobytescurrency":"Yen ","geobytescurrencycode":"JPY","geobytestitle":"Japan"}, password: 'password'})
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '222.171.225.170', port: '37685', line: 'Apr  6 21:11:47 ovzhost sshd[1051]: Accepted password for root from 222.171.225.170 port 37685 ssh2', info: {"geobytescertainty":"95","geobytesinternet":"JP","geobytescountry":"Japan","geobytesregionlocationcode":"JPMY","geobytesregion":"Miyagi","geobytescode":"MY","geobyteslocationcode":"JPMYSEND","geobytescity":"Sendai","geobytescityid":"4325","geobytesfqcn":"Sendai, MY, Japan","geobyteslatitude":"38.250000","geobyteslongitude":"140.882996","geobytescapital":"Tokyo ","geobytestimezone":"+09:00","geobytesnationalitysingular":"Japanese","geobytespopulation":"126771662","geobytesnationalityplural":"Japanese","geobytesmapreference":"Asia ","geobytescurrency":"Yen ","geobytescurrencycode":"JPY","geobytestitle":"Japan"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 160 at Mon Apr  6 21:31:00 2015
+warning: commands will be executed using /bin/sh
+job 161 at Mon Apr  6 21:31:00 2015
+db.logs.insert({timestamp: new Date(1428369109*1000), session_id: ObjectId('55232ed4fad773fd23c78b12'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 222.171.225.170'})
+db.logs.insert({timestamp: new Date(1428369109*1000), session_id: ObjectId('55232ed4fad773fd23c78b12'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 222.171.225.170'})
+WriteResult({ "nInserted" : 1 })
+WriteResult({ "nInserted" : 1 })
+mkdir: cannot create directory ‘/home/aces/data/55232ed4fad773fd23c78b12’: File exists
+mkdir: cannot create directory ‘/home/aces/data/55232ed4fad773fd23c78b12/downloads’: File exists
+[04/06/2015 09:12:02 PM] [monitor_ssh] DISCONNECT?: Apr  6 21:12:02 ovzhost sshd[1048]: pam_unix(sshd:session): session closed for user root
+[04/06/2015 09:12:02 PM] [recycle] RECYCLING HONEYPOT 124
+db.logs.insert({timestamp: new Date(1428369122*1000), session_id: ObjectId('55232ed4fad773fd23c78b12'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('55232ed4fad773fd23c78b12')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/06/2015 09:12:02 PM] [hpctl] STOPPING HP 124
+[04/06/2015 09:12:05 PM] [monitor_ssh] DISCONNECT?: Apr  6 21:12:05 ovzhost sshd[1051]: pam_unix(sshd:session): session closed for user root
+[04/06/2015 09:12:05 PM] [recycle] RECYCLING HONEYPOT 148
+db.logs.insert({timestamp: new Date(1428369125*1000), session_id: ObjectId('55232ed4fad773fd23c78b12'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('55232ed4fad773fd23c78b12')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/06/2015 09:12:05 PM] [hpctl] STOPPING HP 148
+[04/06/2015 09:12:39 PM] [hpctl] STARTING HP 124
+[04/06/2015 09:12:39 PM] [hpctl] STARTING HP 148
+Another app is currently holding the xtables lock. Perhaps you want to use the -w option?
+[04/06/2015 09:12:39 PM] [hpctl] 
+[04/06/2015 09:12:39 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:01 PM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:01 PM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:01 PM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:21 PM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:21 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:21 PM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:21 PM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:39 PM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 09:30:39 PM] [hpctl] DEBUG: Firewall MODE 2
+[04/06/15 09:55:45 PM] [hpctl] STARTING HP 124
+[04/06/15 09:55:45 PM] [hpctl] STARTING HP 148
+nohup: ignoring input
+nohup: ignoring input
+nohup: ignoring input
+nohup: ignoring input
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/15 09:55:45 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:03:01 PM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150406_2200.log
+db.sessions.update({_id: ObjectId('55232ed4fad773fd23c78b12')}, {$set: {os: 'Linux 3.1-3.10', dist: '23', p0f: ['[2015/04/06 21:11:12] mod=syn|cli=222.171.225.170/40493|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=23|params=tos:0x0a|raw_sig=4:41+23:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+db.sessions.update({_id: ObjectId('55232ed4fad773fd23c78b12')}, {$set: {os: 'Linux 3.1-3.10', dist: '22', p0f: ['[2015/04/06 21:11:12] mod=syn|cli=222.171.225.170/37685|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=22|params=tos:0x0a|raw_sig=4:42+22:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:02 PM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:02 PM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:02 PM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:25 PM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:25 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:25 PM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:25 PM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:50 PM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 10:30:51 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:03:01 PM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150406_2300.log
+[04/06/2015 11:28:04 PM] [monitor_ssh] Apr  6 23:28:04 ovzhost sshd[1168]: Accepted password for root from 1.93.129.73 port 58421 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:28:04 PM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '1.93.129.73', port: '58421', line: 'Apr  6 23:28:04 ovzhost sshd[1168]: Accepted password for root from 1.93.129.73 port 58421 ssh2', info: {"geobytescertainty":"90","geobytesinternet":"CN","geobytescountry":"China","geobytesregionlocationcode":"CNBJ","geobytesregion":"Beijing","geobytescode":"BJ","geobyteslocationcode":"CNBJBEIJ","geobytescity":"Beijing","geobytescityid":"3518","geobytesfqcn":"Beijing, BJ, China","geobyteslatitude":"39.900002","geobyteslongitude":"116.413002","geobytescapital":"Beijing ","geobytestimezone":"+08:00","geobytesnationalitysingular":"Chinese","geobytespopulation":"1273111290","geobytesnationalityplural":"Chinese","geobytesmapreference":"Asia ","geobytescurrency":"Yuan Renminbi","geobytescurrencycode":"CNY","geobytestitle":"China"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 162 at Mon Apr  6 23:48:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428377285*1000), session_id: ObjectId('55234ec58250563d188e3c11'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 1.93.129.73'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/06/2015 11:28:05 PM] [monitor_ssh] DISCONNECT?: Apr  6 23:28:05 ovzhost sshd[1168]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:28:05 PM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428377285*1000), session_id: ObjectId('55234ec58250563d188e3c11'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('55234ec58250563d188e3c11')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:28:06 PM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:28:27 PM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:28:27 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:01 PM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:01 PM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:01 PM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:26 PM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:27 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:27 PM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:27 PM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:57 PM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/06/2015 11:30:58 PM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:03:01 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0000.log
+db.sessions.update({_id: ObjectId('55234ec58250563d188e3c11')}, {$set: {os: 'Linux 2.6.x', dist: '22', p0f: ['[2015/04/06 23:27:11] mod=syn|cli=1.93.129.73/53142|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=22|params=none|raw_sig=4:42+22:0:1460:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/06 23:27:11] mod=syn|cli=1.93.129.73/53219|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=22|params=none|raw_sig=4:42+22:0:1460:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/06 23:27:16] mod=syn|cli=1.93.129.73/54526|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=22|params=none|raw_sig=4:42+22:0:1460:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/06 23:27:20] mod=syn|cli=1.93.129.73/55686|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=22|params=none|raw_sig=4:42+22:0:1460:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/06 23:27:26] mod=syn|cli=1.93.129.73/57239|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=22|params=none|raw_sig=4:42+22:0:1460:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/06 23:27:30] mod=syn|cli=1.93.129.73/58421|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=22|params=none|raw_sig=4:42+22:0:1460:mss*4,7:mss,sok,ts,nop,ws:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:02 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:31 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:32 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:32 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:30:32 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:31:01 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:31:01 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 12:42:44 AM] [monitor_ssh] Apr  7 00:42:44 ovzhost sshd[870]: Accepted password for root from 122.228.80.226 port 4602 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:42:44 AM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '122.228.80.226', port: '4602', line: 'Apr  7 00:42:44 ovzhost sshd[870]: Accepted password for root from 122.228.80.226 port 4602 ssh2', info: {"geobytescertainty":"69","geobytesinternet":"CN","geobytescountry":"China","geobytesregionlocationcode":"CNBJ","geobytesregion":"Beijing","geobytescode":"BJ","geobyteslocationcode":"CNBJBEIJ","geobytescity":"Beijing","geobytescityid":"3518","geobytesfqcn":"Beijing, BJ, China","geobyteslatitude":"39.900002","geobyteslongitude":"116.413002","geobytescapital":"Beijing ","geobytestimezone":"+08:00","geobytesnationalitysingular":"Chinese","geobytespopulation":"1273111290","geobytesnationalityplural":"Chinese","geobytesmapreference":"Asia ","geobytescurrency":"Yuan Renminbi","geobytescurrencycode":"CNY","geobytestitle":"China"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 163 at Tue Apr  7 01:02:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428381765*1000), session_id: ObjectId('55236045e99d95709f135b80'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 122.228.80.226'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 12:42:45 AM] [monitor_ssh] DISCONNECT?: Apr  7 00:42:44 ovzhost sshd[870]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:42:45 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428381765*1000), session_id: ObjectId('55236045e99d95709f135b80'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('55236045e99d95709f135b80')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:42:46 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:43:08 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:43:08 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 12:44:45 AM] [monitor_ssh] Apr  7 00:44:45 ovzhost sshd[781]: Accepted password for root from 210.14.158.75 port 60117 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:44:45 AM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '210.14.158.75', port: '60117', line: 'Apr  7 00:44:45 ovzhost sshd[781]: Accepted password for root from 210.14.158.75 port 60117 ssh2', info: {"geobytescertainty":"52","geobytesinternet":"US","geobytescountry":"United States","geobytesregionlocationcode":"USOR","geobytesregion":"Oregon","geobytescode":"OR","geobyteslocationcode":"USORHRIV","geobytescity":"Hood River","geobytescityid":"10502","geobytesfqcn":"Hood River, OR, United States","geobyteslatitude":"45.572601","geobyteslongitude":"-121.657997","geobytescapital":"Washington, DC ","geobytestimezone":"-08:00","geobytesnationalitysingular":"American","geobytespopulation":"278058881","geobytesnationalityplural":"Americans","geobytesmapreference":"North America ","geobytescurrency":"US Dollar","geobytescurrencycode":"USD","geobytestitle":"The United States"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 164 at Tue Apr  7 01:04:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428381886*1000), session_id: ObjectId('552360bd9d3ba57809490d3c'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 210.14.158.75'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 12:45:46 AM] [monitor_ssh] DISCONNECT?: Apr  7 00:45:46 ovzhost sshd[781]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:45:46 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428381946*1000), session_id: ObjectId('552360bd9d3ba57809490d3c'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('552360bd9d3ba57809490d3c')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:45:47 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:46:08 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 12:46:08 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0100.log
+db.sessions.update({_id: ObjectId('55236045e99d95709f135b80')}, {$set: {os: 'Windows XP', dist: '24', p0f: ['[2015/04/07 00:41:36] mod=syn|cli=122.228.80.226/1968|srv=128.8.37.120/22|subj=cli|os=Windows XP|dist=24|params=tos:0x0a|raw_sig=4:104+24:0:1460:65535,0:mss,nop,nop,sok:df,id+:0', '[2015/04/07 00:41:52] mod=syn|cli=122.228.80.226/3987|srv=128.8.37.120/22|subj=cli|os=Windows XP|dist=25|params=tos:0x0a|raw_sig=4:103+25:0:1460:65535,0:mss,nop,nop,sok:df,id+:0', '[2015/04/07 00:42:06] mod=syn|cli=122.228.80.226/4602|srv=128.8.37.120/22|subj=cli|os=Windows XP|dist=25|params=tos:0x0a|raw_sig=4:103+25:0:1460:65535,0:mss,nop,nop,sok:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+db.sessions.update({_id: ObjectId('552360bd9d3ba57809490d3c')}, {$set: {os: 'Linux 3.1-3.10', dist: '19', p0f: ['[2015/04/07 00:20:50] mod=syn|cli=210.14.158.75/10179|srv=128.8.37.120/22|subj=cli|os=???|dist=19|params=none|raw_sig=4:109+19:0:1460:65535,0:mss,nop,nop,sok:ack+:0', '[2015/04/07 00:43:38] mod=syn|cli=210.14.158.75/52226|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:43:43] mod=syn|cli=210.14.158.75/53716|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:43:50] mod=syn|cli=210.14.158.75/55363|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:43:54] mod=syn|cli=210.14.158.75/56368|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:43:58] mod=syn|cli=210.14.158.75/57155|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:03] mod=syn|cli=210.14.158.75/58285|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:07] mod=syn|cli=210.14.158.75/59195|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:11] mod=syn|cli=210.14.158.75/60117|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:20] mod=syn|cli=210.14.158.75/33891|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:27] mod=syn|cli=210.14.158.75/35468|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:32] mod=syn|cli=210.14.158.75/36660|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:42] mod=syn|cli=210.14.158.75/38856|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:52] mod=syn|cli=210.14.158.75/41092|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:44:58] mod=syn|cli=210.14.158.75/42532|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 00:45:05] mod=syn|cli=210.14.158.75/43843|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=19|params=none|raw_sig=4:45+19:0:1460:mss*10,7:mss,sok,ts,nop,ws:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:30 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:30 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:30 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:30 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:59 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 01:30:59 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:03:01 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0200.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:02 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:31 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:31 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:31 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:30:31 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:31:02 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 02:31:02 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:03:01 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0300.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:28 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:29 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:29 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:29 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:57 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 03:30:57 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0400.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:30 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:30 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:30 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:30:30 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:31:02 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 04:31:02 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0500.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:32 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:33 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:33 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:30:33 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:31:01 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 05:31:02 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:03:01 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0600.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:32 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:33 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:33 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:30:33 AM] [hpctl] STOPPING HP 148
+Exited loop - error?
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:31:03 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 06:31:04 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0700.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:31 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:31 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:31 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:30:31 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:31:00 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 07:31:00 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0800.log
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:31 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:31 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:31 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:30:31 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:31:00 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:31:00 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 08:51:45 AM] [monitor_ssh] Apr  7 08:51:45 ovzhost sshd[1042]: Accepted password for root from 180.96.19.163 port 53067 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:51:45 AM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.104', hp: '124', ip: '180.96.19.163', port: '53067', line: 'Apr  7 08:51:45 ovzhost sshd[1042]: Accepted password for root from 180.96.19.163 port 53067 ssh2', info: {"geobytescertainty":"90","geobytesinternet":"CN","geobytescountry":"China","geobytesregionlocationcode":"CNJS","geobytesregion":"Jiangsu","geobytescode":"JS","geobyteslocationcode":"CNJSNANJ","geobytescity":"Nanjing","geobytescityid":"3571","geobytesfqcn":"Nanjing, JS, China","geobyteslatitude":"32.062000","geobyteslongitude":"118.778000","geobytescapital":"Beijing ","geobytestimezone":"+08:00","geobytesnationalitysingular":"Chinese","geobytespopulation":"1273111290","geobytesnationalityplural":"Chinese","geobytesmapreference":"Asia ","geobytescurrency":"Yuan Renminbi","geobytescurrencycode":"CNY","geobytestitle":"China"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 165 at Tue Apr  7 09:11:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428411105*1000), session_id: ObjectId('5523d2e1eea2fda1a6691a2c'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 180.96.19.163'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 08:51:46 AM] [monitor_ssh] DISCONNECT?: Apr  7 08:51:45 ovzhost sshd[1042]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:51:46 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428411106*1000), session_id: ObjectId('5523d2e1eea2fda1a6691a2c'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('5523d2e1eea2fda1a6691a2c')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:51:47 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:52:17 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:52:18 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 08:53:38 AM] [monitor_ssh] Apr  7 08:53:38 ovzhost sshd[1119]: Accepted password for root from 180.96.19.163 port 56067 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:53:38 AM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '180.96.19.163', port: '56067', line: 'Apr  7 08:53:38 ovzhost sshd[1119]: Accepted password for root from 180.96.19.163 port 56067 ssh2', info: {"geobytescertainty":"90","geobytesinternet":"CN","geobytescountry":"China","geobytesregionlocationcode":"CNJS","geobytesregion":"Jiangsu","geobytescode":"JS","geobyteslocationcode":"CNJSNANJ","geobytescity":"Nanjing","geobytescityid":"3571","geobytesfqcn":"Nanjing, JS, China","geobyteslatitude":"32.062000","geobyteslongitude":"118.778000","geobytescapital":"Beijing ","geobytestimezone":"+08:00","geobytesnationalitysingular":"Chinese","geobytespopulation":"1273111290","geobytesnationalityplural":"Chinese","geobytesmapreference":"Asia ","geobytescurrency":"Yuan Renminbi","geobytescurrencycode":"CNY","geobytestitle":"China"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 166 at Tue Apr  7 09:13:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428411219*1000), session_id: ObjectId('5523d353551409999fda85cf'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 180.96.19.163'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 08:53:39 AM] [monitor_ssh] DISCONNECT?: Apr  7 08:53:38 ovzhost sshd[1119]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:53:39 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428411219*1000), session_id: ObjectId('5523d353551409999fda85cf'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('5523d353551409999fda85cf')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:53:40 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:54:10 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 08:54:11 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_0900.log
+db.sessions.update({_id: ObjectId('5523d2e1eea2fda1a6691a2c')}, {$set: {os: 'Linux 2.6.x', dist: '26', p0f: ['[2015/04/07 08:45:56] mod=syn|cli=180.96.19.163/36221|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:07] mod=syn|cli=180.96.19.163/36696|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:18] mod=syn|cli=180.96.19.163/42395|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:22] mod=syn|cli=180.96.19.163/42565|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:28] mod=syn|cli=180.96.19.163/42766|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:34] mod=syn|cli=180.96.19.163/43032|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:42] mod=syn|cli=180.96.19.163/43348|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:48] mod=syn|cli=180.96.19.163/43546|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:53] mod=syn|cli=180.96.19.163/43746|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:46:58] mod=syn|cli=180.96.19.163/43941|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:03] mod=syn|cli=180.96.19.163/44140|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:08] mod=syn|cli=180.96.19.163/44336|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:13] mod=syn|cli=180.96.19.163/44563|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:19] mod=syn|cli=180.96.19.163/44831|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:24] mod=syn|cli=180.96.19.163/45020|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:30] mod=syn|cli=180.96.19.163/45260|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:35] mod=syn|cli=180.96.19.163/45433|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:42] mod=syn|cli=180.96.19.163/45728|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:54] mod=syn|cli=180.96.19.163/46205|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:47:58] mod=syn|cli=180.96.19.163/46354|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:04] mod=syn|cli=180.96.19.163/46536|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:17] mod=syn|cli=180.96.19.163/47052|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:25] mod=syn|cli=180.96.19.163/47312|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:33] mod=syn|cli=180.96.19.163/47653|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:38] mod=syn|cli=180.96.19.163/47788|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:43] mod=syn|cli=180.96.19.163/47969|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:48:52] mod=syn|cli=180.96.19.163/48317|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:01] mod=syn|cli=180.96.19.163/48628|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:06] mod=syn|cli=180.96.19.163/48825|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:16] mod=syn|cli=180.96.19.163/49151|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:30] mod=syn|cli=180.96.19.163/49634|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:35] mod=syn|cli=180.96.19.163/49804|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:47] mod=syn|cli=180.96.19.163/50228|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:56] mod=syn|cli=180.96.19.163/50545|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:09] mod=syn|cli=180.96.19.163/51003|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:16] mod=syn|cli=180.96.19.163/51231|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:25] mod=syn|cli=180.96.19.163/51543|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:33] mod=syn|cli=180.96.19.163/51807|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:39] mod=syn|cli=180.96.19.163/52028|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:47] mod=syn|cli=180.96.19.163/52330|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:56] mod=syn|cli=180.96.19.163/52637|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:08] mod=syn|cli=180.96.19.163/53067|srv=128.8.37.104/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0']}})
+2015-04-07T09:03:02.706-0400 E QUERY    SyntaxError: Unexpected token ILLEGAL
+2015-04-07T09:03:02.711-0400 E QUERY    SyntaxError: Unexpected token :
+db.sessions.update({_id: ObjectId('5523d353551409999fda85cf')}, {$set: {os: 'Linux 2.6.x', dist: '25', p0f: ['[2015/04/07 08:49:27] mod=syn|cli=180.96.19.163/21211|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:31] mod=syn|cli=180.96.19.163/21321|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:36] mod=syn|cli=180.96.19.163/21502|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:43] mod=syn|cli=180.96.19.163/21726|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:47] mod=syn|cli=180.96.19.163/21884|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:50] mod=syn|cli=180.96.19.163/22017|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:49:55] mod=syn|cli=180.96.19.163/22173|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:00] mod=syn|cli=180.96.19.163/22335|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:06] mod=syn|cli=180.96.19.163/22546|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:11] mod=syn|cli=180.96.19.163/22714|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:16] mod=syn|cli=180.96.19.163/22905|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:21] mod=syn|cli=180.96.19.163/23065|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:26] mod=syn|cli=180.96.19.163/23229|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:32] mod=syn|cli=180.96.19.163/23428|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:40] mod=syn|cli=180.96.19.163/23727|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:44] mod=syn|cli=180.96.19.163/23881|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:49] mod=syn|cli=180.96.19.163/24059|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:55] mod=syn|cli=180.96.19.163/24240|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:50:58] mod=syn|cli=180.96.19.163/24377|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:04] mod=syn|cli=180.96.19.163/24580|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:09] mod=syn|cli=180.96.19.163/24758|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:13] mod=syn|cli=180.96.19.163/24906|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:18] mod=syn|cli=180.96.19.163/52516|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:22] mod=syn|cli=180.96.19.163/52652|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:26] mod=syn|cli=180.96.19.163/52799|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:31] mod=syn|cli=180.96.19.163/52975|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:36] mod=syn|cli=180.96.19.163/53163|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:43] mod=syn|cli=180.96.19.163/53386|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:48] mod=syn|cli=180.96.19.163/53560|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:51:55] mod=syn|cli=180.96.19.163/53797|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=26|params=tos:0x0a|raw_sig=4:38+26:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:00] mod=syn|cli=180.96.19.163/53973|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:07] mod=syn|cli=180.96.19.163/54231|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:15] mod=syn|cli=180.96.19.163/54495|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:21] mod=syn|cli=180.96.19.163/54692|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:26] mod=syn|cli=180.96.19.163/54844|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:32] mod=syn|cli=180.96.19.163/55055|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=24|params=tos:0x0a|raw_sig=4:40+24:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:36] mod=syn|cli=180.96.19.163/55225|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:40] mod=syn|cli=180.96.19.163/55352|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:45] mod=syn|cli=180.96.19.163/55538|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:51] mod=syn|cli=180.96.19.163/55719|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:52:56] mod=syn|cli=180.96.19.163/55894|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 08:53:01] mod=syn|cli=180.96.19.163/56067|srv=128.8.37.120/22|subj=cli|os=Linux 2.6.x|dist=25|params=tos:0x0a|raw_sig=4:39+25:0:1380:mss*4,7:mss,sok,ts,nop,ws:df,id+:0']}})
+2015-04-07T09:03:02.863-0400 E QUERY    SyntaxError: Unexpected token ILLEGAL
+2015-04-07T09:03:02.867-0400 E QUERY    SyntaxError: Unexpected token :
+[04/07/2015 09:09:30 AM] [monitor_ssh] Apr  7 09:09:30 ovzhost sshd[888]: Accepted password for root from 134.213.132.61 port 46264 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:09:30 AM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '134.213.132.61', port: '46264', line: 'Apr  7 09:09:30 ovzhost sshd[888]: Accepted password for root from 134.213.132.61 port 46264 ssh2', info: {"geobytescertainty":"66","geobytesinternet":"JP","geobytescountry":"Japan","geobytesregionlocationcode":"JPTY","geobytesregion":"Tokyo","geobytescode":"TY","geobyteslocationcode":"JPTYTOKY","geobytescity":"Tokyo","geobytescityid":"4364","geobytesfqcn":"Tokyo, TY, Japan","geobyteslatitude":"35.700001","geobyteslongitude":"139.766998","geobytescapital":"Tokyo ","geobytestimezone":"+09:00","geobytesnationalitysingular":"Japanese","geobytespopulation":"126771662","geobytesnationalityplural":"Japanese","geobytesmapreference":"Asia ","geobytescurrency":"Yen ","geobytescurrencycode":"JPY","geobytestitle":"Japan"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 167 at Tue Apr  7 09:29:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428412171*1000), session_id: ObjectId('5523d70a711a49620023182d'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 134.213.132.61'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 09:10:07 AM] [monitor_ssh] DISCONNECT?: Apr  7 09:10:07 ovzhost sshd[888]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:10:08 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428412208*1000), session_id: ObjectId('5523d70a711a49620023182d'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('5523d70a711a49620023182d')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:10:08 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:10:36 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:10:36 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:02 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:29 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:30 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:30 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:30 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:58 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 09:30:58 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:03:02 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_1000.log
+db.sessions.update({_id: ObjectId('5523d70a711a49620023182d')}, {$set: {os: 'Linux 3.1-3.10', dist: '15', p0f: ['[2015/04/07 09:08:58] mod=syn|cli=134.213.132.61/46264|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:04] mod=syn|cli=134.213.132.61/52221|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:07] mod=syn|cli=134.213.132.61/55048|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:09] mod=syn|cli=134.213.132.61/57713|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:12] mod=syn|cli=134.213.132.61/60335|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:15] mod=syn|cli=134.213.132.61/34720|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:17] mod=syn|cli=134.213.132.61/36979|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:20] mod=syn|cli=134.213.132.61/39135|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:23] mod=syn|cli=134.213.132.61/41075|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:26] mod=syn|cli=134.213.132.61/42497|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:29] mod=syn|cli=134.213.132.61/43504|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:31] mod=syn|cli=134.213.132.61/44366|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 09:09:33] mod=syn|cli=134.213.132.61/44973|srv=128.8.37.120/22|subj=cli|os=Linux 3.1-3.10|dist=15|params=none|raw_sig=4:49+15:0:1460:mss*10,6:mss,sok,ts,nop,ws:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:01 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:23 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:23 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:23 AM] [recycle] RECYCLING HONEYPOT 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:24 AM] [hpctl] STOPPING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:42 AM] [hpctl] STARTING HP 148
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:30:42 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 10:33:33 AM] [monitor_ssh] Apr  7 10:33:33 ovzhost sshd[795]: Accepted password for root from 5.13.166.191 port 52657 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:33:33 AM] [on_connect] CONNECTION MADE
+/usr/hp/on_connect: line 15: yoteam: command not found
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.104', hp: '124', ip: '5.13.166.191', port: '52657', line: 'Apr  7 10:33:33 ovzhost sshd[795]: Accepted password for root from 5.13.166.191 port 52657 ssh2', info: {"geobytescertainty":"75","geobytesinternet":"RO","geobytescountry":"Romania","geobytesregionlocationcode":"ROBU","geobytesregion":"Bucuresti","geobytescode":"BU","geobyteslocationcode":"ROBUBUCH","geobytescity":"Bucharest","geobytescityid":"4701","geobytesfqcn":"Bucharest, BU, Romania","geobyteslatitude":"44.432999","geobyteslongitude":"26.100000","geobytescapital":"Bucharest ","geobytestimezone":"+02:00","geobytesnationalitysingular":"Romanian","geobytespopulation":"22364022","geobytesnationalityplural":"Romanians","geobytesmapreference":"Europe ","geobytescurrency":"Leu","geobytescurrencycode":"ROL","geobytestitle":"Romania"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 168 at Tue Apr  7 10:53:00 2015
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428417214*1000), session_id: ObjectId('5523eabe50cc53f6580ae806'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 5.13.166.191'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_commands: line 17: yoteam: command not found
+[04/07/2015 10:33:35 AM] [monitor_commands] (ID: 5523eabe50cc53f6580ae806) w
+/usr/hp/monitor_commands: line 17: yoteam: command not found
+[04/07/2015 10:33:37 AM] [monitor_commands] (ID: 5523eabe50cc53f6580ae806) ls -a
+[04/07/2015 10:33:57 AM] [monitor_ssh] Apr  7 10:33:57 ovzhost sshd[821]: Accepted password for root from 5.13.166.191 port 52658 ssh2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:33:57 AM] [on_connect] CONNECTION MADE
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 10:34:16 AM] [monitor_ssh] DISCONNECT?: Apr  7 10:34:16 ovzhost sshd[821]: pam_unix(sshd:session): session closed for user root
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:34:16 AM] [recycle] RECYCLING HONEYPOT 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+db.logs.insert({timestamp: new Date(1428417256*1000), session_id: ObjectId('5523eabe50cc53f6580ae806'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('5523eabe50cc53f6580ae806')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:34:16 AM] [hpctl] STOPPING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:34:37 AM] [hpctl] STARTING HP 124
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 10:34:38 AM] [hpctl] DEBUG: Firewall MODE 2
+/usr/hp/common_functions: line 64: syntax error near unexpected token `}'
+/usr/hp/common_functions: line 64: `}'
+[04/07/2015 11:03:01 AM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_1100.log
+db.sessions.update({_id: ObjectId('5523eabe50cc53f6580ae806')}, {$set: {os: 'Windows 7 or 8', dist: '18', p0f: ['[2015/04/07 10:32:51] mod=syn|cli=5.13.166.191/52657|srv=128.8.37.104/22|subj=cli|os=Windows 7 or 8|dist=18|params=none|raw_sig=4:110+18:0:1440:8192,8:mss,nop,ws,nop,nop,sok:df,id+:0', '[2015/04/07 10:33:23] mod=syn|cli=5.13.166.191/52658|srv=128.8.37.104/22|subj=cli|os=Windows 7 or 8|dist=18|params=none|raw_sig=4:110+18:0:1440:8192,8:mss,nop,ws,nop,nop,sok:df,id+:0', '[2015/04/07 10:33:57] mod=syn|cli=5.13.166.191/52659|srv=128.8.37.104/22|subj=cli|os=Windows 7 or 8|dist=18|params=none|raw_sig=4:110+18:0:1440:8192,8:mss,nop,ws,nop,nop,sok:df,id+:0', '[2015/04/07 10:34:02] mod=syn|cli=5.13.166.191/52660|srv=128.8.37.104/22|subj=cli|os=Windows 7 or 8|dist=18|params=none|raw_sig=4:110+18:0:1440:8192,8:mss,nop,ws,nop,nop,sok:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/07/2015 11:22:10 AM] [monitor_ssh] Apr  7 11:22:10 ovzhost sshd[1101]: Accepted password for root from 175.126.82.235 port 57237 ssh2
+[04/07/2015 11:22:10 AM] [on_connect] CONNECTION MADE
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.104', hp: '124', ip: '175.126.82.235', port: '57237', line: 'Apr  7 11:22:10 ovzhost sshd[1101]: Accepted password for root from 175.126.82.235 port 57237 ssh2', info: {"geobytescertainty":"66","geobytesinternet":"KR","geobytescountry":"Korea, South","geobytesregionlocationcode":"KRKG","geobytesregion":"Kyonggi-do","geobytescode":"KG","geobyteslocationcode":"KRKGSEOU","geobytescity":"Seoul","geobytescityid":"16372","geobytesfqcn":"Seoul, KG, Korea, South","geobyteslatitude":"37.567001","geobyteslongitude":"127.000000","geobytescapital":"Seoul ","geobytestimezone":"+09:00","geobytesnationalitysingular":"Korean","geobytespopulation":"47904370","geobytesnationalityplural":"Koreans","geobytesmapreference":"Asia ","geobytescurrency":"Won","geobytescurrencycode":"KRW","geobytestitle":"South Korea"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 169 at Tue Apr  7 11:42:00 2015
+db.logs.insert({timestamp: new Date(1428420132*1000), session_id: ObjectId('5523f623c3bd7dcbf9395ac6'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 175.126.82.235'})
+WriteResult({ "nInserted" : 1 })
+/usr/hp/monitor_ssh: line 38: yoteam: command not found
+[04/07/2015 11:22:27 AM] [monitor_ssh] DISCONNECT?: Apr  7 11:22:27 ovzhost sshd[1101]: pam_unix(sshd:session): session closed for user root
+[04/07/2015 11:22:27 AM] [recycle] RECYCLING HONEYPOT 124
+db.logs.insert({timestamp: new Date(1428420147*1000), session_id: ObjectId('5523f623c3bd7dcbf9395ac6'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('5523f623c3bd7dcbf9395ac6')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/07/2015 11:22:27 AM] [hpctl] STOPPING HP 124
+[04/07/2015 11:22:51 AM] [hpctl] STARTING HP 124
+[04/07/2015 11:22:51 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 11:30:01 AM] [backup] CRONTAB: Recycling Honeypots
+[04/07/2015 11:30:01 AM] [recycle] RECYCLING HONEYPOT 124
+[04/07/2015 11:30:01 AM] [hpctl] STOPPING HP 124
+[04/07/2015 11:30:19 AM] [hpctl] STARTING HP 124
+[04/07/2015 11:30:20 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 11:30:20 AM] [recycle] RECYCLING HONEYPOT 148
+[04/07/2015 11:30:20 AM] [hpctl] STOPPING HP 148
+[04/07/2015 11:30:47 AM] [hpctl] STARTING HP 148
+[04/07/2015 11:30:47 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 12:03:01 PM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_1200.log
+db.sessions.update({_id: ObjectId('5523f623c3bd7dcbf9395ac6')}, {$set: {os: 'Windows 7 or 8', dist: '17', p0f: ['[2015/04/07 11:21:36] mod=syn|cli=175.126.82.235/57237|srv=128.8.37.104/22|subj=cli|os=Windows 7 or 8|dist=17|params=none|raw_sig=4:111+17:0:1460:8192,8:mss,nop,ws,nop,nop,sok:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/07/2015 12:30:02 PM] [backup] CRONTAB: Recycling Honeypots
+[04/07/2015 12:30:02 PM] [recycle] RECYCLING HONEYPOT 124
+[04/07/2015 12:30:02 PM] [hpctl] STOPPING HP 124
+[04/07/2015 12:30:23 PM] [hpctl] STARTING HP 124
+[04/07/2015 12:30:23 PM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 12:30:23 PM] [recycle] RECYCLING HONEYPOT 148
+[04/07/2015 12:30:23 PM] [hpctl] STOPPING HP 148
+[04/07/2015 12:30:43 PM] [hpctl] STARTING HP 148
+[04/07/2015 12:30:43 PM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 12:35:19 PM] [monitor_ssh] Apr  7 12:35:19 ovzhost sshd[807]: Accepted password for root from 221.203.24.42 port 8050 ssh2
+[04/07/2015 12:35:19 PM] [on_connect] CONNECTION MADE
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.104', hp: '124', ip: '221.203.24.42', port: '8050', line: 'Apr  7 12:35:19 ovzhost sshd[807]: Accepted password for root from 221.203.24.42 port 8050 ssh2', info: {"geobytescertainty":"66","geobytesinternet":"CN","geobytescountry":"China","geobytesregionlocationcode":"CNBJ","geobytesregion":"Beijing","geobytescode":"BJ","geobyteslocationcode":"CNBJBEIJ","geobytescity":"Beijing","geobytescityid":"3518","geobytesfqcn":"Beijing, BJ, China","geobyteslatitude":"39.900002","geobyteslongitude":"116.413002","geobytescapital":"Beijing ","geobytestimezone":"+08:00","geobytesnationalitysingular":"Chinese","geobytespopulation":"1273111290","geobytesnationalityplural":"Chinese","geobytesmapreference":"Asia ","geobytescurrency":"Yuan Renminbi","geobytescurrencycode":"CNY","geobytestitle":"China"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 170 at Tue Apr  7 12:55:00 2015
+db.logs.insert({timestamp: new Date(1428424521*1000), session_id: ObjectId('552407499e2faf64f419dc68'), ctid: 124, level: 'CONNECT', desc: 'Connection opened from 221.203.24.42'})
+WriteResult({ "nInserted" : 1 })
+[04/07/2015 12:35:22 PM] [monitor_ssh] DISCONNECT?: Apr  7 12:35:20 ovzhost sshd[807]: pam_unix(sshd:session): session closed for user root
+[04/07/2015 12:35:22 PM] [recycle] RECYCLING HONEYPOT 124
+db.logs.insert({timestamp: new Date(1428424522*1000), session_id: ObjectId('552407499e2faf64f419dc68'), ctid: 124, level: 'RECYCLE', desc: 'Recycling container 124'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('552407499e2faf64f419dc68')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/07/2015 12:35:22 PM] [hpctl] STOPPING HP 124
+[04/07/2015 12:35:42 PM] [hpctl] STARTING HP 124
+[04/07/2015 12:35:43 PM] [hpctl] DEBUG: Firewall MODE 2
+[04/07/2015 01:03:01 PM] [sync_p0f_logs] /usr/hp/p0f-hacs102_groupF_20150407_1300.log
+db.sessions.update({_id: ObjectId('552407499e2faf64f419dc68')}, {$set: {os: 'Linux 3.1-3.10', dist: '17', p0f: ['[2015/04/07 12:34:26] mod=syn|cli=221.203.24.42/5937|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=17|params=none|raw_sig=4:47+17:0:1456:mss*10,4:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 12:34:26] mod=syn|cli=221.203.24.42/14567|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=17|params=none|raw_sig=4:47+17:0:1456:mss*10,4:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 12:34:30] mod=syn|cli=221.203.24.42/11430|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=17|params=none|raw_sig=4:47+17:0:1456:mss*10,4:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 12:34:35] mod=syn|cli=221.203.24.42/9666|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=17|params=none|raw_sig=4:47+17:0:1456:mss*10,4:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 12:34:39] mod=syn|cli=221.203.24.42/5868|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=17|params=none|raw_sig=4:47+17:0:1456:mss*10,4:mss,sok,ts,nop,ws:df,id+:0', '[2015/04/07 12:34:45] mod=syn|cli=221.203.24.42/8050|srv=128.8.37.104/22|subj=cli|os=Linux 3.1-3.10|dist=17|params=none|raw_sig=4:47+17:0:1456:mss*10,4:mss,sok,ts,nop,ws:df,id+:0']}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/07/2015 01:13:50 PM] [monitor_ssh] Apr  7 13:13:50 ovzhost sshd[1354]: Accepted password for root from 221.203.24.42 port 14970 ssh2
+[04/07/2015 01:13:50 PM] [on_connect] CONNECTION MADE
+db.sessions.insert({connect: new Date(), hp_ip: '128.8.37.120', hp: '148', ip: '221.203.24.42', port: '14970', line: 'Apr  7 13:13:50 ovzhost sshd[1354]: Accepted password for root from 221.203.24.42 port 14970 ssh2', info: {"geobytescertainty":"66","geobytesinternet":"CN","geobytescountry":"China","geobytesregionlocationcode":"CNBJ","geobytesregion":"Beijing","geobytescode":"BJ","geobyteslocationcode":"CNBJBEIJ","geobytescity":"Beijing","geobytescityid":"3518","geobytesfqcn":"Beijing, BJ, China","geobyteslatitude":"39.900002","geobyteslongitude":"116.413002","geobytescapital":"Beijing ","geobytestimezone":"+08:00","geobytesnationalitysingular":"Chinese","geobytespopulation":"1273111290","geobytesnationalityplural":"Chinese","geobytesmapreference":"Asia ","geobytescurrency":"Yuan Renminbi","geobytescurrencycode":"CNY","geobytestitle":"China"}, password: 'password'})
+WriteResult({ "nInserted" : 1 })
+warning: commands will be executed using /bin/sh
+job 171 at Tue Apr  7 13:33:00 2015
+db.logs.insert({timestamp: new Date(1428426831*1000), session_id: ObjectId('5524104fbb4b479a7e36ede5'), ctid: 148, level: 'CONNECT', desc: 'Connection opened from 221.203.24.42'})
+WriteResult({ "nInserted" : 1 })
+[04/07/2015 01:13:52 PM] [monitor_ssh] DISCONNECT?: Apr  7 13:13:51 ovzhost sshd[1354]: pam_unix(sshd:session): session closed for user root
+[04/07/2015 01:13:52 PM] [recycle] RECYCLING HONEYPOT 148
+db.logs.insert({timestamp: new Date(1428426832*1000), session_id: ObjectId('5524104fbb4b479a7e36ede5'), ctid: 148, level: 'RECYCLE', desc: 'Recycling container 148'})
+WriteResult({ "nInserted" : 1 })
+db.sessions.update({_id: ObjectId('5524104fbb4b479a7e36ede5')}, {$set: {disconnect: new Date()}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+[04/07/2015 01:13:52 PM] [hpctl] STOPPING HP 148
+[04/07/2015 01:14:12 PM] [hpctl] STARTING HP 148
+[04/07/2015 01:14:12 PM] [hpctl] DEBUG: Firewall MODE 2
+                                                                                                                                                                          [04/08/15 09:18:22 AM] [hpctl] STARTING HP 124
+nohup: ignoring input
+nohup: ignoring input
+tail: tail: cannot open '/vz/private/124/root/.bash_history' for readingcannot open '/vz/private/124/var/log/auth.log' for reading: No such file or directory
+: No such file or directory
+[04/08/15 09:18:22 AM] [hpctl] STARTING HP 148
+Exited loop - error?
+nohup: ignoring input
+nohup: ignoring input
+tail: cannot open '/vz/private/124/usr/hp/log_commands' for reading: No such file or directory
+[04/08/15 09:18:22 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/08/2015 09:20:38 AM] [hpctl] STARTING HP 124
+nohup: ignoring input
+nohup: ignoring input
+tail: cannot open ‘/vz/private/124/root/.bash_history’ for reading: No such file or directory
+tail: cannot open ‘/vz/private/124/usr/hp/log_commands’ for reading: No such file or directory
+Exited loop - error?
+tail: cannot open ‘/vz/private/124/var/log/auth.log’ for reading: No such file or directory
+Exited loop - error?
+[04/08/2015 09:20:38 AM] [hpctl] STARTING HP 148
+nohup: ignoring input
+nohup: ignoring input
+[04/08/2015 09:20:38 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/08/2015 09:21:05 AM] [recycle] RECYCLING HONEYPOT 124
+[04/08/2015 09:21:05 AM] [hpctl] STOPPING HP 124
+[04/08/2015 09:21:06 AM] [hpctl] STARTING HP 124
+nohup: ignoring input
+nohup: ignoring input
+tail: cannot open ‘/vz/private/124/root/.bash_history’ for reading: No such file or directory
+tail: cannot open ‘/vz/private/124/var/log/auth.log’ for reading: No such file or directory
+Exited loop - error?
+tail: cannot open ‘/vz/private/124/usr/hp/log_commands’ for reading: No such file or directory
+[04/08/2015 09:21:06 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/08/2015 09:21:29 AM] [recycle] RECYCLING HONEYPOT 148
+[04/08/2015 09:21:29 AM] [hpctl] STOPPING HP 148
+Exited loop - error?
+[04/08/2015 09:21:29 AM] [hpctl] STARTING HP 148
+nohup: ignoring input
+nohup: ignoring input
+[04/08/2015 09:21:29 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/08/15 09:23:04 AM] [hpctl] STARTING HP 124
+nohup: ignoring input
+nohup: ignoring input
+tail: cannot open '/vz/private/124/usr/hp/log_commands' for reading: No such file or directory
+tail: cannot open '/vz/private/124/root/.bash_history' for reading: No such file or directory
+tail: cannot open '/vz/private/124/var/log/auth.log' for reading: No such file or directory
+[04/08/15 09:23:04 AM] [hpctl] STARTING HP 148
+nohup: ignoring input
+nohup: ignoring input
+Exited loop - error?
+[04/08/15 09:23:04 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/08/2015 09:23:14 AM] [recycle] RECYCLING HONEYPOT 124
+[04/08/2015 09:23:15 AM] [hpctl] STOPPING HP 124
+[04/08/2015 09:23:31 AM] [hpctl] STARTING HP 124
+nohup: ignoring input
+nohup: ignoring input
+[04/08/2015 09:23:31 AM] [hpctl] DEBUG: Firewall MODE 2
+[04/08/2015 09:23:39 AM] [recycle] RECYCLING HONEYPOT 148
+[04/08/2015 09:23:39 AM] [hpctl] STOPPING HP 148
+[04/08/2015 09:23:58 AM] [hpctl] STARTING HP 148
+nohup: ignoring input
+nohup: ignoring input
+[04/08/2015 09:23:59 AM] [hpctl] DEBUG: Firewall MODE 2
