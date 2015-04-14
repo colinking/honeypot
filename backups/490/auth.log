@@ -1,0 +1,21 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr 10 18:17:49 ovzhost sshd[777]: Connection closed by 127.0.0.1 [preauth]
+Apr 10 18:20:01 ovzhost CRON[786]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 10 18:20:01 ovzhost CRON[786]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr 10 18:20:01 ovzhost CRON[786]: pam_unix(cron:session): session closed for user smmsp
+Apr 10 18:20:16 ovzhost sshd[814]: Invalid user usr2 from 221.146.74.146
+Apr 10 18:20:16 ovzhost sshd[814]: input_userauth_request: invalid user usr2 [preauth]
+Apr 10 18:20:16 ovzhost sshd[814]: pam_unix(sshd:auth): check pass; user unknown
+Apr 10 18:20:16 ovzhost sshd[814]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr 10 18:20:17 ovzhost sshd[814]: Failed password for invalid user usr2 from 221.146.74.146 port 23753 ssh2
+Apr 10 18:20:18 ovzhost sshd[814]: Connection closed by 221.146.74.146 [preauth]
+Apr 10 18:22:17 ovzhost sshd[826]: Connection closed by 128.8.37.120 [preauth]
+Apr 10 18:22:49 ovzhost sshd[831]: Connection closed by 127.0.0.1 [preauth]
+Apr 10 18:24:49 ovzhost sshd[839]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.215.179.202  user=root
+Apr 10 18:24:51 ovzhost sshd[839]: Failed password for root from 58.215.179.202 port 38875 ssh2
+Apr 10 18:24:51 ovzhost sshd[839]: Accepted password for root from 58.215.179.202 port 38875 ssh2
+Apr 10 18:24:51 ovzhost sshd[839]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr 10 18:24:51 ovzhost sshd[839]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 10 18:25:04 ovzhost sshd[839]: pam_unix(sshd:session): session closed for user root

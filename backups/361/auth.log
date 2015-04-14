@@ -1,0 +1,18 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 09:24:27 ovzhost sshd[783]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 09:24:58 ovzhost sshd[792]: Invalid user jira from 221.146.74.146
+Apr  8 09:24:58 ovzhost sshd[792]: input_userauth_request: invalid user jira [preauth]
+Apr  8 09:24:58 ovzhost sshd[792]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 09:24:58 ovzhost sshd[792]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 09:25:00 ovzhost sshd[792]: Failed password for invalid user jira from 221.146.74.146 port 62844 ssh2
+Apr  8 09:25:00 ovzhost sshd[792]: Connection closed by 221.146.74.146 [preauth]
+Apr  8 09:28:37 ovzhost sshd[809]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 09:29:27 ovzhost sshd[814]: Connection closed by 127.0.0.1 [preauth]

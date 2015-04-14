@@ -1,0 +1,26 @@
+Apr  2 14:31:44 ovzhost sshd[780]: Connection closed by 127.0.0.1 [preauth]
+Apr  2 14:35:40 ovzhost sshd[811]: Connection closed by 128.8.37.120 [preauth]
+Apr  2 14:36:44 ovzhost sshd[820]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 16:33:56 ovzhost sshd[789]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 16:35:43 ovzhost sshd[799]: Connection closed by 128.8.37.120 [preauth]
+Apr  8 16:38:56 ovzhost sshd[812]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 16:39:01 ovzhost CRON[815]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 16:39:01 ovzhost CRON[815]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 16:39:01 ovzhost CRON[815]: pam_unix(cron:session): session closed for user root
+Apr  8 16:40:01 ovzhost CRON[830]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 16:40:01 ovzhost CRON[830]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  8 16:40:01 ovzhost CRON[830]: pam_unix(cron:session): session closed for user smmsp
+Apr  8 16:43:56 ovzhost sshd[872]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 16:43:57 ovzhost sshd[869]: Invalid user moni from 221.146.74.146
+Apr  8 16:43:57 ovzhost sshd[869]: input_userauth_request: invalid user moni [preauth]
+Apr  8 16:43:57 ovzhost sshd[869]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 16:43:57 ovzhost sshd[869]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 16:43:59 ovzhost sshd[869]: Failed password for invalid user moni from 221.146.74.146 port 23389 ssh2
+Apr  8 16:43:59 ovzhost sshd[869]: Connection closed by 221.146.74.146 [preauth]
+Apr  8 16:45:43 ovzhost sshd[882]: Connection closed by 128.8.37.120 [preauth]
+Apr  8 16:48:56 ovzhost sshd[895]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 16:52:52 ovzhost sshd[911]: Accepted password for root from 213.157.202.222 port 15614 ssh2
+Apr  8 16:52:52 ovzhost sshd[911]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  8 16:52:52 ovzhost sshd[911]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 16:52:52 ovzhost sshd[911]: Received disconnect from 213.157.202.222: 11: disconnected by user
+Apr  8 16:52:52 ovzhost sshd[911]: pam_unix(sshd:session): session closed for user root

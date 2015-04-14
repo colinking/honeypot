@@ -1,0 +1,78 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 10:30:42 ovzhost sshd[772]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 10:35:29 ovzhost sshd[801]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 10:35:42 ovzhost sshd[804]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 10:39:01 ovzhost CRON[820]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 10:39:01 ovzhost CRON[820]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 10:39:01 ovzhost CRON[820]: pam_unix(cron:session): session closed for user root
+Apr  8 10:40:01 ovzhost CRON[833]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 10:40:01 ovzhost CRON[833]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  8 10:40:01 ovzhost CRON[833]: pam_unix(cron:session): session closed for user smmsp
+Apr  8 10:40:42 ovzhost sshd[860]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 10:45:29 ovzhost sshd[883]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 10:45:42 ovzhost sshd[886]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 10:50:42 ovzhost sshd[905]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 10:51:07 ovzhost sshd[909]: Invalid user kubota from 221.146.74.146
+Apr  8 10:51:07 ovzhost sshd[909]: input_userauth_request: invalid user kubota [preauth]
+Apr  8 10:51:07 ovzhost sshd[909]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 10:51:07 ovzhost sshd[909]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 10:51:08 ovzhost sshd[909]: Failed password for invalid user kubota from 221.146.74.146 port 26099 ssh2
+Apr  8 10:51:08 ovzhost sshd[909]: Connection closed by 221.146.74.146 [preauth]
+Apr  8 10:55:29 ovzhost sshd[930]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 10:55:42 ovzhost sshd[933]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 11:00:01 ovzhost CRON[951]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 11:00:01 ovzhost CRON[951]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  8 11:00:01 ovzhost CRON[951]: pam_unix(cron:session): session closed for user smmsp
+Apr  8 11:00:42 ovzhost sshd[978]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 11:05:29 ovzhost sshd[1001]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 11:05:42 ovzhost sshd[1004]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 11:09:01 ovzhost CRON[1020]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 11:09:01 ovzhost CRON[1021]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 11:09:01 ovzhost CRON[1021]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 11:09:01 ovzhost CRON[1020]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 11:09:01 ovzhost CRON[1020]: pam_unix(cron:session): session closed for user root
+Apr  8 11:09:01 ovzhost CRON[1021]: pam_unix(cron:session): session closed for user root
+Apr  8 11:10:42 ovzhost sshd[1038]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 11:12:31 ovzhost sshd[1050]: Invalid user kumar from 221.146.74.146
+Apr  8 11:12:31 ovzhost sshd[1050]: input_userauth_request: invalid user kumar [preauth]
+Apr  8 11:12:31 ovzhost sshd[1050]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 11:12:31 ovzhost sshd[1050]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 11:12:33 ovzhost sshd[1050]: Failed password for invalid user kumar from 221.146.74.146 port 59365 ssh2
+Apr  8 11:12:33 ovzhost sshd[1050]: Connection closed by 221.146.74.146 [preauth]
+Apr  8 11:15:29 ovzhost sshd[1063]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 11:15:42 ovzhost sshd[1066]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 11:16:34 ovzhost sshd[1075]: reverse mapping checking getaddrinfo for abs-static-166.147.251.27.aircel.co.in [27.251.147.166] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  8 11:16:34 ovzhost sshd[1075]: Invalid user zhangyan from 27.251.147.166
+Apr  8 11:16:34 ovzhost sshd[1075]: input_userauth_request: invalid user zhangyan [preauth]
+Apr  8 11:16:35 ovzhost sshd[1075]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 11:16:35 ovzhost sshd[1075]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=27.251.147.166 
+Apr  8 11:16:37 ovzhost sshd[1075]: Failed password for invalid user zhangyan from 27.251.147.166 port 52727 ssh2
+Apr  8 11:16:37 ovzhost sshd[1075]: Received disconnect from 27.251.147.166: 11: Bye Bye [preauth]
+Apr  8 11:16:39 ovzhost sshd[1077]: reverse mapping checking getaddrinfo for abs-static-166.147.251.27.aircel.co.in [27.251.147.166] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  8 11:16:39 ovzhost sshd[1077]: Invalid user dff from 27.251.147.166
+Apr  8 11:16:39 ovzhost sshd[1077]: input_userauth_request: invalid user dff [preauth]
+Apr  8 11:16:40 ovzhost sshd[1077]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 11:16:40 ovzhost sshd[1077]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=27.251.147.166 
+Apr  8 11:16:42 ovzhost sshd[1077]: Failed password for invalid user dff from 27.251.147.166 port 53623 ssh2
+Apr  8 11:16:42 ovzhost sshd[1077]: Received disconnect from 27.251.147.166: 11: Bye Bye [preauth]
+Apr  8 11:16:44 ovzhost sshd[1079]: reverse mapping checking getaddrinfo for abs-static-166.147.251.27.aircel.co.in [27.251.147.166] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  8 11:16:45 ovzhost sshd[1079]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=27.251.147.166  user=root
+Apr  8 11:16:46 ovzhost sshd[1079]: Failed password for root from 27.251.147.166 port 54468 ssh2
+Apr  8 11:16:47 ovzhost sshd[1079]: Received disconnect from 27.251.147.166: 11: Bye Bye [preauth]
+Apr  8 11:16:49 ovzhost sshd[1081]: reverse mapping checking getaddrinfo for abs-static-166.147.251.27.aircel.co.in [27.251.147.166] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  8 11:16:49 ovzhost sshd[1081]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=27.251.147.166  user=root
+Apr  8 11:16:51 ovzhost sshd[1081]: Failed password for root from 27.251.147.166 port 55235 ssh2
+Apr  8 11:16:51 ovzhost sshd[1081]: Received disconnect from 27.251.147.166: 11: Bye Bye [preauth]
+Apr  8 11:16:53 ovzhost sshd[1083]: reverse mapping checking getaddrinfo for abs-static-166.147.251.27.aircel.co.in [27.251.147.166] failed - POSSIBLE BREAK-IN ATTEMPT!
+Apr  8 11:16:54 ovzhost sshd[1083]: Accepted password for root from 27.251.147.166 port 56064 ssh2
+Apr  8 11:16:54 ovzhost sshd[1083]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  8 11:16:54 ovzhost sshd[1083]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 11:16:55 ovzhost sshd[1083]: pam_unix(sshd:session): session closed for user root

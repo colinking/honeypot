@@ -1,0 +1,22 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr 10 11:31:22 ovzhost sshd[785]: Invalid user user from 221.146.74.146
+Apr 10 11:31:22 ovzhost sshd[785]: input_userauth_request: invalid user user [preauth]
+Apr 10 11:31:22 ovzhost sshd[785]: pam_unix(sshd:auth): check pass; user unknown
+Apr 10 11:31:22 ovzhost sshd[785]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr 10 11:31:24 ovzhost sshd[785]: Failed password for invalid user user from 221.146.74.146 port 57362 ssh2
+Apr 10 11:31:25 ovzhost sshd[785]: pam_unix(sshd:auth): check pass; user unknown
+Apr 10 11:31:27 ovzhost sshd[785]: Failed password for invalid user user from 221.146.74.146 port 57362 ssh2
+Apr 10 11:31:27 ovzhost sshd[785]: pam_unix(sshd:auth): check pass; user unknown
+Apr 10 11:31:28 ovzhost sshd[785]: Failed password for invalid user user from 221.146.74.146 port 57362 ssh2
+Apr 10 11:31:28 ovzhost sshd[785]: Connection closed by 221.146.74.146 [preauth]
+Apr 10 11:31:28 ovzhost sshd[785]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr 10 11:33:00 ovzhost sshd[798]: Connection closed by 127.0.0.1 [preauth]
+Apr 10 11:33:30 ovzhost sshd[801]: Connection closed by 128.8.37.104 [preauth]

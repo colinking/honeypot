@@ -1,0 +1,296 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:06:12 ovzhost sshd[785]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:08:28 ovzhost sshd[796]: Connection closed by 128.8.37.104 [preauth]
+Apr 14 04:08:37 ovzhost sshd[799]: Did not receive identification string from 128.61.240.66
+Apr 14 04:08:37 ovzhost sshd[798]: Did not receive identification string from 140.239.235.139
+Apr 14 04:09:01 ovzhost CRON[804]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 14 04:09:01 ovzhost CRON[803]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 14 04:09:01 ovzhost CRON[803]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 14 04:09:01 ovzhost CRON[804]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 14 04:09:01 ovzhost CRON[803]: pam_unix(cron:session): session closed for user root
+Apr 14 04:09:02 ovzhost CRON[804]: pam_unix(cron:session): session closed for user root
+Apr 14 04:11:12 ovzhost sshd[826]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:16:12 ovzhost sshd[846]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:18:28 ovzhost sshd[857]: Connection closed by 128.8.37.104 [preauth]
+Apr 14 04:20:01 ovzhost CRON[867]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 14 04:20:01 ovzhost CRON[867]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr 14 04:20:01 ovzhost CRON[867]: pam_unix(cron:session): session closed for user smmsp
+Apr 14 04:21:12 ovzhost sshd[897]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:26:12 ovzhost sshd[917]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:28:21 ovzhost sshd[927]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:23 ovzhost sshd[927]: Failed password for root from 43.255.190.122 port 36668 ssh2
+Apr 14 04:28:28 ovzhost sshd[927]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 36668 ssh2]
+Apr 14 04:28:28 ovzhost sshd[927]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:28:28 ovzhost sshd[927]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:28 ovzhost sshd[932]: Connection closed by 128.8.37.104 [preauth]
+Apr 14 04:28:29 ovzhost sshd[929]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:31 ovzhost sshd[929]: Failed password for root from 43.255.190.122 port 56302 ssh2
+Apr 14 04:28:36 ovzhost sshd[929]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 56302 ssh2]
+Apr 14 04:28:36 ovzhost sshd[929]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:28:36 ovzhost sshd[929]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:37 ovzhost sshd[934]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:39 ovzhost sshd[934]: Failed password for root from 43.255.190.122 port 47590 ssh2
+Apr 14 04:28:44 ovzhost sshd[934]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 47590 ssh2]
+Apr 14 04:28:44 ovzhost sshd[934]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:28:44 ovzhost sshd[934]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:45 ovzhost sshd[937]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:47 ovzhost sshd[937]: Failed password for root from 43.255.190.122 port 38504 ssh2
+Apr 14 04:28:52 ovzhost sshd[937]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 38504 ssh2]
+Apr 14 04:28:52 ovzhost sshd[937]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:28:52 ovzhost sshd[937]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:54 ovzhost sshd[939]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:28:56 ovzhost sshd[939]: Failed password for root from 43.255.190.122 port 57081 ssh2
+Apr 14 04:29:02 ovzhost sshd[939]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 57081 ssh2]
+Apr 14 04:29:02 ovzhost sshd[939]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:02 ovzhost sshd[939]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:03 ovzhost sshd[943]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:05 ovzhost sshd[943]: Failed password for root from 43.255.190.122 port 50931 ssh2
+Apr 14 04:29:09 ovzhost sshd[943]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 50931 ssh2]
+Apr 14 04:29:09 ovzhost sshd[943]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:09 ovzhost sshd[943]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:10 ovzhost sshd[947]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:12 ovzhost sshd[947]: Failed password for root from 43.255.190.122 port 39428 ssh2
+Apr 14 04:29:17 ovzhost sshd[947]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 39428 ssh2]
+Apr 14 04:29:18 ovzhost sshd[947]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:18 ovzhost sshd[947]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:19 ovzhost sshd[949]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:21 ovzhost sshd[949]: Failed password for root from 43.255.190.122 port 58449 ssh2
+Apr 14 04:29:26 ovzhost sshd[949]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 58449 ssh2]
+Apr 14 04:29:26 ovzhost sshd[949]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:26 ovzhost sshd[949]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:28 ovzhost sshd[951]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:30 ovzhost sshd[951]: Failed password for root from 43.255.190.122 port 49849 ssh2
+Apr 14 04:29:34 ovzhost sshd[951]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 49849 ssh2]
+Apr 14 04:29:34 ovzhost sshd[951]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:34 ovzhost sshd[951]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:35 ovzhost sshd[955]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:38 ovzhost sshd[955]: Failed password for root from 43.255.190.122 port 41388 ssh2
+Apr 14 04:29:41 ovzhost sshd[955]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 41388 ssh2]
+Apr 14 04:29:41 ovzhost sshd[955]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:41 ovzhost sshd[955]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:45 ovzhost sshd[957]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:47 ovzhost sshd[957]: Failed password for root from 43.255.190.122 port 57347 ssh2
+Apr 14 04:29:51 ovzhost sshd[957]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 57347 ssh2]
+Apr 14 04:29:51 ovzhost sshd[957]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:51 ovzhost sshd[957]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:52 ovzhost sshd[959]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:53 ovzhost sshd[959]: Failed password for root from 43.255.190.122 port 51108 ssh2
+Apr 14 04:29:57 ovzhost sshd[959]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 51108 ssh2]
+Apr 14 04:29:58 ovzhost sshd[959]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:29:58 ovzhost sshd[959]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:29:58 ovzhost sshd[962]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:01 ovzhost sshd[962]: Failed password for root from 43.255.190.122 port 38554 ssh2
+Apr 14 04:30:05 ovzhost sshd[962]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 38554 ssh2]
+Apr 14 04:30:05 ovzhost sshd[962]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:05 ovzhost sshd[962]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:09 ovzhost sshd[964]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:12 ovzhost sshd[964]: Failed password for root from 43.255.190.122 port 55559 ssh2
+Apr 14 04:30:16 ovzhost sshd[964]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 55559 ssh2]
+Apr 14 04:30:16 ovzhost sshd[964]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:16 ovzhost sshd[964]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:17 ovzhost sshd[966]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:19 ovzhost sshd[966]: Failed password for root from 43.255.190.122 port 54216 ssh2
+Apr 14 04:30:24 ovzhost sshd[966]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 54216 ssh2]
+Apr 14 04:30:24 ovzhost sshd[966]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:24 ovzhost sshd[966]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:25 ovzhost sshd[968]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:27 ovzhost sshd[968]: Failed password for root from 43.255.190.122 port 44553 ssh2
+Apr 14 04:30:32 ovzhost sshd[968]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 44553 ssh2]
+Apr 14 04:30:33 ovzhost sshd[968]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:33 ovzhost sshd[968]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:34 ovzhost sshd[970]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:36 ovzhost sshd[970]: Failed password for root from 43.255.190.122 port 37717 ssh2
+Apr 14 04:30:40 ovzhost sshd[970]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 37717 ssh2]
+Apr 14 04:30:40 ovzhost sshd[970]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:40 ovzhost sshd[970]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:41 ovzhost sshd[972]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:43 ovzhost sshd[972]: Failed password for root from 43.255.190.122 port 55439 ssh2
+Apr 14 04:30:48 ovzhost sshd[972]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 55439 ssh2]
+Apr 14 04:30:48 ovzhost sshd[972]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:48 ovzhost sshd[972]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:48 ovzhost sshd[974]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:50 ovzhost sshd[974]: Failed password for root from 43.255.190.122 port 47252 ssh2
+Apr 14 04:30:54 ovzhost sshd[974]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 47252 ssh2]
+Apr 14 04:30:55 ovzhost sshd[974]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:30:55 ovzhost sshd[974]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:30:59 ovzhost sshd[977]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:01 ovzhost sshd[977]: Failed password for root from 43.255.190.122 port 35997 ssh2
+Apr 14 04:31:05 ovzhost sshd[977]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 35997 ssh2]
+Apr 14 04:31:05 ovzhost sshd[977]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:05 ovzhost sshd[977]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:06 ovzhost sshd[979]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:08 ovzhost sshd[979]: Failed password for root from 43.255.190.122 port 33780 ssh2
+Apr 14 04:31:12 ovzhost sshd[979]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 33780 ssh2]
+Apr 14 04:31:12 ovzhost sshd[979]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:12 ovzhost sshd[979]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:12 ovzhost sshd[986]: Connection closed by 127.0.0.1 [preauth]
+Apr 14 04:31:12 ovzhost sshd[981]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:14 ovzhost sshd[981]: Failed password for root from 43.255.190.122 port 50860 ssh2
+Apr 14 04:31:18 ovzhost sshd[981]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 50860 ssh2]
+Apr 14 04:31:18 ovzhost sshd[981]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:18 ovzhost sshd[981]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:19 ovzhost sshd[988]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:21 ovzhost sshd[988]: Failed password for root from 43.255.190.122 port 38380 ssh2
+Apr 14 04:31:25 ovzhost sshd[988]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 38380 ssh2]
+Apr 14 04:31:25 ovzhost sshd[988]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:25 ovzhost sshd[988]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:25 ovzhost sshd[990]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:27 ovzhost sshd[990]: Failed password for root from 43.255.190.122 port 54941 ssh2
+Apr 14 04:31:32 ovzhost sshd[990]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 54941 ssh2]
+Apr 14 04:31:32 ovzhost sshd[990]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:32 ovzhost sshd[990]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:33 ovzhost sshd[992]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:35 ovzhost sshd[992]: Failed password for root from 43.255.190.122 port 46162 ssh2
+Apr 14 04:31:39 ovzhost sshd[992]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 46162 ssh2]
+Apr 14 04:31:39 ovzhost sshd[992]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:39 ovzhost sshd[992]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:39 ovzhost sshd[994]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:42 ovzhost sshd[994]: Failed password for root from 43.255.190.122 port 35204 ssh2
+Apr 14 04:31:46 ovzhost sshd[994]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 35204 ssh2]
+Apr 14 04:31:46 ovzhost sshd[994]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:46 ovzhost sshd[994]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:50 ovzhost sshd[996]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:52 ovzhost sshd[996]: Failed password for root from 43.255.190.122 port 54664 ssh2
+Apr 14 04:31:58 ovzhost sshd[996]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 54664 ssh2]
+Apr 14 04:31:58 ovzhost sshd[996]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:31:58 ovzhost sshd[996]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:31:59 ovzhost sshd[1000]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:00 ovzhost sshd[1000]: Failed password for root from 43.255.190.122 port 55201 ssh2
+Apr 14 04:32:04 ovzhost sshd[1000]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 55201 ssh2]
+Apr 14 04:32:04 ovzhost sshd[1000]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:04 ovzhost sshd[1000]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:04 ovzhost sshd[1002]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:06 ovzhost sshd[1002]: Failed password for root from 43.255.190.122 port 39567 ssh2
+Apr 14 04:32:10 ovzhost sshd[1002]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 39567 ssh2]
+Apr 14 04:32:10 ovzhost sshd[1002]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:10 ovzhost sshd[1002]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:12 ovzhost sshd[1004]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:14 ovzhost sshd[1004]: Failed password for root from 43.255.190.122 port 53441 ssh2
+Apr 14 04:32:18 ovzhost sshd[1004]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 53441 ssh2]
+Apr 14 04:32:19 ovzhost sshd[1004]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:19 ovzhost sshd[1004]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:19 ovzhost sshd[1006]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:21 ovzhost sshd[1006]: Failed password for root from 43.255.190.122 port 45583 ssh2
+Apr 14 04:32:25 ovzhost sshd[1006]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 45583 ssh2]
+Apr 14 04:32:25 ovzhost sshd[1006]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:25 ovzhost sshd[1006]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:26 ovzhost sshd[1010]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:28 ovzhost sshd[1010]: Failed password for root from 43.255.190.122 port 35289 ssh2
+Apr 14 04:32:32 ovzhost sshd[1010]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 35289 ssh2]
+Apr 14 04:32:32 ovzhost sshd[1010]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:32 ovzhost sshd[1010]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:32 ovzhost sshd[1012]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:34 ovzhost sshd[1012]: Failed password for root from 43.255.190.122 port 51589 ssh2
+Apr 14 04:32:37 ovzhost sshd[1012]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 51589 ssh2]
+Apr 14 04:32:38 ovzhost sshd[1012]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:38 ovzhost sshd[1012]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:39 ovzhost sshd[1014]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:41 ovzhost sshd[1014]: Failed password for root from 43.255.190.122 port 40043 ssh2
+Apr 14 04:32:44 ovzhost sshd[1014]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 40043 ssh2]
+Apr 14 04:32:44 ovzhost sshd[1014]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:44 ovzhost sshd[1014]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:45 ovzhost sshd[1016]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:47 ovzhost sshd[1016]: Failed password for root from 43.255.190.122 port 57390 ssh2
+Apr 14 04:32:51 ovzhost sshd[1016]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 57390 ssh2]
+Apr 14 04:32:51 ovzhost sshd[1016]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:51 ovzhost sshd[1016]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:51 ovzhost sshd[1018]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:53 ovzhost sshd[1018]: Failed password for root from 43.255.190.122 port 47667 ssh2
+Apr 14 04:32:57 ovzhost sshd[1018]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 47667 ssh2]
+Apr 14 04:32:57 ovzhost sshd[1018]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:32:57 ovzhost sshd[1018]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:32:58 ovzhost sshd[1021]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:00 ovzhost sshd[1021]: Failed password for root from 43.255.190.122 port 38008 ssh2
+Apr 14 04:33:04 ovzhost sshd[1021]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 38008 ssh2]
+Apr 14 04:33:04 ovzhost sshd[1021]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:04 ovzhost sshd[1021]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:05 ovzhost sshd[1023]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:06 ovzhost sshd[1023]: Failed password for root from 43.255.190.122 port 56654 ssh2
+Apr 14 04:33:10 ovzhost sshd[1023]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 56654 ssh2]
+Apr 14 04:33:10 ovzhost sshd[1023]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:10 ovzhost sshd[1023]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:11 ovzhost sshd[1025]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:13 ovzhost sshd[1025]: Failed password for root from 43.255.190.122 port 44979 ssh2
+Apr 14 04:33:17 ovzhost sshd[1025]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 44979 ssh2]
+Apr 14 04:33:17 ovzhost sshd[1025]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:17 ovzhost sshd[1025]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:18 ovzhost sshd[1027]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:20 ovzhost sshd[1027]: Failed password for root from 43.255.190.122 port 36240 ssh2
+Apr 14 04:33:24 ovzhost sshd[1027]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 36240 ssh2]
+Apr 14 04:33:24 ovzhost sshd[1027]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:24 ovzhost sshd[1027]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:27 ovzhost sshd[1029]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:29 ovzhost sshd[1029]: Failed password for root from 43.255.190.122 port 55313 ssh2
+Apr 14 04:33:32 ovzhost sshd[1029]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 55313 ssh2]
+Apr 14 04:33:32 ovzhost sshd[1029]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:32 ovzhost sshd[1029]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:33 ovzhost sshd[1031]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:36 ovzhost sshd[1031]: Failed password for root from 43.255.190.122 port 48663 ssh2
+Apr 14 04:33:40 ovzhost sshd[1031]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 48663 ssh2]
+Apr 14 04:33:40 ovzhost sshd[1031]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:40 ovzhost sshd[1031]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:40 ovzhost sshd[1034]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:42 ovzhost sshd[1034]: Failed password for root from 43.255.190.122 port 39468 ssh2
+Apr 14 04:33:47 ovzhost sshd[1034]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 39468 ssh2]
+Apr 14 04:33:47 ovzhost sshd[1034]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:47 ovzhost sshd[1034]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:47 ovzhost sshd[1036]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:49 ovzhost sshd[1036]: Failed password for root from 43.255.190.122 port 59312 ssh2
+Apr 14 04:33:53 ovzhost sshd[1036]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 59312 ssh2]
+Apr 14 04:33:53 ovzhost sshd[1036]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:33:53 ovzhost sshd[1036]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:54 ovzhost sshd[1038]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:33:56 ovzhost sshd[1038]: Failed password for root from 43.255.190.122 port 50283 ssh2
+Apr 14 04:34:01 ovzhost sshd[1038]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 50283 ssh2]
+Apr 14 04:34:01 ovzhost sshd[1038]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:01 ovzhost sshd[1038]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:02 ovzhost sshd[1040]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:03 ovzhost sshd[1040]: Failed password for root from 43.255.190.122 port 44778 ssh2
+Apr 14 04:34:08 ovzhost sshd[1040]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 44778 ssh2]
+Apr 14 04:34:08 ovzhost sshd[1040]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:08 ovzhost sshd[1040]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:08 ovzhost sshd[1046]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:11 ovzhost sshd[1046]: Failed password for root from 43.255.190.122 port 34945 ssh2
+Apr 14 04:34:14 ovzhost sshd[1046]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 34945 ssh2]
+Apr 14 04:34:14 ovzhost sshd[1046]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:14 ovzhost sshd[1046]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:15 ovzhost sshd[1048]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:17 ovzhost sshd[1048]: Failed password for root from 43.255.190.122 port 53783 ssh2
+Apr 14 04:34:22 ovzhost sshd[1048]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 53783 ssh2]
+Apr 14 04:34:22 ovzhost sshd[1048]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:22 ovzhost sshd[1048]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:23 ovzhost sshd[1050]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:25 ovzhost sshd[1050]: Failed password for root from 43.255.190.122 port 47213 ssh2
+Apr 14 04:34:29 ovzhost sshd[1050]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 47213 ssh2]
+Apr 14 04:34:29 ovzhost sshd[1050]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:29 ovzhost sshd[1050]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:29 ovzhost sshd[1054]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:31 ovzhost sshd[1054]: Failed password for root from 43.255.190.122 port 37420 ssh2
+Apr 14 04:34:36 ovzhost sshd[1054]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 37420 ssh2]
+Apr 14 04:34:36 ovzhost sshd[1054]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:36 ovzhost sshd[1054]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:36 ovzhost sshd[1056]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:38 ovzhost sshd[1056]: Failed password for root from 43.255.190.122 port 56292 ssh2
+Apr 14 04:34:43 ovzhost sshd[1056]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 56292 ssh2]
+Apr 14 04:34:44 ovzhost sshd[1056]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:44 ovzhost sshd[1056]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:45 ovzhost sshd[1058]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:47 ovzhost sshd[1058]: Failed password for root from 43.255.190.122 port 50210 ssh2
+Apr 14 04:34:51 ovzhost sshd[1058]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 50210 ssh2]
+Apr 14 04:34:51 ovzhost sshd[1058]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:51 ovzhost sshd[1058]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:52 ovzhost sshd[1060]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:34:54 ovzhost sshd[1060]: Failed password for root from 43.255.190.122 port 42779 ssh2
+Apr 14 04:34:59 ovzhost sshd[1060]: message repeated 2 times: [ Failed password for root from 43.255.190.122 port 42779 ssh2]
+Apr 14 04:34:59 ovzhost sshd[1060]: Received disconnect from 43.255.190.122: 11:  [preauth]
+Apr 14 04:34:59 ovzhost sshd[1060]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:35:00 ovzhost sshd[1063]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=43.255.190.122  user=root
+Apr 14 04:35:02 ovzhost sshd[1063]: Failed password for root from 43.255.190.122 port 35638 ssh2

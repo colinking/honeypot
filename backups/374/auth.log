@@ -1,0 +1,66 @@
+Mar 31 17:16:56 ovzhost sudo:     root : unable to resolve host ovzhost
+Mar 31 17:16:56 ovzhost sudo:     root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/less /root/.bash_history
+Mar 31 17:16:56 ovzhost sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 31 17:16:57 ovzhost sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on 0.0.0.0 port 22.
+Apr  2 14:31:13 ovzhost sshd[419]: Server listening on :: port 22.
+Apr  2 14:31:13 ovzhost saslauthd[637]: detach_tty      : master pid is: 637
+Apr  2 14:31:13 ovzhost saslauthd[637]: ipc_init        : listening on socket: /var/run/saslauthd/mux
+Apr  2 14:33:26 ovzhost sshd[797]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 13:32:02 ovzhost sshd[785]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 13:35:11 ovzhost sshd[802]: Invalid user pi from 162.13.137.127
+Apr  8 13:35:11 ovzhost sshd[802]: input_userauth_request: invalid user pi [preauth]
+Apr  8 13:35:11 ovzhost sshd[802]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 13:35:11 ovzhost sshd[802]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=162.13.137.127 
+Apr  8 13:35:13 ovzhost sshd[802]: Failed password for invalid user pi from 162.13.137.127 port 48816 ssh2
+Apr  8 13:35:13 ovzhost sshd[802]: Received disconnect from 162.13.137.127: 11: Bye Bye [preauth]
+Apr  8 13:35:30 ovzhost sshd[805]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 13:37:02 ovzhost sshd[813]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 13:39:01 ovzhost CRON[823]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 13:39:01 ovzhost CRON[823]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 13:39:02 ovzhost CRON[823]: pam_unix(cron:session): session closed for user root
+Apr  8 13:40:01 ovzhost CRON[837]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 13:40:01 ovzhost CRON[837]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  8 13:40:01 ovzhost CRON[837]: pam_unix(cron:session): session closed for user smmsp
+Apr  8 13:42:02 ovzhost sshd[868]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 13:45:30 ovzhost sshd[886]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 13:47:02 ovzhost sshd[894]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 13:50:12 ovzhost sshd[907]: Invalid user mas from 221.146.74.146
+Apr  8 13:50:12 ovzhost sshd[907]: input_userauth_request: invalid user mas [preauth]
+Apr  8 13:50:12 ovzhost sshd[907]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 13:50:12 ovzhost sshd[907]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 13:50:14 ovzhost sshd[907]: Failed password for invalid user mas from 221.146.74.146 port 30438 ssh2
+Apr  8 13:50:14 ovzhost sshd[907]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 13:50:16 ovzhost sshd[907]: Failed password for invalid user mas from 221.146.74.146 port 30438 ssh2
+Apr  8 13:50:16 ovzhost sshd[907]: Connection closed by 221.146.74.146 [preauth]
+Apr  8 13:50:16 ovzhost sshd[907]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 13:52:02 ovzhost sshd[915]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 13:55:30 ovzhost sshd[933]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 13:57:02 ovzhost sshd[941]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 14:00:01 ovzhost CRON[954]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 14:00:01 ovzhost CRON[954]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  8 14:00:01 ovzhost CRON[954]: pam_unix(cron:session): session closed for user smmsp
+Apr  8 14:02:02 ovzhost sshd[986]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 14:05:30 ovzhost sshd[1004]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 14:07:02 ovzhost sshd[1012]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 14:09:01 ovzhost CRON[1023]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 14:09:01 ovzhost CRON[1023]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 14:09:01 ovzhost CRON[1022]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 14:09:01 ovzhost CRON[1022]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  8 14:09:01 ovzhost CRON[1022]: pam_unix(cron:session): session closed for user root
+Apr  8 14:09:01 ovzhost CRON[1023]: pam_unix(cron:session): session closed for user root
+Apr  8 14:12:02 ovzhost sshd[1045]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 14:15:30 ovzhost sshd[1063]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 14:17:02 ovzhost sshd[1071]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 14:19:32 ovzhost sshd[1081]: Invalid user mc from 221.146.74.146
+Apr  8 14:19:32 ovzhost sshd[1081]: input_userauth_request: invalid user mc [preauth]
+Apr  8 14:19:32 ovzhost sshd[1081]: pam_unix(sshd:auth): check pass; user unknown
+Apr  8 14:19:32 ovzhost sshd[1081]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=221.146.74.146 
+Apr  8 14:19:34 ovzhost sshd[1081]: Failed password for invalid user mc from 221.146.74.146 port 32067 ssh2
+Apr  8 14:19:34 ovzhost sshd[1081]: Connection closed by 221.146.74.146 [preauth]
+Apr  8 14:20:01 ovzhost CRON[1086]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  8 14:20:01 ovzhost CRON[1086]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  8 14:20:01 ovzhost CRON[1086]: pam_unix(cron:session): session closed for user smmsp
+Apr  8 14:22:02 ovzhost sshd[1117]: Connection closed by 127.0.0.1 [preauth]
+Apr  8 14:25:30 ovzhost sshd[1136]: Connection closed by 128.8.37.104 [preauth]
+Apr  8 14:27:02 ovzhost sshd[1144]: Connection closed by 127.0.0.1 [preauth]
